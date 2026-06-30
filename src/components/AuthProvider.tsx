@@ -3,6 +3,7 @@ import { onAuthChange, signOut, type AppUser } from '../lib/auth';
 import { setCloudHooks, loadLibrary, mergeUserSongs } from '../lib/songLibrary';
 import { pullUserLibrary, pushUserLibrary, upsertUserSong, deleteUserSong } from '../lib/userCloud';
 import { cloudEnabled } from '../lib/supabase';
+import { setTrackedUser, track } from '../lib/tracking';
 import AuthModal from './AuthModal';
 import AgreementModal from './AgreementModal';
 
@@ -42,7 +43,9 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
     const off = onAuthChange((u) => {
       setUser(u);
       setReady(true);
+      setTrackedUser(u?.email ?? null);
       if (u) {
+        if (pulledFor.current !== u.id) track('login', u.email);
         setCloudHooks({
           upsert: (s) => { upsertUserSong(s, u.id).catch(() => {}); },
           remove: (t) => { deleteUserSong(t, u.id).catch(() => {}); },

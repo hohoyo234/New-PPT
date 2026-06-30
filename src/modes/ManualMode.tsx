@@ -11,6 +11,7 @@ import { BACKGROUND_OPTIONS, pollinationsBg } from '../lib/backgrounds';
 import { saveToLibrary, searchLibraryMulti, type LibrarySong } from '../lib/songLibrary';
 import { openLyricSheet } from '../lib/lyricSheet';
 import { SlideView, PreviewModal, type PreviewSlide } from './SlidePreview';
+import { track } from '../lib/tracking';
 
 const LS_KEY = 'worship_ppt_maker_v1';
 
@@ -173,6 +174,7 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
     try {
       const { blob, bgEmbedFailed } = await generateDeck(valid, settings);
       downloadBlob(blob, fileName);
+      track('export', `manual · ${valid.length}首 · ${fileName}`);
       // Feed the local "database" — including the chosen background image.
       valid.forEach((s) =>
         saveToLibrary({

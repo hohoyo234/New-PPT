@@ -6,6 +6,7 @@ import { replaceLibrary } from './lib/songLibrary';
 import { SEED_SONGS, REPLACE_VERSION } from './lib/seedSongs';
 import AuthProvider from './components/AuthProvider';
 import AuthButton from './components/AuthButton';
+import { initTracking, setTrackedMode, track } from './lib/tracking';
 
 type Mode = 'auto' | 'manual' | 'library';
 
@@ -18,10 +19,14 @@ export default function App() {
     replaceLibrary(SEED_SONGS, REPLACE_VERSION);
     // Cloud write-through is wired by <AuthProvider>: signed-in users sync to
     // their own private table; guests stay local-only.
+    setTrackedMode(mode);
+    initTracking();
   }, []);
 
   const change = (m: Mode) => {
     setMode(m);
+    setTrackedMode(m);
+    track('mode', m);
     try { localStorage.setItem('ppt_mode', m); } catch {}
   };
 

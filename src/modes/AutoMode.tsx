@@ -6,6 +6,7 @@ import { searchLibrary, searchLibraryMulti, saveToLibrary, libraryStats } from '
 import type { LibrarySong } from '../lib/songLibrary';
 import { detectChorus, deriveBackground, parseEntryLine } from '../lib/autoStructure';
 import { exportMerged, exportZip } from '../lib/exporter';
+import { track } from '../lib/tracking';
 import { openLyricSheet } from '../lib/lyricSheet';
 import { PreviewModal } from './SlidePreview';
 
@@ -170,6 +171,7 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
       const res = merge
         ? await exportMerged(songInputs, settings, deckName)
         : await exportZip(songInputs, settings, deckName);
+      track('export', `auto · ${valid.length}首 · ${merge ? '合并' : 'ZIP'} · ${deckName}`);
       // Grow the local "database" — including each song's background image.
       valid.forEach((s) => saveToLibrary({ title: s.title, englishTitle: s.englishTitle, producer: s.producer, lyrics: s.lyrics, englishLyrics: s.englishLyrics, bg: s.bg }));
       flash(res.bgEmbedFailed
