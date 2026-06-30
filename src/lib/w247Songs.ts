@@ -449,7 +449,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "雨痕的玻璃窗 想起過去的傷\n滴答滴答虛空的惆悵\n應許從沒改變 但似乎被遺忘\n憂愁為它塗滿黑色框\n祢開啟我雙眼 看見新的異象\n恩雨喚醒熱情的盼望\n呼召就在前方 我心不再彷徨\n回到起初最愛的地方\n我要展開讚美的翅膀 不管前面風雨有多狂\n祢如鷹帶我一起飛翔 感恩挫折就能變剛強\n我要展開讚美的翅膀 儘管黑夜有時很漫長\n祢如鷹帶我一起飛翔 豐盛生命是我的獎賞",
   "lyricsSc": "雨痕的玻璃窗 想起过去的伤\n滴答滴答虚空的惆怅\n应许从没改变 但似乎被遗忘\n忧愁为它涂满黑色框\n祢开启我双眼 看见新的异象\n恩雨唤醒热情的盼望\n呼召就在前方 我心不再彷徨\n回到起初最爱的地方\n我要展开赞美的翅膀 不管前面风雨有多狂\n祢如鹰带我一起飞翔 感恩挫折就能变刚强\n我要展开赞美的翅膀 尽管黑夜有时很漫长\n祢如鹰带我一起飞翔 丰盛生命是我的奖赏",
-  "englishLyrics": ""
+  "englishLyrics": "Rain-streaked window glass recalls the wounds of the past\nTick, tock, the empty melancholy drips away\nThe promise has never changed, yet it seems forgotten\nSorrow paints it over with a frame of black\nYou open up my eyes to see a brand-new vision\nShowers of grace awaken a passionate hope\nThe calling lies right ahead, my heart wavers no more\nReturning to the place I loved most at the start\nI will spread the wings of praise, no matter how wild the storm ahead\nLike an eagle You bear me to soar, even setbacks turn to strength\nI will spread the wings of praise, though the night is sometimes long\nLike an eagle You bear me to soar, abundant life is my reward"
  },
  {
   "title": "我是如此美麗",
@@ -477,7 +477,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "耶穌 祢是最亮的晨星\n因為有了祢 夜空不會再孤寂\n為了我甘願降卑捨己\n如此犧牲的愛深觸我心\n耶穌 祢是我的盼望\n祢在十架上擔當我罪和憂患\n人生有了祢 生命不再一樣\n重擔被釋放 道路越走越明亮\n耶穌 祢是我生命中的唯一\n有祢才會有陽光照著大地\n祢的話語印在我心裏 祢的祝福使我心滿溢\n對祢的愛慕每時每刻不停息\n耶穌 祢是我生命中的指引\n有祢在我身邊一切都安心\n祢的寳血洗淨我心靈 我願一直跟隨祢到底\n讓我對祢的愛永遠不止息",
   "lyricsSc": "耶稣 祢是最亮的晨星\n因为有了祢 夜空不会再孤寂\n为了我甘愿降卑舍己\n如此牺牲的爱深触我心\n耶稣 祢是我的盼望\n祢在十架上担当我罪和忧患\n人生有了祢 生命不再一样\n重担被释放 道路越走越明亮\n耶稣 祢是我生命中的唯一\n有祢才会有阳光照著大地\n祢的话语印在我心里 祢的祝福使我心满溢\n对祢的爱慕每时每刻不停息\n耶稣 祢是我生命中的指引\n有祢在我身边一切都安心\n祢的寳血洗净我心灵 我愿一直跟随祢到底\n让我对祢的爱永远不止息",
-  "englishLyrics": ""
+  "englishLyrics": "Jesus, You are the brightest morning star\nBecause of You, the night sky is lonely no more\nFor me You willingly humbled Yourself and gave Yourself up\nSuch sacrificial love deeply touches my heart\nJesus, You are my hope\nOn the cross You bore my sin and my sorrow\nWith You in my life, life is no longer the same\nBurdens are set free, the road grows ever brighter\nJesus, You are the only one in my life\nOnly with You does the sunlight shine upon the earth\nYour word is sealed in my heart, Your blessing makes it overflow\nMy adoration for You never ceases, moment by moment\nJesus, You are the guide of my life\nWith You by my side, all my heart is at peace\nYour precious blood washes my soul, I will follow You to the very end\nLet my love for You never, ever cease"
  },
  {
   "title": "祢名",
@@ -519,7 +519,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "禱告 (蒙語)\n地和其中所充滿的，世界和住在其間的，都屬耶和華。祂把地建立在海上，安定在大水之上。誰能登耶和華的山？誰能站在祂的聖所？(詩篇24:1-3)\n祢是創造天地萬物的主宰\n在眾神之中 有誰能像祢\n祢是昔在今在永在的真神\n祢至聖至榮 可頌又可畏\n祢配得所有讚美\n眾天使天軍俯伏敬拜祢\n祢配得所有讚美\n頌讚尊貴榮耀都歸於祢\n我要日日夜夜 稱頌祢奇妙無比的大作為",
   "lyricsSc": "祷告 (蒙语)\n地和其中所充满的，世界和住在其间的，都属耶和华。祂把地建立在海上，安定在大水之上。谁能登耶和华的山？谁能站在祂的圣所？(诗篇24:1-3)\n祢是创造天地万物的主宰\n在众神之中 有谁能像祢\n祢是昔在今在永在的真神\n祢至圣至荣 可颂又可畏\n祢配得所有赞美\n众天使天军俯伏敬拜祢\n祢配得所有赞美\n颂赞尊贵荣耀都归于祢\n我要日日夜夜 称颂祢奇妙无比的大作为",
-  "englishLyrics": ""
+  "englishLyrics": "Prayer (in Mongolian)\nThe earth is the LORD's and everything in it, the world and all who live in it; He founded it on the seas and established it on the waters. Who may ascend the mountain of the LORD? Who may stand in His holy place? (Psalm 24:1-3)\nYou are the Sovereign Lord who created heaven, earth, and all things\nAmong all the gods, who is like You\nYou are the true God who was, and is, and is to come\nYou are most holy, most glorious, worthy of praise and of awe\nYou are worthy of all praise\nAll the angels and heavenly hosts bow down and worship You\nYou are worthy of all praise\nPraise, honor, and glory all belong to You\nDay and night I will extol Your wondrous, matchless deeds"
  },
  {
   "title": "器皿",
@@ -533,7 +533,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "被祢揀選 經祢熬煉\n被祢充滿 聽祢差遣\n賜我清潔 脫離卑賤\n過往一切 使我棄絕\n然後使我破碎 能與祢榮耀相連\n召我等候被祢興起\n如寶貝藏在瓦器裡\n祢莫大能力在軟弱處顯明\n我曾如塵土被丟棄\n幸得祢垂憐被高舉\n手觸摸我 塑造我\n我竟成為蒙愛的器皿",
   "lyricsSc": "被祢拣选 经祢熬炼\n被祢充满 听祢差遣\n赐我清洁 脱离卑贱\n过往一切 使我弃绝\n然后使我破碎 能与祢荣耀相连\n召我等候被祢兴起\n如宝贝藏在瓦器里\n祢莫大能力在软弱处显明\n我曾如尘土被丢弃\n幸得祢垂怜被高举\n手触摸我 塑造我\n我竟成为蒙爱的器皿",
-  "englishLyrics": ""
+  "englishLyrics": "Chosen by You, refined by You\nFilled by You, sent at Your command\nYou make me clean, freeing me from the lowly\nAll that is past, You make me cast away\nThen You break me, that I may be joined to Your glory\nYou call me to wait to be raised up by You\nLike treasure hidden in jars of clay\nYour surpassing power is shown in my weakness\nI was once cast off like the dust\nBut by Your mercy I was lifted high\nYour hand touches me and shapes me\nAnd I become a vessel of Your love"
  },
  {
   "title": "祭壇",
@@ -547,7 +547,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "看哪 燃燒的火焰 聽哪 眾水的聲音\n神哪 祢的榮耀在這裡 我們歡然稱謝祢\n看哪 燃燒的火焰 聽哪 眾水的聲音\n神哪 祢的榮耀在這裡 我們俯伏敬拜祢\n求聖靈的火焰燃燒我的心\n求聖靈的恩膏膏抹我的靈\n我在這裡歌唱讚美永不停息\n求復興的火燃燒點亮這全地\n我在神的殿裡貼近神的心\n我在至聖所裡倚靠神的靈\n神的子民同心發出合一的聲音\n大能的勇士現在要興起\n求聖靈的火焰燃燒我們的心\n求聖靈的恩膏膏抹我們的靈\n我們在這裡歌唱讚美永不停息\n求復興的火燃燒點亮這全地\n我們在神的殿裡貼近神的心\n我們在至聖所裡倚靠神的靈\n神的子民同心發出合一的聲音\n大能的勇士現在要興起 要興起\n尾奏\n喔 要興起 喔",
   "lyricsSc": "看哪 燃烧的火焰 听哪 众水的声音\n神哪 祢的荣耀在这里 我们欢然称谢祢\n看哪 燃烧的火焰 听哪 众水的声音\n神哪 祢的荣耀在这里 我们俯伏敬拜祢\n求圣灵的火焰燃烧我的心\n求圣灵的恩膏膏抹我的灵\n我在这里歌唱赞美永不停息\n求复兴的火燃烧点亮这全地\n我在神的殿里贴近神的心\n我在至圣所里倚靠神的灵\n神的子民同心发出合一的声音\n大能的勇士现在要兴起\n求圣灵的火焰燃烧我们的心\n求圣灵的恩膏膏抹我们的灵\n我们在这里歌唱赞美永不停息\n求复兴的火燃烧点亮这全地\n我们在神的殿里贴近神的心\n我们在至圣所里倚靠神的灵\n神的子民同心发出合一的声音\n大能的勇士现在要兴起 要兴起\n尾奏\n喔 要兴起 喔",
-  "englishLyrics": ""
+  "englishLyrics": "Behold the burning flames, hear the sound of many waters\nO God, Your glory is here, joyfully we give You thanks\nBehold the burning flames, hear the sound of many waters\nO God, Your glory is here, we bow down and worship You\nLet the fire of the Spirit burn within my heart\nLet the anointing of the Spirit anoint my soul\nHere I sing and praise, and never cease\nLet revival's fire burn and light up all this land\nIn the house of God I draw near to His heart\nIn the Holy of Holies I lean upon His Spirit\nGod's people with one accord raise a unified voice\nThe mighty warriors now will arise\nLet the fire of the Spirit burn within our hearts\nLet the anointing of the Spirit anoint our souls\nHere we sing and praise, and never cease\nLet revival's fire burn and light up all this land\nIn the house of God we draw near to His heart\nIn the Holy of Holies we lean upon His Spirit\nGod's people with one accord raise a unified voice\nThe mighty warriors now will arise, will arise\n(Instrumental ending)\nOh, arise, oh"
  },
  {
   "title": "宣告耶穌聖名 (譯自 I Speak Jesus)",
@@ -757,7 +757,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "聖潔的火給我心洗禮 來讓我滿載那屬天恩膏\n讓聖火燒毁心裡的污穢 唯願我跟主心意\n成為我異象一生去宣講祢 名利富貴對我現已失色\n讓我有勇氣不怕多挑戰 唯願我跟主心意\n主引導我往前行 主耶穌請祢差遣\n看萬事皆有損 苦楚不埋怨\n我靠著祢渡每天 全靠祢恩典去渡過\n神聖之火燃燒我 奇妙大愛我不忘\n使命承擔因主呼召 主的靈啊拖緊我",
   "lyricsSc": "圣洁的火给我心洗礼 来让我满载那属天恩膏\n让圣火烧毁心里的污秽 唯愿我跟主心意\n成为我异象一生去宣讲祢 名利富贵对我现已失色\n让我有勇气不怕多挑战 唯愿我跟主心意\n主引导我往前行 主耶稣请祢差遣\n看万事皆有损 苦楚不埋怨\n我靠著祢渡每天 全靠祢恩典去渡过\n神圣之火燃烧我 奇妙大爱我不忘\n使命承担因主呼召 主的灵啊拖紧我",
-  "englishLyrics": ""
+  "englishLyrics": "Let the holy fire baptize my heart, fill me with the anointing from heaven\nLet the holy fire burn away the filth within, I desire only my Lord's heart\nLet it be my vision to proclaim You all my life; fame and wealth have lost their luster to me\nGive me courage, unafraid of every challenge, I desire only my Lord's heart\nLord, lead me onward; Lord Jesus, please send me out\nI count all things as loss, I will not complain in my suffering\nI rely on You through each day, wholly by Your grace I press on\nThe holy fire burns in me, Your wondrous great love I'll never forget\nI take up the mission at the Lord's call; O Spirit of the Lord, hold me close"
  },
  {
   "title": "抬頭仰望(粵)",
@@ -799,7 +799,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "主愛偉大奇妙 至高深不可測透\n竟不惜捨棄獨生子 為世間解去罪困\n今得主稱作義人獲赦罪 我已經不再被控\n神若與我同行誰可抵禦敵對\n誰能令到我與神愛阻隔\n如臨危險刀劍 狂風雨暴 貧困軟弱 赤身飢渴\n也不可使我與神愛隔阻\n縱處人生低處常經變幻 明天今天各種波折\n全亦都不可阻隔著神大愛",
   "lyricsSc": "主爱伟大奇妙 至高深不可测透\n竟不惜舍弃独生子 为世间解去罪困\n今得主称作义人获赦罪 我已经不再被控\n神若与我同行谁可抵御敌对\n谁能令到我与神爱阻隔\n如临危险刀剑 狂风雨暴 贫困软弱 赤身饥渴\n也不可使我与神爱隔阻\n纵处人生低处常经变幻 明天今天各种波折\n全亦都不可阻隔著神大爱",
-  "englishLyrics": ""
+  "englishLyrics": "The Lord's love is great and wondrous, so high and deep it cannot be fathomed\nHe did not spare His only Son, to free the world from the bondage of sin\nNow declared righteous by the Lord and forgiven, I am condemned no more\nIf God walks with me, who can stand against me\nWho can ever separate me from the love of God\nThough facing peril, sword, raging storm, poverty, weakness, nakedness, hunger and thirst\nNone of these can separate me from the love of God\nThough in life's lowest place, ever changing, today and tomorrow full of turmoil\nNone of it can ever separate me from the great love of God"
  },
  {
   "title": "因主歡欣(粵)",
@@ -813,7 +813,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "縱是無花果樹不發旺 葡萄樹不結果子\n但我卻因永生主喜樂 一生一世來讚頌\n神是我患難中的拯救 困阨中隨時的幫助\n神是我力量所倚靠 永活神是我的詩歌\n神是我患難中的拯救 困阨中隨時的幫助\n神是我力量所倚靠 我心堅定向主獻讚頌",
   "lyricsSc": "纵是无花果树不发旺 葡萄树不结果子\n但我却因永生主喜乐 一生一世来赞颂\n神是我患难中的拯救 困阨中随时的帮助\n神是我力量所倚靠 永活神是我的诗歌\n神是我患难中的拯救 困阨中随时的帮助\n神是我力量所倚靠 我心坚定向主献赞颂",
-  "englishLyrics": ""
+  "englishLyrics": "Though the fig tree does not blossom, and the vine bears no fruit\nYet I will rejoice in the everlasting Lord, and praise Him all my life\nGod is my salvation in trouble, my ever-present help in distress\nGod is the strength I rely on, the living God is my song\nGod is my salvation in trouble, my ever-present help in distress\nGod is the strength I rely on, my heart is steadfast to offer Him praise"
  },
  {
   "title": "寶座",
