@@ -47,6 +47,7 @@ export interface SongInput {
   translationFontSize?: number;
   linesPerSlide?: number;
   shadow?: boolean;
+  enablePinyin?: boolean;
 }
 
 export type SlideSize = '16:9' | '4:3';
@@ -144,6 +145,7 @@ export async function generateDeck(songsToExport: SongInput[], s: DeckSettings):
     const baseTfs = s.unifyFontSize ? s.translationFontSize : song.translationFontSize || s.translationFontSize;
     const shadowOn = song.shadow !== undefined ? song.shadow : s.enableShadow;
     const textShadow = shadowOn ? pptShadow(s.shadowLevel) : undefined;
+    const usePinyin = song.enablePinyin ?? s.enablePinyin;
 
     // Sets the slide background. Image backgrounds use a full-bleed "cover"
     // image (crops to fill, never distorts — fixes the squished look at any
@@ -196,7 +198,7 @@ export async function generateDeck(songsToExport: SongInput[], s: DeckSettings):
     const transRatio = baseLfs > 0 ? baseTfs / baseLfs : 0.5;
     const lineH = 0.8 * SY;
     const transH = 0.8 * SY;
-    const pinyinH = s.enablePinyin ? 0.4 * SY : 0;
+    const pinyinH = usePinyin ? 0.4 * SY : 0;
 
     slidesContent.forEach((slideLines) => {
       const lyricPt = Math.max(12, Math.min(72, baseLfs)) * SX;
@@ -207,7 +209,7 @@ export async function generateDeck(songsToExport: SongInput[], s: DeckSettings):
       const blockH = slideLines.reduce((h, l) => h + pinyinH + lineH + (l.en ? transH : 0), 0);
       let currentY = Math.max(0.3 * SY, (H - blockH) / 2);
       slideLines.forEach(({ cn, en }) => {
-        if (s.enablePinyin) {
+        if (usePinyin) {
           const py = toPinyin(cn);
           if (py) lSlide.addText(py, { x: 0, y: currentY, w: '100%', h: pinyinH, align: 'center', fontFace: bodyFont, fontSize: pinyinPt, color: lc, shadow: textShadow });
           currentY += pinyinH;

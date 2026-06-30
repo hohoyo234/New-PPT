@@ -41,17 +41,18 @@ export function SlideView({ slide, bg, pc, lyricFontSize, translationFontSize, s
 export type SlideStyle = {
   lyricColor: string; translationColor: string;
   lyricFontSize: number; translationFontSize: number; linesPerSlide: number;
+  enablePinyin: boolean;
 };
 
 // Click-to-enlarge modal: big slide with prev/next + edit the song's lyrics AND
 // (optionally) its style — colors, background, font sizes, lines per page — live.
-export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontSize, translationFontSize, shadow, enablePinyin, onLyric, onEnglish, onClose, style, onStyle, bgOptions, onBg }: {
+export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontSize, translationFontSize, shadow, enablePinyin, onLyric, onEnglish, onClose, style, onStyle, bgOptions, onBg, onRandomBg }: {
   slides: PreviewSlide[]; bg?: BgOption | null; pc: SlideColors; start: number;
   lyric: string; english: string; lyricFontSize: number; translationFontSize: number; shadow: string; enablePinyin?: boolean;
   onLyric: (v: string) => void; onEnglish: (v: string) => void; onClose: () => void;
   // When provided, a "样式" panel appears with live color/font/lines/background controls.
   style?: SlideStyle; onStyle?: (patch: Partial<SlideStyle>) => void;
-  bgOptions?: BgOption[]; onBg?: (bg: BgOption) => void;
+  bgOptions?: BgOption[]; onBg?: (bg: BgOption) => void; onRandomBg?: () => void;
 }) {
   const [i, setI] = useState(start);
   const [tab, setTab] = useState<'text' | 'style'>('text');
@@ -98,7 +99,12 @@ export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontS
               {/* Background picker */}
               {bgOptions && onBg && (
                 <div className="space-y-1.5">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-outline/40 px-1">背景</span>
+                  <div className="flex items-center justify-between px-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-outline/40">背景</span>
+                    {onRandomBg && (
+                      <button onClick={onRandomBg} className="h-7 px-2.5 rounded-lg bg-black text-white text-[10px] font-black uppercase tracking-wider hover:bg-emerald-600 flex items-center gap-1 transition-all"><span className="material-symbols-outlined text-[14px]">casino</span>随机背景</button>
+                    )}
+                  </div>
                   <div className="grid grid-cols-6 gap-1.5 max-h-28 overflow-y-auto no-scrollbar p-0.5">
                     {bgOptions.map((b) => (
                       <button key={b.id} title={b.label} onClick={() => onBg(b)} className={`aspect-video rounded-md overflow-hidden border-2 ${bg?.id === b.id ? 'border-emerald-500' : 'border-transparent'}`} style={b.url ? { backgroundImage: `url(${b.url})`, backgroundSize: 'cover', backgroundPosition: 'center' } : { backgroundColor: `#${b.color}` }} />
@@ -116,13 +122,18 @@ export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontS
               <RangeField label="翻译字号" value={style.translationFontSize} min={12} max={56} onChange={(v) => onStyle({ translationFontSize: v })} />
               {/* Lines per slide */}
               <div className="space-y-1.5">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-outline/40 px-1">每页行数（歌词无空行分页时生效）</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-outline/40 px-1">每页行数（在歌词里用空行分页，即可逐页自定）</span>
                 <div className="flex gap-1.5">
                   {[1, 2, 3, 4, 5, 6].map((n) => (
                     <button key={n} onClick={() => onStyle({ linesPerSlide: n })} className={`flex-1 h-9 rounded-lg text-[12px] font-black transition-all ${style.linesPerSlide === n ? 'bg-emerald-600 text-white shadow' : 'bg-[#F9F7F5] text-outline/60 hover:bg-[#E5E0DA]'}`}>{n}</button>
                   ))}
                 </div>
               </div>
+              {/* Pinyin toggle */}
+              <button onClick={() => onStyle({ enablePinyin: !style.enablePinyin })} className="w-full flex items-center justify-between bg-[#F9F7F5] rounded-xl px-3.5 py-2.5 hover:bg-[#F4F1EE]">
+                <span className="flex items-center gap-2"><span className="material-symbols-outlined text-[18px] text-outline/50">translate</span><span className="text-[12px] font-black text-[#2C2C2C]">歌词上方加拼音</span></span>
+                <span className={`relative w-10 h-6 rounded-full transition-colors ${style.enablePinyin ? 'bg-emerald-600' : 'bg-[#E5E0DA]'}`}><span className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-all ${style.enablePinyin ? 'left-[18px]' : 'left-0.5'}`} /></span>
+              </button>
             </div>
           )}
 

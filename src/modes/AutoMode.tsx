@@ -28,6 +28,7 @@ interface AutoSong {
   lyricFontSize?: number;
   translationFontSize?: number;
   linesPerSlide?: number;
+  enablePinyin?: boolean;
 }
 
 const AUTO_SETTINGS: Omit<DeckSettings, 'selectedBg' | 'showSongTitle' | 'unifyBackground' | 'slideSize'> = {
@@ -161,7 +162,7 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
         // Per-song style overrides flow straight through to the .pptx generator.
         lyricColor: s.lyricColor, translationColor: s.translationColor,
         lyricFontSize: s.lyricFontSize, translationFontSize: s.translationFontSize,
-        linesPerSlide: s.linesPerSlide,
+        linesPerSlide: s.linesPerSlide, enablePinyin: s.enablePinyin,
       }));
       const res = merge
         ? await exportMerged(songInputs, settings, deckName)
@@ -359,6 +360,12 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
   const lfs = song.lyricFontSize || AUTO_SETTINGS.lyricFontSize;
   const tfs = song.translationFontSize || AUTO_SETTINGS.translationFontSize;
   const lps = song.linesPerSlide || AUTO_SETTINGS.linesPerSlide;
+  const py = song.enablePinyin ?? AUTO_SETTINGS.enablePinyin;
+  // Instant background — system picks a random image preset (no AI wait).
+  const randomBg = () => {
+    const pool = BACKGROUND_OPTIONS.filter((b) => b.url);
+    if (pool.length) onPickPreset(song.id, pool[Math.floor(Math.random() * pool.length)]);
+  };
   const preview = useMemo(() => {
     const exp = expandSongSections(song.lyrics || '', song.englishLyrics || '');
     const pages = paginateLyrics(exp.lyrics, exp.english, lps);
@@ -388,7 +395,8 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
             <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-white text-[9px] font-black uppercase tracking-wider">{slideCount} 页歌词</div>
           </div>
           <div className="flex gap-1">
-            <button onClick={() => onReRoll(song.id)} title="AI 重新生成背景" className="flex-1 h-7 rounded-lg bg-black text-white text-[9px] font-black uppercase flex items-center justify-center gap-0.5 hover:bg-emerald-600"><span className="material-symbols-outlined text-[13px]">refresh</span>换图</button>
+            <button onClick={randomBg} title="系统随机选一张背景（即时）" className="flex-1 h-7 rounded-lg bg-emerald-600 text-white text-[9px] font-black uppercase flex items-center justify-center gap-0.5 hover:bg-emerald-500"><span className="material-symbols-outlined text-[13px]">casino</span>随机</button>
+            <button onClick={() => onReRoll(song.id)} title="AI 重新生成背景（较慢）" className="w-7 h-7 rounded-lg bg-black text-white flex items-center justify-center hover:bg-emerald-600"><span className="material-symbols-outlined text-[14px]">auto_awesome</span></button>
             <button onClick={() => setBgOpen((v) => !v)} title="选预设背景" className="w-7 h-7 rounded-lg bg-[#F9F7F5] hover:bg-[#E5E0DA] flex items-center justify-center"><span className="material-symbols-outlined text-[14px]">palette</span></button>
           </div>
           {bgOpen && (
@@ -460,13 +468,15 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
           lyricFontSize={lfs}
           translationFontSize={tfs}
           shadow={shadow}
+          enablePinyin={py}
           onLyric={(v) => onPatch(song.id, { lyrics: v })}
           onEnglish={(v) => onPatch(song.id, { englishLyrics: v })}
           onClose={() => setZoomIdx(null)}
-          style={{ lyricColor: lc, translationColor: tc, lyricFontSize: lfs, translationFontSize: tfs, linesPerSlide: lps }}
+          style={{ lyricColor: lc, translationColor: tc, lyricFontSize: lfs, translationFontSize: tfs, linesPerSlide: lps, enablePinyin: py }}
           onStyle={(patch) => onPatch(song.id, patch)}
           bgOptions={BACKGROUND_OPTIONS}
           onBg={(b) => onPickPreset(song.id, b)}
+          onRandomBg={randomBg}
         />
       )}
     </div>
