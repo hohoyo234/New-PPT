@@ -2353,7 +2353,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "將我一生 全奉獻 如活祭供於壇上\n將我一生 獻奉於祢 無懼怕 任我主差遣\n將我一生 都交給祢 願與我主相契合不分\n全沒缺欠 獻奉這一生 等到那天 榮耀裡相見\n只盼一生 無後悔 能學會數算年日\n只盼一生 永屬於祢 來實踐 父祢的旨意",
   "lyricsSc": "将我一生 全奉献 如活祭供于坛上\n将我一生 献奉于祢 无惧怕 任我主差遣\n将我一生 都交给祢 愿与我主相契合不分\n全没缺欠 献奉这一生 等到那天 荣耀里相见\n只盼一生 无后悔 能学会数算年日\n只盼一生 永属于祢 来实践 父祢的旨意",
-  "englishLyrics": ""
+  "englishLyrics": "My whole life I offer up, as a living sacrifice upon the altar\nMy whole life I give to You, unafraid, send me wherever You will, my Lord\nMy whole life I hand to You, longing to be one with my Lord, never parted\nLacking nothing, I offer up this life, until the day we meet in glory\nI long for a life without regret, learning to number my days\nI long for a life forever Yours, to carry out Your will, O Father"
  },
  {
   "title": "僅此一生",
@@ -2815,7 +2815,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "阿們 (8X)\n一切應許 在基督裡 全都是「阿們」\n我們的心 向著祢 永遠說「阿們」",
   "lyricsSc": "阿们 (8X)\n一切应许 在基督里 全都是「阿们」\n我们的心 向著祢 永远说「阿们」",
-  "englishLyrics": ""
+  "englishLyrics": "Amen (8X)\nAll the promises in Christ are 'Yes' and 'Amen'\nOur hearts toward You forever say 'Amen'"
  },
  {
   "title": "復活.升天.大使命",
@@ -2829,7 +2829,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "在七日的第一日清早，耶穌復活了。\n那日晚上，門徒所在的地方，因怕猶太人，門都關了。耶穌來站在當中，對他們說，「願你們平安」。說了這話，就把手和肋旁指給他們看。門徒看見主就喜樂了。\n耶穌又對他們說，「願你們平安。父怎樣差遣了我，我也照樣差遣你們。我要將我父所應許的降在你們身上，你們要在城裡等候，直到你們領受從上頭來的能力。天上地下所有的權柄都賜給我了。所以你們要去，使萬民作我的門徒，奉父、子、聖靈的名給他們施洗，凡我所吩咐你們的，都教訓他們遵守，我就常與你們同在，直到世界的末了。」\n耶穌領他們到伯大尼的對面，就舉手給他們祝福。正祝福的時候，祂就離開他們，被帶到天上去了。當祂往上去，他們定睛望天的時候，忽然有兩個人，身穿白衣，站在旁邊，說，「加利利人哪，你們為甚麼站著望天呢．這離開你們被接升天的耶穌，你們見祂怎樣往天上去，祂還要怎樣來。」",
   "lyricsSc": "在七日的第一日清早，耶稣复活了。\n那日晚上，门徒所在的地方，因怕犹太人，门都关了。耶稣来站在当中，对他们说，「愿你们平安」。说了这话，就把手和肋旁指给他们看。门徒看见主就喜乐了。\n耶稣又对他们说，「愿你们平安。父怎样差遣了我，我也照样差遣你们。我要将我父所应许的降在你们身上，你们要在城里等候，直到你们领受从上头来的能力。天上地下所有的权柄都赐给我了。所以你们要去，使万民作我的门徒，奉父、子、圣灵的名给他们施洗，凡我所吩咐你们的，都教训他们遵守，我就常与你们同在，直到世界的末了。」\n耶稣领他们到伯大尼的对面，就举手给他们祝福。正祝福的时候，祂就离开他们，被带到天上去了。当祂往上去，他们定睛望天的时候，忽然有两个人，身穿白衣，站在旁边，说，「加利利人哪，你们为甚么站著望天呢．这离开你们被接升天的耶稣，你们见祂怎样往天上去，祂还要怎样来。」",
-  "englishLyrics": ""
+  "englishLyrics": "Early on the first day of the week, Jesus rose from the dead.\nOn the evening of that day, the doors being locked where the disciples were for fear of the Jews, Jesus came and stood among them and said, 'Peace be with you.' When He had said this, He showed them His hands and His side. Then the disciples were glad when they saw the Lord.\nJesus said to them again, 'Peace be with you. As the Father has sent Me, so I am sending you. I am sending the promise of My Father upon you; but stay in the city until you are clothed with power from on high. All authority in heaven and on earth has been given to Me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.'\nThen He led them out as far as Bethany, and lifting up His hands He blessed them. While He blessed them, He parted from them and was carried up into heaven. And while they were gazing into heaven as He went, behold, two men stood by them in white robes and said, 'Men of Galilee, why do you stand looking into heaven? This Jesus, who was taken up from you into heaven, will come in the same way as you saw Him go into heaven.'"
  },
  {
   "title": "哦主,祢名何其美",
@@ -2857,7 +2857,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "在天父家中有許多房間 溫暖甜蜜充滿光和愛\n但在門外邊還有多少人 只有無奈傷痛和孤單\n讓小小燈火四處燃起 帶夜行的人回家\n讓千萬盞燈遍照全地 帶迷途的人回家\n主耶穌在等待 (2X)\n讓千萬盞燈遍照全地 帶祂心上人回家\n帶祂心上人回家",
   "lyricsSc": "在天父家中有许多房间 温暖甜蜜充满光和爱\n但在门外边还有多少人 只有无奈伤痛和孤单\n让小小灯火四处燃起 带夜行的人回家\n让千万盏灯遍照全地 带迷途的人回家\n主耶稣在等待 (2X)\n让千万盏灯遍照全地 带祂心上人回家\n带祂心上人回家",
-  "englishLyrics": ""
+  "englishLyrics": "In the Father's house are many rooms, warm and sweet, full of light and love\nBut outside the door, how many still remain, with only helplessness, pain and loneliness\nLet the little lights be kindled everywhere, to bring the night-travelers home\nLet thousands of lamps shine over all the earth, to bring the lost ones home\nThe Lord Jesus is waiting (2X)\nLet thousands of lamps shine over all the earth, to bring the ones He loves home\nTo bring the ones He loves home"
  },
  {
   "title": "上好的福分",
@@ -2899,7 +2899,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "求祢為我造清潔的心\n使我裡面重新有正直的靈\n不要丟棄我 使我離開祢的面\n不要從我收回祢的聖靈\n求祢使我仍得救恩之樂\n賜我樂意的靈扶持我\n求祢使我得聽歡喜快樂的聲音\n使壓傷的骨頭可以踴躍\n神啊 祢是拯救我的上帝\n我的舌頭要高唱祢的公義\n憂傷痛悔的心祢不輕看\n洗滌我 我就比雪更白",
   "lyricsSc": "求祢为我造清洁的心\n使我里面重新有正直的灵\n不要丢弃我 使我离开祢的面\n不要从我收回祢的圣灵\n求祢使我仍得救恩之乐\n赐我乐意的灵扶持我\n求祢使我得听欢喜快乐的声音\n使压伤的骨头可以踊跃\n神啊 祢是拯救我的上帝\n我的舌头要高唱祢的公义\n忧伤痛悔的心祢不轻看\n洗涤我 我就比雪更白",
-  "englishLyrics": ""
+  "englishLyrics": "Create in me a clean heart, O God\nAnd renew a right spirit within me\nCast me not away from Your presence\nAnd take not Your Holy Spirit from me\nRestore to me the joy of Your salvation\nAnd uphold me with a willing spirit\nLet me hear joy and gladness\nThat the bones You have broken may rejoice\nO God, You are the God of my salvation\nMy tongue will sing aloud of Your righteousness\nA broken and contrite heart You will not despise\nWash me, and I shall be whiter than snow"
  },
  {
   "title": "我要等候耶和華",
@@ -2913,7 +2913,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "我要專心等候耶和華 也要定睛仰望祂\n來到主施恩寶座前 必蒙憐恤得夠用恩典\n我要耐心等候耶和華 如守夜等候天明\n在夜間歌頌祂信實 每早晨高唱祂的慈愛\n唯獨祂是我的磐石 我的拯救 我的高臺\n在祂面前傾心吐意 我的幫助從祂而來\n我要專心等候耶和華 也要定睛仰望祂\n在夜間歌頌祂信實 每早晨高唱祂的慈愛",
   "lyricsSc": "我要专心等候耶和华 也要定睛仰望祂\n来到主施恩宝座前 必蒙怜恤得够用恩典\n我要耐心等候耶和华 如守夜等候天明\n在夜间歌颂祂信实 每早晨高唱祂的慈爱\n唯独祂是我的磐石 我的拯救 我的高台\n在祂面前倾心吐意 我的帮助从祂而来\n我要专心等候耶和华 也要定睛仰望祂\n在夜间歌颂祂信实 每早晨高唱祂的慈爱",
-  "englishLyrics": ""
+  "englishLyrics": "I will wait for the LORD with all my heart, and fix my eyes upon Him\nComing before the throne of grace, I will find mercy and grace to help in need\nI will patiently wait for the LORD, like a watchman waiting for the dawn\nIn the night I sing of His faithfulness, every morning I sing aloud of His love\nHe alone is my rock, my salvation, my high stronghold\nBefore Him I pour out my heart, my help comes from Him\nI will wait for the LORD with all my heart, and fix my eyes upon Him\nIn the night I sing of His faithfulness, every morning I sing aloud of His love"
  },
  {
   "title": "我願為祢去",
@@ -2941,7 +2941,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "每一天 祢定睛垂顧 好像我是祢唯一的孩子\n每一天 祢側耳垂聽 好像世上沒有別的禱告\n多少不為人知的愁苦 多少不曾掉落的眼淚\n我發現祢知道 祢全都知道\n我願意 我願意 我願意 從祢手中接受每個環境\n我願意 我願意 我願意 這是我所需 是於我有益\n我願意 我願意 我願意 交出自己 信任祢美意\n我願意 我願意 我願意 祢永遠良善 全然是愛\n我願意 我願意\nI do, I do, I do - 我願意！",
   "lyricsSc": "每一天 祢定睛垂顾 好像我是祢唯一的孩子\n每一天 祢侧耳垂听 好像世上没有别的祷告\n多少不为人知的愁苦 多少不曾掉落的眼泪\n我发现祢知道 祢全都知道\n我愿意 我愿意 我愿意 从祢手中接受每个环境\n我愿意 我愿意 我愿意 这是我所需 是于我有益\n我愿意 我愿意 我愿意 交出自己 信任祢美意\n我愿意 我愿意 我愿意 祢永远良善 全然是爱\n我愿意 我愿意\nI do, I do, I do - 我愿意！",
-  "englishLyrics": ""
+  "englishLyrics": "Every day You watch over me, as though I were Your only child\nEvery day You incline Your ear, as though no other prayer were in the world\nSo much unknown sorrow, so many tears that never fell\nI find that You know, You know it all\nI am willing, I am willing, I am willing, to receive from Your hand every circumstance\nI am willing, I am willing, I am willing, this is what I need, and it is for my good\nI am willing, I am willing, I am willing, to give up myself, trusting Your good purpose\nI am willing, I am willing, I am willing, You are forever good, You are wholly love\nI am willing, I am willing\nI do, I do, I do — I am willing!"
  },
  {
   "title": "序曲(詩篇90篇1-2)",
@@ -2955,7 +2955,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "主啊 祢世世代代作我們的居所\n諸山未曾生出 地與世界祢未曾造成\n從亙古到永遠 祢是神",
   "lyricsSc": "主啊 祢世世代代作我们的居所\n诸山未曾生出 地与世界祢未曾造成\n从亘古到永远 祢是神",
-  "englishLyrics": ""
+  "englishLyrics": "Lord, You have been our dwelling place in all generations\nBefore the mountains were brought forth, or ever You had formed the earth and the world\nFrom everlasting to everlasting, You are God"
  },
  {
   "title": "眾山怎樣圍繞耶路撒冷",
