@@ -2,7 +2,6 @@ import type { SeedSong } from './songLibrary';
 import { SOP_SONGS } from './sopSongs';
 import { EXTRA_SONGS } from './extraSongs';
 import { W247_SONGS } from './w247Songs';
-import { GECI_SONGS } from './geciSongs';
 
 // The song library is the complete 讚美之泉 (Stream of Praise) catalog — 707 songs
 // imported from the official SOP song & lyrics list (sop.org). Each entry carries
@@ -19,8 +18,8 @@ import { GECI_SONGS } from './geciSongs';
 export const SEED_VERSION = 2;
 
 // Bump to force a one-time full replacement of the user's library with the
-// catalog below (see replaceLibrary in songLibrary.ts). Bumped to 4 so existing
-// users pick up EXTRA + W247 + GECI songs while keeping their own additions.
-export const REPLACE_VERSION = 4;
+// catalog below (see replaceLibrary in songLibrary.ts). Bumped to 5 to drop the
+// messy 歌词.docx (GECI) import that merged unrelated songs together.
+export const REPLACE_VERSION = 5;
 
-export const SEED_SONGS: SeedSong[] = [...SOP_SONGS, ...EXTRA_SONGS, ...W247_SONGS, ...GECI_SONGS];
+export const SEED_SONGS: SeedSong[] = [...SOP_SONGS, ...EXTRA_SONGS, ...W247_SONGS];

@@ -15,7 +15,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "神羔羊 世上的光 離開天堂 屈尊而降\n人子來 尋找迷羊 愛護失喪 為我受傷\n在世上 無枕無床 受盡淒涼 飽經風霜\n人的心 鐵硬如鋼 反倒將祂 釘十架上\n十架路 祂願走上 我眾罪 祂替我當\n十架上 汗血如江 遍體鱗傷 地震天蒼\n主耶穌 無怨無悔 為我死 為我破碎\n十架上 流盡寶血 洗淨我罪\n十架上 犧牲的愛 將我挽回",
   "lyricsSc": "神羔羊 世上的光 离开天堂 屈尊而降\n人子来 寻找迷羊 爱护失丧 为我受伤\n在世上 无枕无床 受尽凄凉 饱经风霜\n人的心 铁硬如钢 反倒将祂 钉十架上\n十架路 祂愿走上 我众罪 祂替我当\n十架上 汗血如江 遍体鳞伤 地震天苍\n主耶稣 无怨无悔 为我死 为我破碎\n十架上 流尽宝血 洗净我罪\n十架上 牺牲的爱 将我挽回",
-  "englishLyrics": ""
+  "englishLyrics": "Lamb of God, the Light of the world, He left heaven and humbly came down\nThe Son of Man came seeking lost sheep, caring for the lost, wounded for me\nIn this world, no place to rest His head, enduring sorrow, weathered by every storm\nThe hearts of men, hard as steel, instead nailed Him upon the cross\nThe road of the cross He willingly walked, all my sins He bore in my place\nUpon the cross, sweat and blood like a river, His body all wounded, earth quaked, heaven darkened\nLord Jesus, with no complaint nor regret, died for me and was broken for me\nUpon the cross He poured out His precious blood, to wash my sin away\nUpon the cross, His sacrificial love has won me back"
  },
  {
   "title": "在基督裡",
@@ -111,8 +111,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "我曾錯過多少機會 浪費多少祢的恩典\n以為世界能給我什麼\n祢慈聲呼喚在耳邊 但今生佔據我心田\n只讓祢憑白傷心守候\n前副歌\n錯過了屬天的福分 失落了兒子的名分\n虧缺了祢榮耀的形象\n感謝祢一直等著我 敞開祢懷抱親吻我\n我得罪了祢請赦免我\n願我多愛祢一點 再多愛祢一點\n今生不再辜負 祢豐盛榮耀恩典\n願我多愛祢一點 再多愛祢一點\n盡我餘生的年日 降服 追隨\n不再懊悔",
-  "lyricsSc": "我曾错过多少机会 浪费多少祢的恩典\n以为世界能给我什么\n祢慈声呼唤在耳边 但今生占据我心田\n只让祢凭白伤心守候\n前副歌\n错过了属天的福分 失落了儿子的名分\n亏缺了祢荣耀的形象\n感谢祢一直等著我 敞开祢怀抱亲吻我\n我得罪了祢请赦免我\n愿我多爱祢一点 再多爱祢一点\n今生不再辜负 祢丰盛荣耀恩典\n愿我多爱祢一点 再多爱祢一点\n尽我余生的年日 降服 追随\n不再懊悔",
+  "lyrics": "我曾錯過多少機會 浪費多少祢的恩典\n以為世界能給我什麼\n祢慈聲呼喚在耳邊 但今生佔據我心田\n只讓祢憑白傷心守候\n錯過了屬天的福分 失落了兒子的名分\n虧缺了祢榮耀的形象\n感謝祢一直等著我 敞開祢懷抱親吻我\n我得罪了祢請赦免我\n願我多愛祢一點 再多愛祢一點\n今生不再辜負 祢豐盛榮耀恩典\n願我多愛祢一點 再多愛祢一點\n盡我餘生的年日 降服 追隨\n不再懊悔",
+  "lyricsSc": "我曾错过多少机会 浪费多少祢的恩典\n以为世界能给我什么\n祢慈声呼唤在耳边 但今生占据我心田\n只让祢凭白伤心守候\n错过了属天的福分 失落了儿子的名分\n亏缺了祢荣耀的形象\n感谢祢一直等著我 敞开祢怀抱亲吻我\n我得罪了祢请赦免我\n愿我多爱祢一点 再多爱祢一点\n今生不再辜负 祢丰盛荣耀恩典\n愿我多爱祢一点 再多爱祢一点\n尽我余生的年日 降服 追随\n不再懊悔",
   "englishLyrics": "Oh, what blessings I have squandered!\nOh, how far from truth I wandered!\nHow’d those earthly lies consume my mind?\nI ignored Your wise instruction,\nChose instead the world’s seduction\nWith my grieving Father left behind.\nYour blessings I have brushed aside,\nMy place as heir I have denied,\nFalling short of You in how I’ve lived.\nOn my disgraced return, You raced\nTo take me back in warm embrace.\nFather, I have sinned; can You forgive?\nHow I want to love You more,\nI want to love You more.\nMay I never fail You, and Your grace beyond compare.\nHow I want to love You more,\nI want to love You more.\nMay I always follow You, for I am Yours,\n… forevermore."
  },
  {
@@ -127,7 +127,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "在黑暗中迷失方向 心中滿是無盡的傷\n每一步路艱難沉重 彷彿世界將你遺忘\n請相信你並不孤單 父的愛永遠環繞著你\n我會一直陪伴著你 直到光明驅散陰霾\n淚水模糊你的視綫 心靈深處落漠冰冷\n但祂話語溫暖如春 給你力量重新站立\n在每一個寂寞的夜 祂會光照前方的路\n在每一次跌倒瞬間 祂的雙手緊握著你",
   "lyricsSc": "在黑暗中迷失方向 心中满是无尽的伤\n每一步路艰难沉重 仿佛世界将你遗忘\n请相信你并不孤单 父的爱永远环绕著你\n我会一直陪伴著你 直到光明驱散阴霾\n泪水模糊你的视线 心灵深处落漠冰冷\n但祂话语温暖如春 给你力量重新站立\n在每一个寂寞的夜 祂会光照前方的路\n在每一次跌倒瞬间 祂的双手紧握著你",
-  "englishLyrics": ""
+  "englishLyrics": "Lost in the darkness, your heart full of endless wounds\nEvery step so heavy and hard, as if the world had forgotten you\nPlease believe you are not alone, the Father's love forever surrounds you\nI will always be here beside you, until the light drives away the gloom\nTears blur the sight before your eyes, deep within, lonely and cold\nBut His word is warm as springtime, giving you strength to rise and stand again\nIn every lonely and silent night, He will shine upon the road ahead\nIn every moment that you fall, His own two hands hold you fast"
  },
  {
   "title": "抬頭仰望",
@@ -153,8 +153,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "畢翼",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "因我所遭遇的是出於祢 我就默然不語\n前副歌\n祢使我的年日窄如手掌\n我一生的年數在祢面前如同無有\n獨一全智的神哪 祢永遠不會錯\n祢的寶座立定在天 祢的權柄統管萬有",
-  "lyricsSc": "因我所遭遇的是出于祢 我就默然不语\n前副歌\n祢使我的年日窄如手掌\n我一生的年数在祢面前如同无有\n独一全智的神哪 祢永远不会错\n祢的宝座立定在天 祢的权柄统管万有",
+  "lyrics": "因我所遭遇的是出於祢 我就默然不語\n祢使我的年日窄如手掌\n我一生的年數在祢面前如同無有\n獨一全智的神哪 祢永遠不會錯\n祢的寶座立定在天 祢的權柄統管萬有",
+  "lyricsSc": "因我所遭遇的是出于祢 我就默然不语\n祢使我的年日窄如手掌\n我一生的年数在祢面前如同无有\n独一全智的神哪 祢永远不会错\n祢的宝座立定在天 祢的权柄统管万有",
   "englishLyrics": "(2X)\nOh Lord, I would not speak, I held my tongue,\nFor You did this to me.\nOh Lord, I would not speak, I held my tongue;\nYou ordained it for me.\nShort as a hand’s breadth You have made my life,\nAll of the years I’ve lived are as nothing in Your sight!\nYou are God only wise; in You there is no wrong.\nYou have set Your throne in the skies,\nAnd Your kingdom rules over all."
  },
  {
@@ -237,9 +237,9 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "(按出現順序) 高安妮、朱芳菲、劉怡禮、陳浩湧、林婉容、李牧音、周岩",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "真的好奇妙 真的好奇妙\n我還在母腹祢看見我心跳\n真的不尋常 真的不平凡\n祢知道我的喜怒哀樂\n前副歌\n我心所思的 我口所出的 祢沒有不知道\n我坐下來 我站起來 祢全都知道\n祢是全知奇妙神\n時時眷顧守護我一生\n這知識奇妙 又是那麼神聖\n敬畏心油然而生\n哦 主耶穌 我愛祢\n是祢把我捧在祢懷裡\n不論到何處 祢手扶持引領\n何等美妙認識祢\n我若躲藏自己 有祢在那裡\n無論我跑到哪裡 祢也在那裡 不離不棄",
-  "lyricsSc": "真的好奇妙 真的好奇妙\n我还在母腹祢看见我心跳\n真的不寻常 真的不平凡\n祢知道我的喜怒哀乐\n前副歌\n我心所思的 我口所出的 祢没有不知道\n我坐下来 我站起来 祢全都知道\n祢是全知奇妙神\n时时眷顾守护我一生\n这知识奇妙 又是那么神圣\n敬畏心油然而生\n哦 主耶稣 我爱祢\n是祢把我捧在祢怀里\n不论到何处 祢手扶持引领\n何等美妙认识祢\n我若躲藏自己 有祢在那里\n无论我跑到哪里 祢也在那里 不离不弃",
-  "englishLyrics": ""
+  "lyrics": "真的好奇妙 真的好奇妙\n我還在母腹祢看見我心跳\n真的不尋常 真的不平凡\n祢知道我的喜怒哀樂\n我心所思的 我口所出的 祢沒有不知道\n我坐下來 我站起來 祢全都知道\n祢是全知奇妙神\n時時眷顧守護我一生\n這知識奇妙 又是那麼神聖\n敬畏心油然而生\n哦 主耶穌 我愛祢\n是祢把我捧在祢懷裡\n不論到何處 祢手扶持引領\n何等美妙認識祢\n我若躲藏自己 有祢在那裡\n無論我跑到哪裡 祢也在那裡 不離不棄",
+  "lyricsSc": "真的好奇妙 真的好奇妙\n我还在母腹祢看见我心跳\n真的不寻常 真的不平凡\n祢知道我的喜怒哀乐\n我心所思的 我口所出的 祢没有不知道\n我坐下来 我站起来 祢全都知道\n祢是全知奇妙神\n时时眷顾守护我一生\n这知识奇妙 又是那么神圣\n敬畏心油然而生\n哦 主耶稣 我爱祢\n是祢把我捧在祢怀里\n不论到何处 祢手扶持引领\n何等美妙认识祢\n我若躲藏自己 有祢在那里\n无论我跑到哪里 祢也在那里 不离不弃",
+  "englishLyrics": "It is so wonderful, it is so wonderful\nWhile I was still in the womb, You saw my heart beating\nIt is so uncommon, it is so extraordinary\nYou know my joy, my anger, my sorrow and my gladness\nWhat my heart thinks, what my lips speak, there is nothing You do not know\nWhen I sit down, when I rise up, You know it all\nYou are the all-knowing, wondrous God\nWatching over and guarding me all my life\nThis knowledge is wondrous, and oh so holy\nReverence rises up within me\nOh Lord Jesus, I love You\nIt is You who hold me close in Your arms\nWherever I go, Your hand upholds and leads me\nHow wonderful it is to know You\nIf I would hide myself away, You are there\nWherever I run, You are there too, never leaving, never forsaking"
  },
  {
   "title": "感恩有祢",
@@ -253,7 +253,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "感恩有祢向我走來\n感恩有祢將我拉起\n感恩有祢對我微笑\n感恩有祢溫暖我心\n我願每天都與祢傾心吐意\n我願每時每刻都與祢同行\n我願每個決定都聽祢聲音\n我的生命因祢而幸福美麗",
   "lyricsSc": "感恩有祢向我走来\n感恩有祢将我拉起\n感恩有祢对我微笑\n感恩有祢温暖我心\n我愿每天都与祢倾心吐意\n我愿每时每刻都与祢同行\n我愿每个决定都听祢声音\n我的生命因祢而幸福美丽",
-  "englishLyrics": ""
+  "englishLyrics": "Thankful that You came walking toward me\nThankful that You reached down and lifted me up\nThankful that You smiled upon me\nThankful that You warmed my heart\nEach day I long to pour out my heart to You\nEvery moment I long to walk together with You\nIn every decision I long to listen for Your voice\nMy life, because of You, is blessed and beautiful"
  },
  {
   "title": "倚靠祢",
@@ -267,7 +267,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "不是倚靠勢力 不是倚靠才能\n乃是倚靠祢的靈\n不是倚靠君王 不是倚靠世人\n單單的倚靠祢\n我不要看環境 不要再憂慮\n抬頭仰望祢\n我仍要讚美 仍要歌頌\n因為祢是我的神\n我要倚靠祢 倚靠祢大能的膀臂\n我要倚靠祢 緊緊地抓住祢\n我要倚靠祢 倚靠祢大能的膀臂\n我要倚靠祢\n我奉耶穌的名宣告大山都要挪開\n我奉耶穌的名命令小山都夷為平地\n不是倚靠勢力 不是倚靠才能\n乃是倚靠祢的靈",
   "lyricsSc": "不是倚靠势力 不是倚靠才能\n乃是倚靠祢的灵\n不是倚靠君王 不是倚靠世人\n单单的倚靠祢\n我不要看环境 不要再忧虑\n抬头仰望祢\n我仍要赞美 仍要歌颂\n因为祢是我的神\n我要倚靠祢 倚靠祢大能的膀臂\n我要倚靠祢 紧紧地抓住祢\n我要倚靠祢 倚靠祢大能的膀臂\n我要倚靠祢\n我奉耶稣的名宣告大山都要挪开\n我奉耶稣的名命令小山都夷为平地\n不是倚靠势力 不是倚靠才能\n乃是倚靠祢的灵",
-  "englishLyrics": ""
+  "englishLyrics": "Not by might, and not by power\nBut by Your Spirit alone\nNot relying on kings, not relying on men\nRelying on You alone\nI will not stare at my circumstances, I will worry no more\nI lift my head and look to You\nStill I will praise, still I will sing\nFor You are my God\nI will rely on You, lean upon Your mighty arm\nI will rely on You, holding tightly to You\nI will rely on You, lean upon Your mighty arm\nI will rely on You\nIn the name of Jesus I declare the great mountains shall move\nIn the name of Jesus I command the hills be made level\nNot by might, and not by power\nBut by Your Spirit alone"
  },
  {
   "title": "燃燒我的心",
@@ -281,7 +281,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "聖靈歡迎祢來 聖靈釋放祢的同在\n聖靈來觸摸我的心\n聖靈歡迎祢來 聖靈澆灌祢的同在\n聖靈來潔淨我的心\n燃燒我的心 為耶穌 全心全意\n火熱地愛祢 為耶穌 到底\n燃燒我的心 為耶穌 傾倒所有\n更深地愛祢 為耶穌 我主\n更多更多充滿 更多更多充滿\n更多更多充滿 提升我的靈\n更多更多燃燒 更多更多燃燒\n更多更多燃燒 使我更像祢",
   "lyricsSc": "圣灵欢迎祢来 圣灵释放祢的同在\n圣灵来触摸我的心\n圣灵欢迎祢来 圣灵浇灌祢的同在\n圣灵来洁净我的心\n燃烧我的心 为耶稣 全心全意\n火热地爱祢 为耶稣 到底\n燃烧我的心 为耶稣 倾倒所有\n更深地爱祢 为耶稣 我主\n更多更多充满 更多更多充满\n更多更多充满 提升我的灵\n更多更多燃烧 更多更多燃烧\n更多更多燃烧 使我更像祢",
-  "englishLyrics": ""
+  "englishLyrics": "Holy Spirit, You are welcome here, Holy Spirit release Your presence\nHoly Spirit, come and touch my heart\nHoly Spirit, You are welcome here, Holy Spirit pour out Your presence\nHoly Spirit, come and cleanse my heart\nSet my heart on fire, for Jesus, with all my heart and soul\nTo love You fervently, for Jesus, to the very end\nSet my heart on fire, for Jesus, pouring out all I have\nTo love You more deeply, for Jesus, my Lord\nMore and more, fill me, more and more, fill me\nMore and more, fill me, lift my spirit higher\nMore and more, burn in me, more and more, burn in me\nMore and more, burn in me, make me more like You"
  },
  {
   "title": "Faith Over Fear",
@@ -293,8 +293,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "吳思婷",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "在最黑暗的時刻 我相信祢正在這\n經歷軟弱的拉扯 我有全然信靠祢的選擇\n前副歌1\n洗去身上污穢泥濘 潔淨我心\n脫去生命的灰塵帶來更新\n信心戰勝恐懼\n祢話語 讓我重新得力\n在最黑暗的時刻 我相信祢正在這\n經歷軟弱的拉扯 我有全然信靠祢的選擇\n前副歌2\n洗去身上污穢泥濘 潔淨我心\n脫去生命的灰塵帶來更新\n挪去謊言 堅固我心 與祢同行\n我唯一渴慕是祢\n信心戰勝恐懼\n祢話語 讓我重新得力\n前副歌3\n洗去身上污穢泥濘 潔淨我心\n脫去生命的灰塵帶來更新\n挪去謊言 堅固我心 與祢同行\n我唯一渴慕是祢 祢能力使我甦醒\n信心的盾牌 是從祢而來\n不怕失敗 祢與我同在\n仇敵迎面而來 舉起信心盾牌\n不被打敗 祢與我同在\n跨越一切的阻礙 不在軟弱中徘徊\n恐懼不再 祢與我同在\n更深經歷祢的愛 有祢仇敵必衰敗\n恐懼不再 祢與我同在\n信心戰勝恐懼\n祢話語 讓我重新得力",
-  "lyricsSc": "在最黑暗的时刻 我相信祢正在这\n经历软弱的拉扯 我有全然信靠祢的选择\n前副歌1\n洗去身上污秽泥泞 洁净我心\n脱去生命的灰尘带来更新\n信心战胜恐惧\n祢话语 让我重新得力\n在最黑暗的时刻 我相信祢正在这\n经历软弱的拉扯 我有全然信靠祢的选择\n前副歌2\n洗去身上污秽泥泞 洁净我心\n脱去生命的灰尘带来更新\n挪去谎言 坚固我心 与祢同行\n我唯一渴慕是祢\n信心战胜恐惧\n祢话语 让我重新得力\n前副歌3\n洗去身上污秽泥泞 洁净我心\n脱去生命的灰尘带来更新\n挪去谎言 坚固我心 与祢同行\n我唯一渴慕是祢 祢能力使我苏醒\n信心的盾牌 是从祢而来\n不怕失败 祢与我同在\n仇敌迎面而来 举起信心盾牌\n不被打败 祢与我同在\n跨越一切的阻碍 不在软弱中徘徊\n恐惧不再 祢与我同在\n更深经历祢的爱 有祢仇敌必衰败\n恐惧不再 祢与我同在\n信心战胜恐惧\n祢话语 让我重新得力",
+  "lyrics": "在最黑暗的時刻 我相信祢正在這\n經歷軟弱的拉扯 我有全然信靠祢的選擇\n洗去身上污穢泥濘 潔淨我心\n脫去生命的灰塵帶來更新\n信心戰勝恐懼\n祢話語 讓我重新得力\n在最黑暗的時刻 我相信祢正在這\n經歷軟弱的拉扯 我有全然信靠祢的選擇\n洗去身上污穢泥濘 潔淨我心\n脫去生命的灰塵帶來更新\n挪去謊言 堅固我心 與祢同行\n我唯一渴慕是祢\n信心戰勝恐懼\n祢話語 讓我重新得力\n洗去身上污穢泥濘 潔淨我心\n脫去生命的灰塵帶來更新\n挪去謊言 堅固我心 與祢同行\n我唯一渴慕是祢 祢能力使我甦醒\n信心的盾牌 是從祢而來\n不怕失敗 祢與我同在\n仇敵迎面而來 舉起信心盾牌\n不被打敗 祢與我同在\n跨越一切的阻礙 不在軟弱中徘徊\n恐懼不再 祢與我同在\n更深經歷祢的愛 有祢仇敵必衰敗\n恐懼不再 祢與我同在\n信心戰勝恐懼\n祢話語 讓我重新得力",
+  "lyricsSc": "在最黑暗的时刻 我相信祢正在这\n经历软弱的拉扯 我有全然信靠祢的选择\n洗去身上污秽泥泞 洁净我心\n脱去生命的灰尘带来更新\n信心战胜恐惧\n祢话语 让我重新得力\n在最黑暗的时刻 我相信祢正在这\n经历软弱的拉扯 我有全然信靠祢的选择\n洗去身上污秽泥泞 洁净我心\n脱去生命的灰尘带来更新\n挪去谎言 坚固我心 与祢同行\n我唯一渴慕是祢\n信心战胜恐惧\n祢话语 让我重新得力\n洗去身上污秽泥泞 洁净我心\n脱去生命的灰尘带来更新\n挪去谎言 坚固我心 与祢同行\n我唯一渴慕是祢 祢能力使我苏醒\n信心的盾牌 是从祢而来\n不怕失败 祢与我同在\n仇敌迎面而来 举起信心盾牌\n不被打败 祢与我同在\n跨越一切的阻碍 不在软弱中徘徊\n恐惧不再 祢与我同在\n更深经历祢的爱 有祢仇敌必衰败\n恐惧不再 祢与我同在\n信心战胜恐惧\n祢话语 让我重新得力",
   "englishLyrics": "Faith Over Fear\nFaith Over Fear\nFaith Over Fear\n(2X)"
  },
  {
@@ -309,7 +309,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "否則我如何迎接 每個晴天和狂風暴雨\n否則我如何拒絕 絕望糾纏在我心裡\n否則我如何分辨 黑夜到白天的距離\n否則我如何面對 心中說不出的嘆息\n否則我如何認得 茫茫人海祢的聲音\n否則我如何明白 重大又艱難的決定\n否則我如何想起 多少次流著淚說放棄\n否則我如何經過水火 又得到安息\n讀了祢六十六封信 思念有了期許\n都見字如面 穿越時空距離\n讀著祢六十六封信 聽見祢耳邊的叮嚀\n頁頁都是祢  牽掛我的痕跡",
   "lyricsSc": "否则我如何迎接 每个晴天和狂风暴雨\n否则我如何拒绝 绝望纠缠在我心里\n否则我如何分辨 黑夜到白天的距离\n否则我如何面对 心中说不出的叹息\n否则我如何认得 茫茫人海祢的声音\n否则我如何明白 重大又艰难的决定\n否则我如何想起 多少次流著泪说放弃\n否则我如何经过水火 又得到安息\n读了祢六十六封信 思念有了期许\n都见字如面 穿越时空距离\n读著祢六十六封信 听见祢耳边的叮咛\n页页都是祢  牵挂我的痕迹",
-  "englishLyrics": ""
+  "englishLyrics": "Or else how could I welcome every clear day and every raging storm\nOr else how could I refuse the despair entangled in my heart\nOr else how could I tell the distance from night to day\nOr else how could I face the sighs I cannot speak within\nOr else how could I know Your voice in this vast sea of people\nOr else how could I understand the weighty and difficult choices\nOr else how could I recall how many times I wept and said 'I give up'\nOr else how could I pass through fire and water and still find rest\nHaving read Your sixty-six letters, my longing has found its hope\nEach word like seeing Your face, crossing the distance of time and space\nReading Your sixty-six letters, I hear Your whisper close beside me\nEvery page is You, the trace of Your care for me"
  },
  {
   "title": "我知道祢愛我",
@@ -323,7 +323,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "直到遇見祢的那一刻\n是祢看透了我的軟弱\n我在無盡黑夜中 祢的光卻照亮我\n祢知真實的我\n每當我在環境中軟弱\n祢的愛是如此的執著\n無法隱藏的我被祢得著\n生命中所有重擔我交託\n我知道祢愛我 擔當我所有軟弱\n何等憐憫的愛 拯救我生命不再失落\n祢的愛讓我勇敢不退縮\n我知道祢愛我 祢完全接納我\n何等犧牲的愛 用生命贖回了我\n我願一生跟隨祢 為祢而活",
   "lyricsSc": "直到遇见祢的那一刻\n是祢看透了我的软弱\n我在无尽黑夜中 祢的光却照亮我\n祢知真实的我\n每当我在环境中软弱\n祢的爱是如此的执著\n无法隐藏的我被祢得著\n生命中所有重担我交托\n我知道祢爱我 担当我所有软弱\n何等怜悯的爱 拯救我生命不再失落\n祢的爱让我勇敢不退缩\n我知道祢爱我 祢完全接纳我\n何等牺牲的爱 用生命赎回了我\n我愿一生跟随祢 为祢而活",
-  "englishLyrics": ""
+  "englishLyrics": "Until the very moment that I met You\nIt was You who saw through all my weakness\nIn the endless night, Your light still shone on me\nYou know the real me\nWhenever I am weak amid my circumstances\nYour love is so steadfast, so unyielding\nUnable to hide, I was claimed by You\nEvery burden in my life I entrust to You\nI know that You love me, You bear all my weakness\nWhat merciful love, saving my life so it's lost no more\nYour love makes me brave, never to shrink back\nI know that You love me, You fully accept me\nWhat sacrificial love, redeeming me with Your life\nI will follow You all my life, and live for You"
  },
  {
   "title": "我願為活祭",
@@ -335,9 +335,9 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "李宏卓",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "來到祢面前 注視祢雙眼\n為我流淚 為我心碎 了解我的傷悲\n我真的不配 滿身的污穢\n祢竟給我無盡恩典 用愛把我贖回\n前副歌\n我願為活祭 獻上全給祢 (2X)\n何等尊貴 何等聖潔 何等榮耀的君王\n何等尊貴 何等聖潔 何等榮耀的羔羊",
-  "lyricsSc": "来到祢面前 注视祢双眼\n为我流泪 为我心碎 了解我的伤悲\n我真的不配 满身的污秽\n祢竟给我无尽恩典 用爱把我赎回\n前副歌\n我愿为活祭 献上全给祢 (2X)\n何等尊贵 何等圣洁 何等荣耀的君王\n何等尊贵 何等圣洁 何等荣耀的羔羊",
-  "englishLyrics": ""
+  "lyrics": "來到祢面前 注視祢雙眼\n為我流淚 為我心碎 了解我的傷悲\n我真的不配 滿身的污穢\n祢竟給我無盡恩典 用愛把我贖回\n我願為活祭 獻上全給祢 (2X)\n何等尊貴 何等聖潔 何等榮耀的君王\n何等尊貴 何等聖潔 何等榮耀的羔羊",
+  "lyricsSc": "来到祢面前 注视祢双眼\n为我流泪 为我心碎 了解我的伤悲\n我真的不配 满身的污秽\n祢竟给我无尽恩典 用爱把我赎回\n我愿为活祭 献上全给祢 (2X)\n何等尊贵 何等圣洁 何等荣耀的君王\n何等尊贵 何等圣洁 何等荣耀的羔羊",
+  "englishLyrics": "I come before You, gazing into Your eyes\nYou wept for me, Your heart broke for me, You understand my sorrow\nI am truly unworthy, covered all in filth\nYet You gave me endless grace, redeeming me with love\nI will be a living sacrifice, offering all to You (2X)\nHow honored, how holy, how glorious is the King\nHow honored, how holy, how glorious is the Lamb"
  },
  {
   "title": "祂的兒子",
@@ -349,9 +349,9 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "周岩、天音麗娜、錫錫",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "神既在古時藉著眾先知\n多次多方曉諭列祖就在這末世\n藉著祂兒子曉諭我們\n曉諭我們 藉著祂的兒子\n又早已立祂為承受萬有的\n也曾藉著祂創造諸世界\n祂是神榮耀所發的光輝\n是神本體的真像\n獨白\n祂是神榮耀所發的光輝\n是神本體的真像\n常用祂權能的命令托住萬有\n祂洗淨了人的罪\n就坐在高天至大者右邊",
+  "lyrics": "神既在古時藉著眾先知\n多次多方曉諭列祖就在這末世\n藉著祂兒子曉諭我們\n曉諭我們 藉著祂的兒子\n又早已立祂為承受萬有的\n也曾藉著祂創造諸世界\n祂是神榮耀所發的光輝\n是神本體的真像\n祂是神榮耀所發的光輝\n是神本體的真像\n常用祂權能的命令托住萬有\n祂洗淨了人的罪\n就坐在高天至大者右邊",
   "lyricsSc": "神既在古时藉著众先知\n多次多方晓谕列祖就在这末世\n藉著祂儿子晓谕我们\n晓谕我们 藉著祂的儿子\n又早已立祂为承受万有的\n也曾藉著祂创造诸世界\n祂是神荣耀所发的光辉\n是神本体的真像\n独白\n祂是神荣耀所发的光辉\n是神本体的真像\n常用祂权能的命令托住万有\n祂洗净了人的罪\n就坐在高天至大者右边",
-  "englishLyrics": ""
+  "englishLyrics": "God, who in ancient times spoke through the prophets\nAt many times and in many ways to our fathers, and in these last days\nHas spoken to us through His Son\nSpoken to us, through His own Son\nWhom He appointed heir of all things\nThrough whom also He made the worlds\nHe is the radiance of God's glory\nThe exact image of His being\nHe is the radiance of God's glory\nThe exact image of His being\nUpholding all things by His word of power\nHe has cleansed us from our sins\nAnd sat down at the right hand of the Majesty on high"
  },
  {
   "title": "耶和華必向我們顯現 (譯自 Yahweh Se Manifestará)",
@@ -407,7 +407,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "每當我仰望祢的十架\n每當我遇見祢 淚如雨下\n如今我不再是一個人\n有祢常陪在我身旁\n當漆黑的夜我仰望星空\n向左走向右走 哪裡才是出口\n直到我遇見祢溫柔的手\n淚水濕潤了眼眸\n我曾以為會永遠失去愛的勇氣\n蒙在眼睛的塵埃祢慢慢擦去\n我曾經陷入無邊黑暗無法自拔\n是祢將我攙拉\n我曾以為會永遠失去愛的勇氣\n蒙在眼睛的塵埃祢慢慢擦去\n祢救我脫離無邊黑暗無法自拔\n是祢將我攙拉",
   "lyricsSc": "每当我仰望祢的十架\n每当我遇见祢 泪如雨下\n如今我不再是一个人\n有祢常陪在我身旁\n当漆黑的夜我仰望星空\n向左走向右走 哪里才是出口\n直到我遇见祢温柔的手\n泪水湿润了眼眸\n我曾以为会永远失去爱的勇气\n蒙在眼睛的尘埃祢慢慢擦去\n我曾经陷入无边黑暗无法自拔\n是祢将我搀拉\n我曾以为会永远失去爱的勇气\n蒙在眼睛的尘埃祢慢慢擦去\n祢救我脱离无边黑暗无法自拔\n是祢将我搀拉",
-  "englishLyrics": ""
+  "englishLyrics": "Whenever I look up to Your cross\nWhenever I meet You, my tears fall like the rain\nNow I am no longer all alone\nFor You are always here beside me\nIn the pitch-black night I gaze up at the stars\nTurning left, turning right, where is the way out\nUntil I met Your gentle hand\nTears welling up and wetting my eyes\nI once thought I'd forever lose the courage to love\nThe dust upon my eyes, You slowly wiped away\nI once sank into boundless darkness, unable to break free\nIt was You who pulled me up\nI once thought I'd forever lose the courage to love\nThe dust upon my eyes, You slowly wiped away\nYou saved me out of boundless darkness I could not escape\nIt was You who pulled me up"
  },
  {
   "title": "神啊,我的神",
@@ -421,7 +421,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "我怎能忘記祢\n當我在黑暗軟弱中跌倒\n在乾旱疲乏無水之地\n我如此渴想祢\n我的心切慕祢\n因祢的慈愛比生命更好\n我要在聖所中瞻仰祢\n為要得見祢的能力和榮耀\n神啊 我的神 我切切尋求祢\n醫治安慰我 祢永不撇棄我\n神啊 我的神 我日夜思念祢\n在祢的懷中 我心得飽足",
   "lyricsSc": "我怎能忘记祢\n当我在黑暗软弱中跌倒\n在干旱疲乏无水之地\n我如此渴想祢\n我的心切慕祢\n因祢的慈爱比生命更好\n我要在圣所中瞻仰祢\n为要得见祢的能力和荣耀\n神啊 我的神 我切切寻求祢\n医治安慰我 祢永不撇弃我\n神啊 我的神 我日夜思念祢\n在祢的怀中 我心得饱足",
-  "englishLyrics": ""
+  "englishLyrics": "How could I ever forget You\nWhen I fall in darkness and in weakness\nIn a dry and weary land where there is no water\nSo deeply do I long for You\nMy soul thirsts after You\nFor Your lovingkindness is better than life\nI will behold You in Your sanctuary\nTo see Your power and Your glory\nO God, my God, earnestly I seek You\nYou heal and comfort me, You will never forsake me\nO God, my God, day and night I think of You\nIn Your embrace, my soul is satisfied"
  },
  {
   "title": "印記",
@@ -435,7 +435,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "把我像封蠟一樣裝進祢的心裡\n祢的愛勝過死亡的陰雲\n透過身體的每一個部分我都能感到\n祢那炙熱的火焰般呼吸\n然後如同把蠟放在火焰上\n我會得到祢聖名的印記\n洪水永遠不能淹沒祢的愛意\n不能削弱祢堅強的旨意\n暴雨也許會傾瀉而下\n但是永遠不能讓火焰止息\n在旺盛的烈火中我心變溫柔\n去接受祢聖名的印記\n啦 啦啦啦啦 接受聖名的印記\n眾水不能熄滅 大水不能淹沒\n眾水不能熄滅愛的印記\n把我像封蠟一樣裝進祢的心裡\n去接受聖名的印記",
   "lyricsSc": "把我像封蜡一样装进祢的心里\n祢的爱胜过死亡的阴云\n透过身体的每一个部分我都能感到\n祢那炙热的火焰般呼吸\n然后如同把蜡放在火焰上\n我会得到祢圣名的印记\n洪水永远不能淹没祢的爱意\n不能削弱祢坚强的旨意\n暴雨也许会倾泻而下\n但是永远不能让火焰止息\n在旺盛的烈火中我心变温柔\n去接受祢圣名的印记\n啦 啦啦啦啦 接受圣名的印记\n众水不能熄灭 大水不能淹没\n众水不能熄灭爱的印记\n把我像封蜡一样装进祢的心里\n去接受圣名的印记",
-  "englishLyrics": ""
+  "englishLyrics": "Set me like a seal of wax into Your heart\nYour love is stronger than the shadow of death\nThrough every part of my body I can feel\nYour breath like a burning flame\nAnd then, like wax held over the flame\nI will receive the seal of Your holy name\nFloods can never drown Your love\nNor weaken Your steadfast will\nThough the rainstorm may come pouring down\nIt can never put the flame out\nIn the blazing fire my heart grows tender\nTo receive the seal of Your holy name\nLa, la-la-la-la, receive the seal of the holy name\nMany waters cannot quench it, floods cannot drown it\nMany waters cannot quench the seal of love\nSet me like a seal of wax into Your heart\nTo receive the seal of the holy name"
  },
  {
   "title": "最愛的地方",
@@ -573,8 +573,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "世世代代前來 向祢俯伏敬拜\n齊聲宣揚稱頌神羔羊\n眾聖徒眾兒女 萬族萬民萬邦\n齊聲宣揚稱頌神羔羊\n前副歌\n祢名高過穹蒼 祢名何等偉大 祢名超乎萬名之上\n所有寶座冠冕 所有權勢地位 祢名超乎萬有之上\n天使高聲唱 聖哉 萬有齊呼喊 聖哉\n祢已被高舉 聖哉 祢永遠聖潔\n我已被祢赦免 我已被祢贖回\n永遠宣揚稱頌神羔羊\n我已得著自由 歸入耶穌聖名\n永遠宣揚稱頌神羔羊\n永遠宣揚稱頌神羔羊\n天使高聲唱 聖哉 萬有齊呼喊 聖哉\n祢已被高舉 聖哉 祢永遠聖潔\n萬民要敬拜 聖哉 全地的君王 聖哉\n祢永不改變 聖哉 祢永遠聖潔",
-  "lyricsSc": "世世代代前来 向祢俯伏敬拜\n齐声宣扬称颂神羔羊\n众圣徒众儿女 万族万民万邦\n齐声宣扬称颂神羔羊\n前副歌\n祢名高过穹苍 祢名何等伟大 祢名超乎万名之上\n所有宝座冠冕 所有权势地位 祢名超乎万有之上\n天使高声唱 圣哉 万有齐呼喊 圣哉\n祢已被高举 圣哉 祢永远圣洁\n我已被祢赦免 我已被祢赎回\n永远宣扬称颂神羔羊\n我已得著自由 归入耶稣圣名\n永远宣扬称颂神羔羊\n永远宣扬称颂神羔羊\n天使高声唱 圣哉 万有齐呼喊 圣哉\n祢已被高举 圣哉 祢永远圣洁\n万民要敬拜 圣哉 全地的君王 圣哉\n祢永不改变 圣哉 祢永远圣洁",
+  "lyrics": "世世代代前來 向祢俯伏敬拜\n齊聲宣揚稱頌神羔羊\n眾聖徒眾兒女 萬族萬民萬邦\n齊聲宣揚稱頌神羔羊\n祢名高過穹蒼 祢名何等偉大 祢名超乎萬名之上\n所有寶座冠冕 所有權勢地位 祢名超乎萬有之上\n天使高聲唱 聖哉 萬有齊呼喊 聖哉\n祢已被高舉 聖哉 祢永遠聖潔\n我已被祢赦免 我已被祢贖回\n永遠宣揚稱頌神羔羊\n我已得著自由 歸入耶穌聖名\n永遠宣揚稱頌神羔羊\n永遠宣揚稱頌神羔羊\n天使高聲唱 聖哉 萬有齊呼喊 聖哉\n祢已被高舉 聖哉 祢永遠聖潔\n萬民要敬拜 聖哉 全地的君王 聖哉\n祢永不改變 聖哉 祢永遠聖潔",
+  "lyricsSc": "世世代代前来 向祢俯伏敬拜\n齐声宣扬称颂神羔羊\n众圣徒众儿女 万族万民万邦\n齐声宣扬称颂神羔羊\n祢名高过穹苍 祢名何等伟大 祢名超乎万名之上\n所有宝座冠冕 所有权势地位 祢名超乎万有之上\n天使高声唱 圣哉 万有齐呼喊 圣哉\n祢已被高举 圣哉 祢永远圣洁\n我已被祢赦免 我已被祢赎回\n永远宣扬称颂神羔羊\n我已得著自由 归入耶稣圣名\n永远宣扬称颂神羔羊\n永远宣扬称颂神羔羊\n天使高声唱 圣哉 万有齐呼喊 圣哉\n祢已被高举 圣哉 祢永远圣洁\n万民要敬拜 圣哉 全地的君王 圣哉\n祢永不改变 圣哉 祢永远圣洁",
   "englishLyrics": "A thousand generations falling down in worship\nTo sing the song of ages to the Lamb\nAnd all who’ve gone before us and all who will believe\nWill sing the song of ages to the Lamb\nYour name is the highest\nYour name is the greatest\nYour name stands above them all\nAll thrones and dominions\nAll powers and positions\nYour name stands above them all\nAnd the angels cry holy\nAll creation cries holy\nYou are lifted high, holy, holy forever\nIf you’ve been forgiven and if you’ve been redeemed\nSing the song forever to the Lamb\nIf you walk in freedom and if you bear His name\nSing the song forever to the Lamb\nWe’ll sing the song forever and amen\nAnd the angels cry holy\nAll creation cries holy\nYou are lifted high, holy, holy forever\nHear your people sing holy\nTo the King of kings, holy\nYou will always be holy, holy forever"
  },
  {
@@ -867,8 +867,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "蘇春曉、陳右真、林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "創造宇宙萬物的神 按祂形象造男造女\n賜福他們權柄治理這地\n生命氣息從祢而來 疆界年日為祢所定\n萬物受造彰顯榮耀祢的名\n前副歌\n我來為要順服祢 我來為要榮耀祢\n活著為要敬拜祢 活著為要遵行祢旨意\n祢是阿拉法 俄梅戛 稱頌祢名不止息\n統管全地永恆的主 全心全意敬拜祢",
-  "lyricsSc": "创造宇宙万物的神 按祂形象造男造女\n赐福他们权柄治理这地\n生命气息从祢而来 疆界年日为祢所定\n万物受造彰显荣耀祢的名\n前副歌\n我来为要顺服祢 我来为要荣耀祢\n活著为要敬拜祢 活著为要遵行祢旨意\n祢是阿拉法 俄梅戛 称颂祢名不止息\n统管全地永恒的主 全心全意敬拜祢",
+  "lyrics": "創造宇宙萬物的神 按祂形象造男造女\n賜福他們權柄治理這地\n生命氣息從祢而來 疆界年日為祢所定\n萬物受造彰顯榮耀祢的名\n我來為要順服祢 我來為要榮耀祢\n活著為要敬拜祢 活著為要遵行祢旨意\n祢是阿拉法 俄梅戛 稱頌祢名不止息\n統管全地永恆的主 全心全意敬拜祢",
+  "lyricsSc": "创造宇宙万物的神 按祂形象造男造女\n赐福他们权柄治理这地\n生命气息从祢而来 疆界年日为祢所定\n万物受造彰显荣耀祢的名\n我来为要顺服祢 我来为要荣耀祢\n活著为要敬拜祢 活著为要遵行祢旨意\n祢是阿拉法 俄梅戛 称颂祢名不止息\n统管全地永恒的主 全心全意敬拜祢",
   "englishLyrics": "You established all creation,\nFormed us as its culmination,\nThen You granted us the right to rule it;\nBut we live through Your sustaining,\nBounds and times are Your ordaining:\nYou have made all things to glorify Your name.\nI am here, Lord, to obey,\nI am here to glorify;\nLord, I live to give You praise,\nAnd unto Your will submit my life.\nYou are Alpha, Omega,\nI will ever sing Your praise;\nO Creator and Ruler,\nGladly I will sing Your praise."
  },
  {
@@ -895,8 +895,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "諾亞的日子 人們照常吃喝嫁娶\n直到洪水把他們都冲去\n約拿的日子 人們分不清對和錯\n直到聽見神僕人的呼籲\n前副歌\n沒有人傳 怎能聽見\n沒有聽見 怎能相信 怎能求告主名\n主啊膏抹我 使用我 唱響這時代的呼聲\n主啊膏抹我 使用我 唱響這時代的呼聲\n時候將到 現在就是了\n死人要聽見神兒子的聲音\n就要活了",
-  "lyricsSc": "诺亚的日子 人们照常吃喝嫁娶\n直到洪水把他们都冲去\n约拿的日子 人们分不清对和错\n直到听见神仆人的呼吁\n前副歌\n没有人传 怎能听见\n没有听见 怎能相信 怎能求告主名\n主啊膏抹我 使用我 唱响这时代的呼声\n主啊膏抹我 使用我 唱响这时代的呼声\n时候将到 现在就是了\n死人要听见神儿子的声音\n就要活了",
+  "lyrics": "諾亞的日子 人們照常吃喝嫁娶\n直到洪水把他們都冲去\n約拿的日子 人們分不清對和錯\n直到聽見神僕人的呼籲\n沒有人傳 怎能聽見\n沒有聽見 怎能相信 怎能求告主名\n主啊膏抹我 使用我 唱響這時代的呼聲\n主啊膏抹我 使用我 唱響這時代的呼聲\n時候將到 現在就是了\n死人要聽見神兒子的聲音\n就要活了",
+  "lyricsSc": "诺亚的日子 人们照常吃喝嫁娶\n直到洪水把他们都冲去\n约拿的日子 人们分不清对和错\n直到听见神仆人的呼吁\n没有人传 怎能听见\n没有听见 怎能相信 怎能求告主名\n主啊膏抹我 使用我 唱响这时代的呼声\n主啊膏抹我 使用我 唱响这时代的呼声\n时候将到 现在就是了\n死人要听见神儿子的声音\n就要活了",
   "englishLyrics": "(2X)\nIn the days of Noah,\nWicked men were making merry\nTill the flood came\nAnd brought judgment to them all;\nIn the days of Jonah,\nMan could not tell right from wrong,\nTill they heeded Your holy servant’s call!\nWho will hear You with no preaching?\nWho will know You with no teaching?\nWho will call on Your name?\n(X2)\nLord, anoint me! Make use of me!\nCalling back the dead unto life!\nLord, anoint me! Make use of me!\nSend me in to sound the cry!\nSoon will come a time,\nAnd the time is come,\nWhen the dead shall hear the voice of the Son of God\nAnd have new life!"
  },
  {
@@ -979,8 +979,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "沙崙多加",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "一路走著唱著 沿著絲綢之路\n來到錫安大道上\n秦國美麗童女 個個裝飾整齊\n向著錫安城歌唱\n前副歌\n錫安城啊 大君王的城\n神的約櫃在這地方\n妳的秦國贖民 必要歡喜歸回\n迎見大君王\n讓我們唱響錫安城 讓讚美聲迴盪\n憂愁嘆息都逃避 喜樂替憂傷\n讓我們相約錫安城 金色耶路撒冷\n尋找千年的約定 擁抱祢愛情\n讓我們唱響錫安城 讓讚美聲迴盪\n華人要進入命定 穿聖潔的衣裳\n讓我們相約錫安城 金色耶路撒冷\n帶上祝福和禮物 向神揚聲唱\n向神揚聲唱\n來…………",
-  "lyricsSc": "一路走著唱著 沿著丝绸之路\n来到锡安大道上\n秦国美丽童女 个个装饰整齐\n向著锡安城歌唱\n前副歌\n锡安城啊 大君王的城\n神的约柜在这地方\n妳的秦国赎民 必要欢喜归回\n迎见大君王\n让我们唱响锡安城 让赞美声回荡\n忧愁叹息都逃避 喜乐替忧伤\n让我们相约锡安城 金色耶路撒冷\n寻找千年的约定 拥抱祢爱情\n让我们唱响锡安城 让赞美声回荡\n华人要进入命定 穿圣洁的衣裳\n让我们相约锡安城 金色耶路撒冷\n带上祝福和礼物 向神扬声唱\n向神扬声唱\n来…………",
+  "lyrics": "一路走著唱著 沿著絲綢之路\n來到錫安大道上\n秦國美麗童女 個個裝飾整齊\n向著錫安城歌唱\n錫安城啊 大君王的城\n神的約櫃在這地方\n妳的秦國贖民 必要歡喜歸回\n迎見大君王\n讓我們唱響錫安城 讓讚美聲迴盪\n憂愁嘆息都逃避 喜樂替憂傷\n讓我們相約錫安城 金色耶路撒冷\n尋找千年的約定 擁抱祢愛情\n讓我們唱響錫安城 讓讚美聲迴盪\n華人要進入命定 穿聖潔的衣裳\n讓我們相約錫安城 金色耶路撒冷\n帶上祝福和禮物 向神揚聲唱\n向神揚聲唱\n來…………",
+  "lyricsSc": "一路走著唱著 沿著丝绸之路\n来到锡安大道上\n秦国美丽童女 个个装饰整齐\n向著锡安城歌唱\n锡安城啊 大君王的城\n神的约柜在这地方\n妳的秦国赎民 必要欢喜归回\n迎见大君王\n让我们唱响锡安城 让赞美声回荡\n忧愁叹息都逃避 喜乐替忧伤\n让我们相约锡安城 金色耶路撒冷\n寻找千年的约定 拥抱祢爱情\n让我们唱响锡安城 让赞美声回荡\n华人要进入命定 穿圣洁的衣裳\n让我们相约锡安城 金色耶路撒冷\n带上祝福和礼物 向神扬声唱\n向神扬声唱\n来…………",
   "englishLyrics": "Following the Silk Road on the way to Zion\nComes a faithful pilgrim band,\nSinging as they’re going, from the Middle Kingdom\nHeading to the Holy Land.\nZion, glorious city of the King,\nFrom across the globe God’s people sing;\nJoyfully returning, God’s redeemed are yearning\nTo behold the King!\nCome let us sing of Zion, praising with resounding voice;\nGone, our sadness and despair, now replaced by joy.\nAnd let us go to Zion, lovely beacon from above,\nSeeking out God’s promises, basking in His love.\nCome let us sing of Zion, holy city shining gold;\nFaithful from all nations come, in righteousness now clothed.\nAnd let us go to Zion, as our praises widely ring,\nBringing gifts and blessings, and songs of joy to sing.\nJoyful, let us sing!"
  },
  {
@@ -1007,8 +1007,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "天音麗娜",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "耶穌我要稱謝祢 因祢來堅固我心\n賜給我勝過困難的勇氣 我要來尊崇祢\n耶穌我要稱謝祢 因使我剛強站立\n賜給我抵擋仇敵的能力 使我戰勝恐懼\n前副歌\n感謝祢保守我的心 感謝祢堅固我的靈\n我要來尊崇祢聖名\n耶穌祢是我唯一\n我一生緊跟隨祢 堅定不移永不放棄\n耶穌祢是我唯一\n我一生緊跟隨祢 頌讚榮耀全都歸祢\n永遠不與祢分離 跟隨到底",
-  "lyricsSc": "耶稣我要称谢祢 因祢来坚固我心\n赐给我胜过困难的勇气 我要来尊崇祢\n耶稣我要称谢祢 因使我刚强站立\n赐给我抵挡仇敌的能力 使我战胜恐惧\n前副歌\n感谢祢保守我的心 感谢祢坚固我的灵\n我要来尊崇祢圣名\n耶稣祢是我唯一\n我一生紧跟随祢 坚定不移永不放弃\n耶稣祢是我唯一\n我一生紧跟随祢 颂赞荣耀全都归祢\n永远不与祢分离 跟随到底",
+  "lyrics": "耶穌我要稱謝祢 因祢來堅固我心\n賜給我勝過困難的勇氣 我要來尊崇祢\n耶穌我要稱謝祢 因使我剛強站立\n賜給我抵擋仇敵的能力 使我戰勝恐懼\n感謝祢保守我的心 感謝祢堅固我的靈\n我要來尊崇祢聖名\n耶穌祢是我唯一\n我一生緊跟隨祢 堅定不移永不放棄\n耶穌祢是我唯一\n我一生緊跟隨祢 頌讚榮耀全都歸祢\n永遠不與祢分離 跟隨到底",
+  "lyricsSc": "耶稣我要称谢祢 因祢来坚固我心\n赐给我胜过困难的勇气 我要来尊崇祢\n耶稣我要称谢祢 因使我刚强站立\n赐给我抵挡仇敌的能力 使我战胜恐惧\n感谢祢保守我的心 感谢祢坚固我的灵\n我要来尊崇祢圣名\n耶稣祢是我唯一\n我一生紧跟随祢 坚定不移永不放弃\n耶稣祢是我唯一\n我一生紧跟随祢 颂赞荣耀全都归祢\n永远不与祢分离 跟随到底",
   "englishLyrics": "Jesus, how I thank You,\nFor You make weak hearts strong.\nArmed with Your courage, I can overcome,\nPraising You in song.\nJesus, how I thank You,\nFor You make me stand strong,\nArmed with the strength to counter any foe:\nIn You all fear is gone.\nIn You my heart is protected,\nWith time becoming perfected;\nI shall exalt Your holy name!\nJesus, my one and only,\nI’ll always follow closely;\nI’ll not give up or turn away.\nJesus, my one and only,\nI’ll always follow closely;\nTo You all glory and all praise!\nI’ll always follow You, Lord,\nAll of my days."
  },
  {
@@ -1161,8 +1161,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "蘇春曉",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "一切黑暗 都將過去 不再懼怕 穿越死亡\n這個世界 都將過去 但神的國度 將到永遠\n一切痛苦 都將過去 平靜安寧 因有盼望\n災難禍患 都將過去 但主的話語 永不更改\n前副歌\n唯有真理能使我自由\n持守在主的道路\n榮耀救主是我的全部\n我們就是祢的國度\n哈利路亞 我們唱得勝的歌\n哈利路亞 天國已為我預備\n哈利路亞 頌讚的歌永不停\n耶穌是我們的主 我們的主",
-  "lyricsSc": "一切黑暗 都将过去 不再惧怕 穿越死亡\n这个世界 都将过去 但神的国度 将到永远\n一切痛苦 都将过去 平静安宁 因有盼望\n灾难祸患 都将过去 但主的话语 永不更改\n前副歌\n唯有真理能使我自由\n持守在主的道路\n荣耀救主是我的全部\n我们就是祢的国度\n哈利路亚 我们唱得胜的歌\n哈利路亚 天国已为我预备\n哈利路亚 颂赞的歌永不停\n耶稣是我们的主 我们的主",
+  "lyrics": "一切黑暗 都將過去 不再懼怕 穿越死亡\n這個世界 都將過去 但神的國度 將到永遠\n一切痛苦 都將過去 平靜安寧 因有盼望\n災難禍患 都將過去 但主的話語 永不更改\n唯有真理能使我自由\n持守在主的道路\n榮耀救主是我的全部\n我們就是祢的國度\n哈利路亞 我們唱得勝的歌\n哈利路亞 天國已為我預備\n哈利路亞 頌讚的歌永不停\n耶穌是我們的主 我們的主",
+  "lyricsSc": "一切黑暗 都将过去 不再惧怕 穿越死亡\n这个世界 都将过去 但神的国度 将到永远\n一切痛苦 都将过去 平静安宁 因有盼望\n灾难祸患 都将过去 但主的话语 永不更改\n唯有真理能使我自由\n持守在主的道路\n荣耀救主是我的全部\n我们就是祢的国度\n哈利路亚 我们唱得胜的歌\n哈利路亚 天国已为我预备\n哈利路亚 颂赞的歌永不停\n耶稣是我们的主 我们的主",
   "englishLyrics": "Darkness and sin are but fleeting;\nHave no more fear of the grave.\nAll of this world is but fleeting;\nGod’s holy kingdom is here to stay!\nSuffering and pain are but fleeting;\nPromise and peace will prevail.\nEvil and plague are but fleeting;\nThe word of God, won’t pass away!\nKnowing the truth has set me free;\nTo the Lord’s path will I keep.\nJesus means more than the world to me;\nI will praise Him eternally!\nHallelujah, our God, He reigns victorious!\nHallelujah, He’s readied heaven for us!\nHallelujah, we sing Him praises glorious!\nJesus is Lord over all! Lord over all!"
  },
  {
@@ -1623,8 +1623,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "朱大",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "黑暗在四周 祢的光也在左右\n可我感覺不到祢 把祢關在門口\n我好害怕 在這世界中掙扎\n我向外尋求出路 卻不知祢就在身後\n前副歌\n當我跌倒的時候 祢一次次喊我\n說起來吧孩子 我與你同行\n站起來 站起來 你們祈求就給你們\n尋找就尋見 叩門就給你開門\n站起來 站起來 把心敞開\n讓神的光芒照進來 讓恩典常在\n黑暗在四周 祢的光也在左右\n當我感覺不到祢 我知祢在身後\n不再害怕 我不再獨自掙扎\n不論向左或向右 我心堅定緊跟祢走\n雖然有時會軟弱 也不在罪中停留\n聽見祢的呼喊 必剛強壯膽\n我雖行過死蔭的幽谷也不怕遭害\n因為祢的杖 祢的杆 都與我同在",
-  "lyricsSc": "黑暗在四周 祢的光也在左右\n可我感觉不到祢 把祢关在门口\n我好害怕 在这世界中挣扎\n我向外寻求出路 却不知祢就在身后\n前副歌\n当我跌倒的时候 祢一次次喊我\n说起来吧孩子 我与你同行\n站起来 站起来 你们祈求就给你们\n寻找就寻见 叩门就给你开门\n站起来 站起来 把心敞开\n让神的光芒照进来 让恩典常在\n黑暗在四周 祢的光也在左右\n当我感觉不到祢 我知祢在身后\n不再害怕 我不再独自挣扎\n不论向左或向右 我心坚定紧跟祢走\n虽然有时会软弱 也不在罪中停留\n听见祢的呼喊 必刚强壮胆\n我虽行过死荫的幽谷也不怕遭害\n因为祢的杖 祢的杆 都与我同在",
+  "lyrics": "黑暗在四周 祢的光也在左右\n可我感覺不到祢 把祢關在門口\n我好害怕 在這世界中掙扎\n我向外尋求出路 卻不知祢就在身後\n當我跌倒的時候 祢一次次喊我\n說起來吧孩子 我與你同行\n站起來 站起來 你們祈求就給你們\n尋找就尋見 叩門就給你開門\n站起來 站起來 把心敞開\n讓神的光芒照進來 讓恩典常在\n黑暗在四周 祢的光也在左右\n當我感覺不到祢 我知祢在身後\n不再害怕 我不再獨自掙扎\n不論向左或向右 我心堅定緊跟祢走\n雖然有時會軟弱 也不在罪中停留\n聽見祢的呼喊 必剛強壯膽\n我雖行過死蔭的幽谷也不怕遭害\n因為祢的杖 祢的杆 都與我同在",
+  "lyricsSc": "黑暗在四周 祢的光也在左右\n可我感觉不到祢 把祢关在门口\n我好害怕 在这世界中挣扎\n我向外寻求出路 却不知祢就在身后\n当我跌倒的时候 祢一次次喊我\n说起来吧孩子 我与你同行\n站起来 站起来 你们祈求就给你们\n寻找就寻见 叩门就给你开门\n站起来 站起来 把心敞开\n让神的光芒照进来 让恩典常在\n黑暗在四周 祢的光也在左右\n当我感觉不到祢 我知祢在身后\n不再害怕 我不再独自挣扎\n不论向左或向右 我心坚定紧跟祢走\n虽然有时会软弱 也不在罪中停留\n听见祢的呼喊 必刚强壮胆\n我虽行过死荫的幽谷也不怕遭害\n因为祢的杖 祢的杆 都与我同在",
   "englishLyrics": "(X2)\nIn endless darkness,\nYou’re the source of endless light,\nBut for me it was unseen:\nI’d shut You from my life.\nI shook with fear\nAs I faced a world with strife,\nEvery effort made in vain,\nForgetting that You were my guide.\nBut then every time I’d fall,\nEach time You’d gently call:\n“Stand up again, My child;\nI’m here by your side!”\nChild, arise, stand up high,\nWhat you ask for, you will receive;\nSeek, and you will find,\nKnock, and the door will be opened.\nChild, arise, stand up high,\nHeart open wide,\nIn every place be filled with grace,\nAnd shine forth God’s light!\nIn endless darkness,\nYou’re the source of endless light.\nEven when it feels untrue,\nI know You’re by my side!\nGone is my fear\nAs I face this world of strife,\nFor I’ve fixed my heart on You,\nMy compass, my beacon, my guide.\nThough from time to time I fall,\nI heed Your rousing call\nAnd cast aside my sin,\nCourageous and strong!\nThough I walk the darkest of valleys,\nNo evil will I fear,\nAnd Your rod and staff comfort me,\nFor Lord, You are near.\n(X2)"
  },
  {
@@ -1721,8 +1721,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "在神眼裏 我是祂的至寶\n是珍貴的 是獨一無二的\n在人眼裏 或許會被輕看\n卻無損於我的美麗 因陶匠是祢\n前副歌\n雖然我很黑 祢看我爲秀美\n雖然我有罪 祢爲我犧牲一切\n我不是失誤的作品 我是神的傑作\n在祢愛中我能喜悅自己\n坦然無懼去夢想去愛\n我不是失誤的作品 我是神的傑作\n用祢眼光看不一樣的自己\n祢又喜又樂 為我歡呼喝采",
-  "lyricsSc": "在神眼里 我是祂的至宝\n是珍贵的 是独一无二的\n在人眼里 或许会被轻看\n却无损于我的美丽 因陶匠是祢\n前副歌\n虽然我很黑 祢看我为秀美\n虽然我有罪 祢为我牺牲一切\n我不是失误的作品 我是神的杰作\n在祢爱中我能喜悦自己\n坦然无惧去梦想去爱\n我不是失误的作品 我是神的杰作\n用祢眼光看不一样的自己\n祢又喜又乐 为我欢呼喝采",
+  "lyrics": "在神眼裏 我是祂的至寶\n是珍貴的 是獨一無二的\n在人眼裏 或許會被輕看\n卻無損於我的美麗 因陶匠是祢\n雖然我很黑 祢看我爲秀美\n雖然我有罪 祢爲我犧牲一切\n我不是失誤的作品 我是神的傑作\n在祢愛中我能喜悅自己\n坦然無懼去夢想去愛\n我不是失誤的作品 我是神的傑作\n用祢眼光看不一樣的自己\n祢又喜又樂 為我歡呼喝采",
+  "lyricsSc": "在神眼里 我是祂的至宝\n是珍贵的 是独一无二的\n在人眼里 或许会被轻看\n却无损于我的美丽 因陶匠是祢\n虽然我很黑 祢看我为秀美\n虽然我有罪 祢为我牺牲一切\n我不是失误的作品 我是神的杰作\n在祢爱中我能喜悦自己\n坦然无惧去梦想去爱\n我不是失误的作品 我是神的杰作\n用祢眼光看不一样的自己\n祢又喜又乐 为我欢呼喝采",
   "englishLyrics": "(2X)\nWhen God sees me, he sees a treasure,\nA precious thing, and made unique;\nWhen man sees me by earthly measures,\nI am not much. Still I rejoice,\nFor God created me!\nEven though I’m dark,\nIt’s beauty that You see!\nEven though I’ve sinned,\nYou gave everything for me!\nI know I am not a failure, for You created me!\nThrough Your love I’ll rejoice in my person,\nAnd with boldness I’ll love and dream;\nI know I am not a failure, for You created me!\nThrough Your eyes I see I’m a new creation,\nAnd You’re delighting,\nYou’re rejoicing for me!\nI know I am not a failure, for You created me!\nThrough Your hands I become like a vessel,\nWith Your glory for others to see.\nI know I am not a failure, for You created me!\nThrough Your will I can still be my own person,\nAnd You’re delighting,\nYou’re rejoicing for me!"
  },
  {
@@ -1735,8 +1735,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "徐潮敏、林婉容、王志達",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "説唱\n賜我們信心勇往前行 領我們在基督裡誇勝\n勇往前行 基督裡誇勝\n神的大愛已彰顯 十架救恩已成全\n世上卻有多少人 不知祂愛的高深\n前副歌\n誰願把這愛傳播到天涯海角\n福音傳給各國 各民 各族 各方\n是你嗎 是我嗎\n讓萬國能聽見 讓萬國能看見\n耶穌是愛 唯一拯救\n讓萬國來頌讚 讓萬國來敬拜\n耶穌是王 直到永遠\n賜我們信心勇往前行 領我們在基督裡誇勝\n讓我們甘心犧牲自己 藉我們顯揚天國的氣息",
-  "lyricsSc": "说唱\n赐我们信心勇往前行 领我们在基督里夸胜\n勇往前行 基督里夸胜\n神的大爱已彰显 十架救恩已成全\n世上却有多少人 不知祂爱的高深\n前副歌\n谁愿把这爱传播到天涯海角\n福音传给各国 各民 各族 各方\n是你吗 是我吗\n让万国能听见 让万国能看见\n耶稣是爱 唯一拯救\n让万国来颂赞 让万国来敬拜\n耶稣是王 直到永远\n赐我们信心勇往前行 领我们在基督里夸胜\n让我们甘心牺牲自己 藉我们显扬天国的气息",
+  "lyrics": "説唱\n賜我們信心勇往前行 領我們在基督裡誇勝\n勇往前行 基督裡誇勝\n神的大愛已彰顯 十架救恩已成全\n世上卻有多少人 不知祂愛的高深\n誰願把這愛傳播到天涯海角\n福音傳給各國 各民 各族 各方\n是你嗎 是我嗎\n讓萬國能聽見 讓萬國能看見\n耶穌是愛 唯一拯救\n讓萬國來頌讚 讓萬國來敬拜\n耶穌是王 直到永遠\n賜我們信心勇往前行 領我們在基督裡誇勝\n讓我們甘心犧牲自己 藉我們顯揚天國的氣息",
+  "lyricsSc": "说唱\n赐我们信心勇往前行 领我们在基督里夸胜\n勇往前行 基督里夸胜\n神的大爱已彰显 十架救恩已成全\n世上却有多少人 不知祂爱的高深\n谁愿把这爱传播到天涯海角\n福音传给各国 各民 各族 各方\n是你吗 是我吗\n让万国能听见 让万国能看见\n耶稣是爱 唯一拯救\n让万国来颂赞 让万国来敬拜\n耶稣是王 直到永远\n赐我们信心勇往前行 领我们在基督里夸胜\n让我们甘心牺牲自己 藉我们显扬天国的气息",
   "englishLyrics": "God’s great love has been revealed,\nChrist’s work on the cross, complete;\nYet so many still don’t know\nOf His love so wide and deep!\nWho will spread this love unto the ends of the earth,\nSpread the news to every nation, race, and birth?\nHe calls you, He calls me.\nLet all the nations hear,\nLet all the nations see:\nJesus is love, He is the Way;\nLet all the nations praise\nAnd worship on their knees:\nJesus is king, forever He reigns.\nGive us faith to charge into the field;\nLead us in the triumph in Christ!\nGive us courage, let us volunteer;\nThrough us spread Your fragrance far and wide!"
  },
  {
@@ -1749,8 +1749,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "夜深了 大地在沈睡 繁星啊 為誰在點綴\n難道是永恆的那一位\n夜深了 大地在沈睡 我心啊 你在思念誰\n難道是完美的那一位 噢\n前副歌\n那一位啊 祢是誰 為何甘願從尊貴變卑微\n那一位啊 我是誰 為何值得祢為我流淚心碎 噢\n帶我飛 脫離地的纏累\n帶我飛 一覽天的明媚\n我渴望認識祢是誰 渴望認識祢是誰\n帶我飛 脫離地的纏累\n帶我飛 一覽天的明媚\n我渴望認識祢是誰 渴望認識祢是誰\n我渴望認識祢是誰 從祢眼中看見我是誰\n帶我飛 脫離地的纏累\n帶我飛 一覽天的明媚\n我渴望認識祢是誰 從祢眼中看見我是誰 (2X)",
-  "lyricsSc": "夜深了 大地在沉睡 繁星啊 为谁在点缀\n难道是永恒的那一位\n夜深了 大地在沉睡 我心啊 你在思念谁\n难道是完美的那一位 噢\n前副歌\n那一位啊 祢是谁 为何甘愿从尊贵变卑微\n那一位啊 我是谁 为何值得祢为我流泪心碎 噢\n带我飞 脱离地的缠累\n带我飞 一览天的明媚\n我渴望认识祢是谁 渴望认识祢是谁\n带我飞 脱离地的缠累\n带我飞 一览天的明媚\n我渴望认识祢是谁 渴望认识祢是谁\n我渴望认识祢是谁 从祢眼中看见我是谁\n带我飞 脱离地的缠累\n带我飞 一览天的明媚\n我渴望认识祢是谁 从祢眼中看见我是谁 (2X)",
+  "lyrics": "夜深了 大地在沈睡 繁星啊 為誰在點綴\n難道是永恆的那一位\n夜深了 大地在沈睡 我心啊 你在思念誰\n難道是完美的那一位 噢\n那一位啊 祢是誰 為何甘願從尊貴變卑微\n那一位啊 我是誰 為何值得祢為我流淚心碎 噢\n帶我飛 脫離地的纏累\n帶我飛 一覽天的明媚\n我渴望認識祢是誰 渴望認識祢是誰\n帶我飛 脫離地的纏累\n帶我飛 一覽天的明媚\n我渴望認識祢是誰 渴望認識祢是誰\n我渴望認識祢是誰 從祢眼中看見我是誰\n帶我飛 脫離地的纏累\n帶我飛 一覽天的明媚\n我渴望認識祢是誰 從祢眼中看見我是誰 (2X)",
+  "lyricsSc": "夜深了 大地在沉睡 繁星啊 为谁在点缀\n难道是永恒的那一位\n夜深了 大地在沉睡 我心啊 你在思念谁\n难道是完美的那一位 噢\n那一位啊 祢是谁 为何甘愿从尊贵变卑微\n那一位啊 我是谁 为何值得祢为我流泪心碎 噢\n带我飞 脱离地的缠累\n带我飞 一览天的明媚\n我渴望认识祢是谁 渴望认识祢是谁\n带我飞 脱离地的缠累\n带我飞 一览天的明媚\n我渴望认识祢是谁 渴望认识祢是谁\n我渴望认识祢是谁 从祢眼中看见我是谁\n带我飞 脱离地的缠累\n带我飞 一览天的明媚\n我渴望认识祢是谁 从祢眼中看见我是谁 (2X)",
   "englishLyrics": "The night is deep, all the world’s sleeping;\nStars above, why are you beaming?\nCould it be it’s for the Ageless One?\nThe night is deep, all the world’s dreaming;\nHeart of mine, what are you seeking?\nCould it be you seek the Perfect One? Oh—\nPerfect One, who are You?\nHow can You love the world You came into?\nPerfect One, who am I?\nHow am I worth the tears of heartbreak You cry? Oh—\nLet me soar high above the bonds of earth!\nLet me soar to the highest heavens!\nOh, how I want to know You more,\nHow I want to know You more!\nLet me soar high above the bonds of earth!\nLet me soar to the highest heavens!\nOh, how I want to know You more,\nHow I want to know You more!\nOh, how I want to know You more,\nAnd discover what my life is for!\nLet me soar high above the bonds of earth!\nLet me soar to the highest heavens!\nOh, how I want to know You more,\nAnd discover what my life is for!\nOh, how I want to know You more,\nAnd discover what my life is for!"
  },
  {
@@ -1777,8 +1777,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "喔 聖善夜 群星閃爍多光明\n在伯利恒 救主今夜降生\n迷茫大地 罪惡虛空中嘆息\n直到晨曦顯現 帶來黎明\n前副歌\n真光顯現 恩典照亮世人\n揮別長夜 迎接榮耀早晨\n俯伏敬拜 讓讚美聲傳萬邦\n喔 聖善夜 救主基督降生\n喔 聖善夜 救主基督降生\n政權必擔在祂肩上 馬槽嬰孩是萬王之王\n看祂不張揚不喧嚷 祂來為作贖罪羔羊\n俯伏敬拜 讓讚美聲傳萬邦\n喔 尊貴 榮耀 能力永遠歸祂\n尊貴 榮耀 能力永遠歸祂\n永永遠遠歸祂",
-  "lyricsSc": "喔 圣善夜 群星闪烁多光明\n在伯利恒 救主今夜降生\n迷茫大地 罪恶虚空中叹息\n直到晨曦显现 带来黎明\n前副歌\n真光显现 恩典照亮世人\n挥别长夜 迎接荣耀早晨\n俯伏敬拜 让赞美声传万邦\n喔 圣善夜 救主基督降生\n喔 圣善夜 救主基督降生\n政权必担在祂肩上 马槽婴孩是万王之王\n看祂不张扬不喧嚷 祂来为作赎罪羔羊\n俯伏敬拜 让赞美声传万邦\n喔 尊贵 荣耀 能力永远归祂\n尊贵 荣耀 能力永远归祂\n永永远远归祂",
+  "lyrics": "喔 聖善夜 群星閃爍多光明\n在伯利恒 救主今夜降生\n迷茫大地 罪惡虛空中嘆息\n直到晨曦顯現 帶來黎明\n真光顯現 恩典照亮世人\n揮別長夜 迎接榮耀早晨\n俯伏敬拜 讓讚美聲傳萬邦\n喔 聖善夜 救主基督降生\n喔 聖善夜 救主基督降生\n政權必擔在祂肩上 馬槽嬰孩是萬王之王\n看祂不張揚不喧嚷 祂來為作贖罪羔羊\n俯伏敬拜 讓讚美聲傳萬邦\n喔 尊貴 榮耀 能力永遠歸祂\n尊貴 榮耀 能力永遠歸祂\n永永遠遠歸祂",
+  "lyricsSc": "喔 圣善夜 群星闪烁多光明\n在伯利恒 救主今夜降生\n迷茫大地 罪恶虚空中叹息\n直到晨曦显现 带来黎明\n真光显现 恩典照亮世人\n挥别长夜 迎接荣耀早晨\n俯伏敬拜 让赞美声传万邦\n喔 圣善夜 救主基督降生\n喔 圣善夜 救主基督降生\n政权必担在祂肩上 马槽婴孩是万王之王\n看祂不张扬不喧嚷 祂来为作赎罪羔羊\n俯伏敬拜 让赞美声传万邦\n喔 尊贵 荣耀 能力永远归祂\n尊贵 荣耀 能力永远归祂\n永永远远归祂",
   "englishLyrics": "(2X)\nO holy night! The stars are brightly shining,\nIt is the night of our dear Savior’s birth.\nLong lay the world in sin and error pining.\nTill He appeared and the soul felt its worth.\nA thrill of hope the weary world rejoices,\nFor yonder breaks a new and glorious morn.\nFall on your knees! Oh, hear the angel voices!\nO night divine, O night when Christ was born;\nO night divine, O night, O night divine!\nSee, in the lowly cattle stall,\nBorn without pomp or trumpet call,\nOn His shoulder all pow’r will fall,\nLamb of God, Ruler of all!\nChrist is the Lord! Then ever, ever praise we,\nHis power and glory ever more proclaim!\nHis power and glory ever more proclaim!"
  },
  {
@@ -1889,8 +1889,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "或立豐功偉績 或是平凡無奇 我慶幸能認識祢\n祢已將我舉起 撫慰我的心靈 將我捧在祢的掌心 哦\n前副歌\n為祢所認識 祢知道我的名字\n為祢所認識 世上可有更偉大的事\n我愛聽祢呼喚我的名字 教導我當曉得的事\n祢定睛在我身上勸誡我 讓我深知道祢愛我",
-  "lyricsSc": "或立丰功伟绩 或是平凡无奇 我庆幸能认识祢\n祢已将我举起 抚慰我的心灵 将我捧在祢的掌心 哦\n前副歌\n为祢所认识 祢知道我的名字\n为祢所认识 世上可有更伟大的事\n我爱听祢呼唤我的名字 教导我当晓得的事\n祢定睛在我身上劝诫我 让我深知道祢爱我",
+  "lyrics": "或立豐功偉績 或是平凡無奇 我慶幸能認識祢\n祢已將我舉起 撫慰我的心靈 將我捧在祢的掌心 哦\n為祢所認識 祢知道我的名字\n為祢所認識 世上可有更偉大的事\n我愛聽祢呼喚我的名字 教導我當曉得的事\n祢定睛在我身上勸誡我 讓我深知道祢愛我",
+  "lyricsSc": "或立丰功伟绩 或是平凡无奇 我庆幸能认识祢\n祢已将我举起 抚慰我的心灵 将我捧在祢的掌心 哦\n为祢所认识 祢知道我的名字\n为祢所认识 世上可有更伟大的事\n我爱听祢呼唤我的名字 教导我当晓得的事\n祢定睛在我身上劝诫我 让我深知道祢爱我",
   "englishLyrics": "Whether walking on air,\nOr in depths of despair,\nKnowing You, I am made glad;\nWhen my spirit’s distressed,\nLord, You put it at rest,\nAnd I rest, secure in Your hand! Oh,\nTo be known by You,\nTo be recognized by name,\nNo joy’s quite the same!\nWhat more marvelous thing can there be?\nWhat joy to hear You calling out my name!\nTeach to me the things I should know,\nAnd show to me the folly of my ways;\nWhat joy to know Your love for me!"
  },
  {
@@ -1959,8 +1959,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容、王志達、陳浩湧",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "恩膏 是袮的聖靈住在我裏面\n因為耶穌的寶血使我得稱義\n恩膏 是袮的聖靈降在我身上\n因為耶穌的寶血使我得潔淨\n前副歌\n感謝天父 差遣聖靈訓誨提攜\n引我進入真理 為我披上能力\n父我感謝袮 感謝袮賜下聖靈\n使我按這恩膏的教訓住在主裏\n不是倚靠才能 不是倚靠勢力\n凡事倚靠神的靈 宣告天國已降臨\n讓聖靈恩膏如江河從我腹中湧流\n直到認識耶和華榮耀的知識遍滿全地",
-  "lyricsSc": "恩膏 是袮的圣灵住在我里面\n因为耶稣的宝血使我得称义\n恩膏 是袮的圣灵降在我身上\n因为耶稣的宝血使我得洁净\n前副歌\n感谢天父 差遣圣灵训诲提携\n引我进入真理 为我披上能力\n父我感谢袮 感谢袮赐下圣灵\n使我按这恩膏的教训住在主里\n不是倚靠才能 不是倚靠势力\n凡事倚靠神的灵 宣告天国已降临\n让圣灵恩膏如江河从我腹中涌流\n直到认识耶和华荣耀的知识遍满全地",
+  "lyrics": "恩膏 是袮的聖靈住在我裏面\n因為耶穌的寶血使我得稱義\n恩膏 是袮的聖靈降在我身上\n因為耶穌的寶血使我得潔淨\n感謝天父 差遣聖靈訓誨提攜\n引我進入真理 為我披上能力\n父我感謝袮 感謝袮賜下聖靈\n使我按這恩膏的教訓住在主裏\n不是倚靠才能 不是倚靠勢力\n凡事倚靠神的靈 宣告天國已降臨\n讓聖靈恩膏如江河從我腹中湧流\n直到認識耶和華榮耀的知識遍滿全地",
+  "lyricsSc": "恩膏 是袮的圣灵住在我里面\n因为耶稣的宝血使我得称义\n恩膏 是袮的圣灵降在我身上\n因为耶稣的宝血使我得洁净\n感谢天父 差遣圣灵训诲提携\n引我进入真理 为我披上能力\n父我感谢袮 感谢袮赐下圣灵\n使我按这恩膏的教训住在主里\n不是倚靠才能 不是倚靠势力\n凡事倚靠神的灵 宣告天国已降临\n让圣灵恩膏如江河从我腹中涌流\n直到认识耶和华荣耀的知识遍满全地",
   "englishLyrics": "Spirit, be my anointing, come and dwell in me,\nFor the blood of Christ has made me clean;\nSpirit, be my anointing, and descend on me,\nFor the blood of Christ covers me!\nFather, thank You,\nFor Your Spirit teaches and guides,\nBrings me into truth,\nAnd endows me with might!\nI give thanks to You\nFor the Spirit You provide;\nAs Your Spirit has taught to me,\nIn Him I’ll abide!\nLeaning not on myself,\nNor on my own strength,\nTrusting in Your Spirit,\nYour Kingdom I’ll proclaim!\nLord may Your Spirit’s anointing\nLike living rivers flow\nTill the full knowledge of Your glory\nCovers the globe!"
  },
  {
@@ -1987,8 +1987,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容、王志達",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "主 我是一個活祭 我不再屬於自己\n甘心樂意獻給祢 一生一世永屬祢\n前副歌\n我的生命 每個氣息 全是祢所賜予\n財富能力 血汗熱情 理當獻上歸祢\n膏我 用我 從天降下火\n願祢悅納獻上的所有",
-  "lyricsSc": "主 我是一个活祭 我不再属于自己\n甘心乐意献给祢 一生一世永属祢\n前副歌\n我的生命 每个气息 全是祢所赐予\n财富能力 血汗热情 理当献上归祢\n膏我 用我 从天降下火\n愿祢悦纳献上的所有",
+  "lyrics": "主 我是一個活祭 我不再屬於自己\n甘心樂意獻給祢 一生一世永屬祢\n我的生命 每個氣息 全是祢所賜予\n財富能力 血汗熱情 理當獻上歸祢\n膏我 用我 從天降下火\n願祢悅納獻上的所有",
+  "lyricsSc": "主 我是一个活祭 我不再属于自己\n甘心乐意献给祢 一生一世永属祢\n我的生命 每个气息 全是祢所赐予\n财富能力 血汗热情 理当献上归祢\n膏我 用我 从天降下火\n愿祢悦纳献上的所有",
   "englishLyrics": "As a living sacrifice,\nI belong no more to me,\nGladly offering up my life,\nTo be Yours eternally.\nAll of my life,\nEvery breath,\nAll are bestowed by You;\nAll of my wealth,\nPassion and strength,\nAll are deserved to You!\nBless me, use me, Lord send down Your fire!\nTake my offering: Lord, be satisfied."
  },
  {
@@ -2337,8 +2337,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容、劉俊成、洪文慶",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "他曾說 縱然眾人都跌倒 我寧死也不能不認祢\n一步步彼得遠遠的跟隨 在耶穌被賣的那一夜\n如羊羔 祂被欺壓不開口 默默地被牽往宰殺之地\n彼得心裏不禁充滿懼怕 竟然三次都說 我不認識祂\n旁白 1\n立時雞就叫了，彼得想起主對他所說的話：\n「雞叫以先 , 你要三次不認我」，他就出去痛哭。\n前副歌\n我的主 我的主 請赦免我！祢深知我的一切軟弱\n當祢轉身看我 毫無責備 眼中的愛憐令我心碎\n我知道祢已經為我祈求 讓我不至於失了信心\n是祢憐憫讓我能再回頭 在愛中堅固我弟兄\n旁白 2\n我們既然有一位已經升入高天尊榮的大祭司，\n就是神的兒子耶穌，便當持定所承認的道。\n因我們的大祭司並非不能體恤我們的軟弱…\n所以，我們只管坦然無懼的來到施恩的寶座前，\n為要得憐恤，蒙恩惠，作隨時的幫助。",
-  "lyricsSc": "他曾说 纵然众人都跌倒 我宁死也不能不认祢\n一步步彼得远远的跟随 在耶稣被卖的那一夜\n如羊羔 祂被欺压不开口 默默地被牵往宰杀之地\n彼得心里不禁充满惧怕 竟然三次都说 我不认识祂\n旁白 1\n立时鸡就叫了，彼得想起主对他所说的话：\n「鸡叫以先 , 你要三次不认我」，他就出去痛哭。\n前副歌\n我的主 我的主 请赦免我！祢深知我的一切软弱\n当祢转身看我 毫无责备 眼中的爱怜令我心碎\n我知道祢已经为我祈求 让我不至于失了信心\n是祢怜悯让我能再回头 在爱中坚固我弟兄\n旁白 2\n我们既然有一位已经升入高天尊荣的大祭司，\n就是神的儿子耶稣，便当持定所承认的道。\n因我们的大祭司并非不能体恤我们的软弱…\n所以，我们只管坦然无惧的来到施恩的宝座前，\n为要得怜恤，蒙恩惠，作随时的帮助。",
+  "lyrics": "他曾說 縱然眾人都跌倒 我寧死也不能不認祢\n一步步彼得遠遠的跟隨 在耶穌被賣的那一夜\n如羊羔 祂被欺壓不開口 默默地被牽往宰殺之地\n彼得心裏不禁充滿懼怕 竟然三次都說 我不認識祂\n立時雞就叫了，彼得想起主對他所說的話：\n「雞叫以先 , 你要三次不認我」，他就出去痛哭。\n我的主 我的主 請赦免我！祢深知我的一切軟弱\n當祢轉身看我 毫無責備 眼中的愛憐令我心碎\n我知道祢已經為我祈求 讓我不至於失了信心\n是祢憐憫讓我能再回頭 在愛中堅固我弟兄\n我們既然有一位已經升入高天尊榮的大祭司，\n就是神的兒子耶穌，便當持定所承認的道。\n因我們的大祭司並非不能體恤我們的軟弱…\n所以，我們只管坦然無懼的來到施恩的寶座前，\n為要得憐恤，蒙恩惠，作隨時的幫助。",
+  "lyricsSc": "他曾说 纵然众人都跌倒 我宁死也不能不认祢\n一步步彼得远远的跟随 在耶稣被卖的那一夜\n如羊羔 祂被欺压不开口 默默地被牵往宰杀之地\n彼得心里不禁充满惧怕 竟然三次都说 我不认识祂\n立时鸡就叫了，彼得想起主对他所说的话：\n「鸡叫以先 , 你要三次不认我」，他就出去痛哭。\n我的主 我的主 请赦免我！祢深知我的一切软弱\n当祢转身看我 毫无责备 眼中的爱怜令我心碎\n我知道祢已经为我祈求 让我不至于失了信心\n是祢怜悯让我能再回头 在爱中坚固我弟兄\n我们既然有一位已经升入高天尊荣的大祭司，\n就是神的儿子耶稣，便当持定所承认的道。\n因我们的大祭司并非不能体恤我们的软弱…\n所以，我们只管坦然无惧的来到施恩的宝座前，\n为要得怜恤，蒙恩惠，作随时的帮助。",
   "englishLyrics": "He once claimed, “I shall never disown You;\nThough I die, I shall ne’er fall away.”\nNow he follows his Lord from a distance\nThis night that Jesus has been betrayed!\nThough afflicted, the Savior is silent;\nUnto slaughter He goes like a lamb.\nPeter’s fearless resolve turns to panic:\nThree fateful times he says,\n“I don’t know the man!”\nO my Lord, precious Lord,\nPlease forgive me!\nI am weak, as I saw on that night;\nYou turned and looked at me\nWithout rebuke,\nYet broke my heart with Your loving eyes.\nBut I know that for me\nYou’ve been praying,\nThat my faith would endure through this wrong.\nWith your mercy,\nI’ve turned back from straying\nAnd, strengthened,\nMade my brethren strong!"
  },
  {
@@ -2435,8 +2435,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "徐潮敏、林婉容、劉俊成",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "耶穌 萬名之上的名 耶穌 何等寶貴的名\n天下人間 別無賜下拯救 唯靠耶穌基督聖名\n耶穌 至善至美的名 耶穌 我最愛慕的名\n神獨生子 降卑成為人子 願榮耀都歸耶穌聖名\n旁白\n他本有神的形像，反倒卑微自己，成為人的樣式，\n且為罪人死在十字架上，所以，神將他升為至高，\n又賜給他那超乎萬名之上的名，叫一切在天上的、\n地上的，和地底下的，無不屈膝，無不口稱「耶穌基督是主」\n耶穌 至尊至聖的名 耶穌 超乎萬有的名\n黑暗逃避 帶下自由安寧 義人都投靠耶穌聖名\n祂是神榮耀所發的光輝 是神本體的真相\n萬有受造都靠祂權能的命令\n是為祂而造 也靠祂而立\n黑暗逃避 帶下自由安寧\n願榮耀都歸耶穌 (2X)\n願榮耀都歸耶穌聖名 (3X)",
-  "lyricsSc": "耶稣 万名之上的名 耶稣 何等宝贵的名\n天下人间 别无赐下拯救 唯靠耶稣基督圣名\n耶稣 至善至美的名 耶稣 我最爱慕的名\n神独生子 降卑成为人子 愿荣耀都归耶稣圣名\n旁白\n他本有神的形像，反倒卑微自己，成为人的样式，\n且为罪人死在十字架上，所以，神将他升为至高，\n又赐给他那超乎万名之上的名，叫一切在天上的、\n地上的，和地底下的，无不屈膝，无不口称「耶稣基督是主」\n耶稣 至尊至圣的名 耶稣 超乎万有的名\n黑暗逃避 带下自由安宁 义人都投靠耶稣圣名\n祂是神荣耀所发的光辉 是神本体的真相\n万有受造都靠祂权能的命令\n是为祂而造 也靠祂而立\n黑暗逃避 带下自由安宁\n愿荣耀都归耶稣 (2X)\n愿荣耀都归耶稣圣名 (3X)",
+  "lyrics": "耶穌 萬名之上的名 耶穌 何等寶貴的名\n天下人間 別無賜下拯救 唯靠耶穌基督聖名\n耶穌 至善至美的名 耶穌 我最愛慕的名\n神獨生子 降卑成為人子 願榮耀都歸耶穌聖名\n他本有神的形像，反倒卑微自己，成為人的樣式，\n且為罪人死在十字架上，所以，神將他升為至高，\n又賜給他那超乎萬名之上的名，叫一切在天上的、\n地上的，和地底下的，無不屈膝，無不口稱「耶穌基督是主」\n耶穌 至尊至聖的名 耶穌 超乎萬有的名\n黑暗逃避 帶下自由安寧 義人都投靠耶穌聖名\n祂是神榮耀所發的光輝 是神本體的真相\n萬有受造都靠祂權能的命令\n是為祂而造 也靠祂而立\n黑暗逃避 帶下自由安寧\n願榮耀都歸耶穌 (2X)\n願榮耀都歸耶穌聖名 (3X)",
+  "lyricsSc": "耶稣 万名之上的名 耶稣 何等宝贵的名\n天下人间 别无赐下拯救 唯靠耶稣基督圣名\n耶稣 至善至美的名 耶稣 我最爱慕的名\n神独生子 降卑成为人子 愿荣耀都归耶稣圣名\n他本有神的形像，反倒卑微自己，成为人的样式，\n且为罪人死在十字架上，所以，神将他升为至高，\n又赐给他那超乎万名之上的名，叫一切在天上的、\n地上的，和地底下的，无不屈膝，无不口称「耶稣基督是主」\n耶稣 至尊至圣的名 耶稣 超乎万有的名\n黑暗逃避 带下自由安宁 义人都投靠耶稣圣名\n祂是神荣耀所发的光辉 是神本体的真相\n万有受造都靠祂权能的命令\n是为祂而造 也靠祂而立\n黑暗逃避 带下自由安宁\n愿荣耀都归耶稣 (2X)\n愿荣耀都归耶稣圣名 (3X)",
   "englishLyrics": "Jesus, the name above all names;\nJesus, the one most precious name!\nNo other name has the power to save\nBut Christ Jesus’ holy name!\nJesus, the best and fairest name;\nJesus, the one most lovely name!\nGod from on high become man sent to die:\nMay all glory be unto His name!\nJesus, the one most holy name;\nJesus, the all-surpassing name!\nDarkness shall flee, leaving freedom and peace:\nNow the righteous shall live by His name!\nHe is Christ, the radiance of God’s glory,\nThe very image of God!\nCreation is upheld with His powerful word:\nFor Him existing, through Him subsisting!\nDarkness shall flee, leaving freedom and peace:\nGive all glory to His name! (2X)\nGive all glory to Christ’s holy name.\nMay all glory be unto His name.\nGive all glory to Christ’s holy name!"
  },
  {
@@ -2939,8 +2939,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "每一天 祢定睛垂顧 好像我是祢唯一的孩子\n每一天 祢側耳垂聽 好像世上沒有別的禱告\n前副歌\n多少不為人知的愁苦 多少不曾掉落的眼淚\n我發現祢知道 祢全都知道\n我願意 我願意 我願意 從祢手中接受每個環境\n我願意 我願意 我願意 這是我所需 是於我有益\n我願意 我願意 我願意 交出自己 信任祢美意\n我願意 我願意 我願意 祢永遠良善 全然是愛\n我願意 我願意\nI do, I do, I do - 我願意！",
-  "lyricsSc": "每一天 祢定睛垂顾 好像我是祢唯一的孩子\n每一天 祢侧耳垂听 好像世上没有别的祷告\n前副歌\n多少不为人知的愁苦 多少不曾掉落的眼泪\n我发现祢知道 祢全都知道\n我愿意 我愿意 我愿意 从祢手中接受每个环境\n我愿意 我愿意 我愿意 这是我所需 是于我有益\n我愿意 我愿意 我愿意 交出自己 信任祢美意\n我愿意 我愿意 我愿意 祢永远良善 全然是爱\n我愿意 我愿意\nI do, I do, I do - 我愿意！",
+  "lyrics": "每一天 祢定睛垂顧 好像我是祢唯一的孩子\n每一天 祢側耳垂聽 好像世上沒有別的禱告\n多少不為人知的愁苦 多少不曾掉落的眼淚\n我發現祢知道 祢全都知道\n我願意 我願意 我願意 從祢手中接受每個環境\n我願意 我願意 我願意 這是我所需 是於我有益\n我願意 我願意 我願意 交出自己 信任祢美意\n我願意 我願意 我願意 祢永遠良善 全然是愛\n我願意 我願意\nI do, I do, I do - 我願意！",
+  "lyricsSc": "每一天 祢定睛垂顾 好像我是祢唯一的孩子\n每一天 祢侧耳垂听 好像世上没有别的祷告\n多少不为人知的愁苦 多少不曾掉落的眼泪\n我发现祢知道 祢全都知道\n我愿意 我愿意 我愿意 从祢手中接受每个环境\n我愿意 我愿意 我愿意 这是我所需 是于我有益\n我愿意 我愿意 我愿意 交出自己 信任祢美意\n我愿意 我愿意 我愿意 祢永远良善 全然是爱\n我愿意 我愿意\nI do, I do, I do - 我愿意！",
   "englishLyrics": ""
  },
  {
@@ -3023,8 +3023,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "祢使我感動到流淚 又使我心甜到發笑\n想著祢 暖流湧上心頭 再次心醉祢神聖榮耀\n前副歌\n這一生不再追求別的 但以認識祢為至寶\n讓這愛在我靈魂燃燒 得著祢 也被祢得著\n花盡一生來愛祢 花盡一生來愛祢\n願我一生不知別的 但知基督並祂釘十架\n花盡一生來愛祢 花盡一生來愛祢\n我願花盡一生來愛祢 花盡一生來愛祢",
-  "lyricsSc": "祢使我感动到流泪 又使我心甜到发笑\n想著祢 暖流涌上心头 再次心醉祢神圣荣耀\n前副歌\n这一生不再追求别的 但以认识祢为至宝\n让这爱在我灵魂燃烧 得著祢 也被祢得著\n花尽一生来爱祢 花尽一生来爱祢\n愿我一生不知别的 但知基督并祂钉十架\n花尽一生来爱祢 花尽一生来爱祢\n我愿花尽一生来爱祢 花尽一生来爱祢",
+  "lyrics": "祢使我感動到流淚 又使我心甜到發笑\n想著祢 暖流湧上心頭 再次心醉祢神聖榮耀\n這一生不再追求別的 但以認識祢為至寶\n讓這愛在我靈魂燃燒 得著祢 也被祢得著\n花盡一生來愛祢 花盡一生來愛祢\n願我一生不知別的 但知基督並祂釘十架\n花盡一生來愛祢 花盡一生來愛祢\n我願花盡一生來愛祢 花盡一生來愛祢",
+  "lyricsSc": "祢使我感动到流泪 又使我心甜到发笑\n想著祢 暖流涌上心头 再次心醉祢神圣荣耀\n这一生不再追求别的 但以认识祢为至宝\n让这爱在我灵魂燃烧 得著祢 也被祢得著\n花尽一生来爱祢 花尽一生来爱祢\n愿我一生不知别的 但知基督并祂钉十架\n花尽一生来爱祢 花尽一生来爱祢\n我愿花尽一生来爱祢 花尽一生来爱祢",
   "englishLyrics": ""
  },
  {
