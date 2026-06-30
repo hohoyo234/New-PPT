@@ -2157,7 +2157,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "哈利路亞 祢實在奇妙\n哈利路亞 寶座上的羊羔\n哈利路亞 祢使憂傷啼哭變作歡喜\n哈利路亞 從海角到天邊\n哈利路亞 引導我來行\n哈利路亞 讚美榮耀祢名\n哈利路亞 祢使軟弱的心變作堅強\n哈利路亞 祢什麼攏知影\n哈利路亞 引導我來行\n哈利路亞 讚美榮耀祢名\n哈利路亞 祢使軟弱的心變作堅強\n哈利路亞 一生在祢手中\n尾段\n哈利路亞 祢使軟弱的心變作堅強\n哈利路亞 一生在祢手中",
   "lyricsSc": "哈利路亚 祢实在奇妙\n哈利路亚 宝座上的羊羔\n哈利路亚 祢使忧伤啼哭变作欢喜\n哈利路亚 从海角到天边\n哈利路亚 引导我来行\n哈利路亚 赞美荣耀祢名\n哈利路亚 祢使软弱的心变作坚强\n哈利路亚 祢什么拢知影\n哈利路亚 引导我来行\n哈利路亚 赞美荣耀祢名\n哈利路亚 祢使软弱的心变作坚强\n哈利路亚 一生在祢手中\n尾段\n哈利路亚 祢使软弱的心变作坚强\n哈利路亚 一生在祢手中",
-  "englishLyrics": ""
+  "englishLyrics": "Hallelujah, You are truly wonderful\nHallelujah, the Lamb upon the throne\nHallelujah, You turn grief and weeping into joy\nHallelujah, from the ends of the sea to the edge of the sky\nHallelujah, You lead me on my way\nHallelujah, praise and glory to Your name\nHallelujah, You turn the weak heart into strength\nHallelujah, You know all things\nHallelujah, You lead me on my way\nHallelujah, praise and glory to Your name\nHallelujah, You turn the weak heart into strength\nHallelujah, all my life is in Your hands\n(Ending)\nHallelujah, You turn the weak heart into strength\nHallelujah, all my life is in Your hands"
  },
  {
   "title": "耶穌愛我,我知影(台)",
@@ -2199,7 +2199,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "乎我聽見祢愛疼的聲 因為我倚靠祢\n乎我知通行的路 因為我心仰望祢\n我要奉獻感謝的祭 亦欲求告祢的名\n時常儆醒來祈禱 對祢表明我心聲\n我要對祢的聖所舉手懇求 祢有聽見我的聲\n願我祈禱那香排列祢面前 成作祢歡喜的祭",
   "lyricsSc": "乎我听见祢爱疼的声 因为我倚靠祢\n乎我知通行的路 因为我心仰望祢\n我要奉献感谢的祭 亦欲求告祢的名\n时常儆醒来祈祷 对祢表明我心声\n我要对祢的圣所举手恳求 祢有听见我的声\n愿我祈祷那香排列祢面前 成作祢欢喜的祭",
-  "englishLyrics": ""
+  "englishLyrics": "Let me hear Your loving voice, for I rely on You\nLet me know the way to walk, for my heart looks to You\nI will offer a sacrifice of thanksgiving, and call upon Your name\nAlways watchful in prayer, pouring out my heart to You\nI lift my hands toward Your sanctuary and plead, and You hear my voice\nMay my prayer be set like incense before You, the sacrifice that pleases You"
  },
  {
   "title": "祢的愛(台)",
@@ -2213,7 +2213,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "祢不變的愛 使我心內甘甜滿足\n祢奇妙的愛 我要一生稱謝\n從永遠到永遠 祢的慈愛永無改變\n我一生一世 仰望祢榮光無停\n祢完全的愛 使我甘心奉獻自己\n祢無限的愛 使我暗冥吟詩\n從永遠到永遠 祢的慈愛永無改變\n我一生一世 仰望祢榮光無停\n祢愛疼永無離",
   "lyricsSc": "祢不变的爱 使我心内甘甜满足\n祢奇妙的爱 我要一生称谢\n从永远到永远 祢的慈爱永无改变\n我一生一世 仰望祢荣光无停\n祢完全的爱 使我甘心奉献自己\n祢无限的爱 使我暗冥吟诗\n从永远到永远 祢的慈爱永无改变\n我一生一世 仰望祢荣光无停\n祢爱疼永无离",
-  "englishLyrics": ""
+  "englishLyrics": "Your unchanging love fills my heart with sweetness and satisfaction\nYour wondrous love, I will give thanks all my life\nFrom everlasting to everlasting, Your lovingkindness never changes\nAll my life I will gaze upon Your glory without ceasing\nYour perfect love makes me willing to offer myself\nYour boundless love makes me sing even in the darkest night\nFrom everlasting to everlasting, Your lovingkindness never changes\nAll my life I will gaze upon Your glory without ceasing\nYour love will never depart from me"
  },
  {
   "title": "主啊,誰人親像祢(台)",
@@ -2227,7 +2227,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "常常為我排設筵席 我的生命充滿祢的疼\n怎樣報答祢的恩典這大 千言萬語也講不息\n我是誰祢如此看顧 甘願貧窮使我富足\n我是什麼祢吶這呢疼我 除祢以外無別的渴慕\n主 我讚美祢 一生尊崇祢\n主啊 誰人親像祢\n主 我敬拜祢 滿心感謝祢\n願我一生服事祢",
   "lyricsSc": "常常为我排设筵席 我的生命充满祢的疼\n怎样报答祢的恩典这大 千言万语也讲不息\n我是谁祢如此看顾 甘愿贫穷使我富足\n我是什么祢呐这呢疼我 除祢以外无别的渴慕\n主 我赞美祢 一生尊崇祢\n主啊 谁人亲像祢\n主 我敬拜祢 满心感谢祢\n愿我一生服事祢",
-  "englishLyrics": ""
+  "englishLyrics": "Always You set a table before me, my life is filled with Your love\nHow can I repay Your grace so great, a thousand words could never tell it all\nWho am I that You so care for me, willingly poor to make me rich\nWhat am I that You love me so, besides You I have no other longing\nLord, I praise You, all my life I exalt You\nLord, who is there like You\nLord, I worship You, with all my heart I thank You\nMay I serve You all the days of my life"
  },
  {
   "title": "我欲等候耶和華(台)",
@@ -2241,7 +2241,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "我欲全心等候耶和華 也要注神仰望伊\n來到主施恩寶座前 倘得憐憫恩典夠我用\n我欲忍耐等候耶和華 親像顧暝等天光\n在暗時稱讚伊信實 在早時謳咾伊的慈愛\n只有伊是我的石磐 我的拯救 我的高臺\n在伊面前排列一切 我的幫助是從伊來",
   "lyricsSc": "我欲全心等候耶和华 也要注神仰望伊\n来到主施恩宝座前 倘得怜悯恩典够我用\n我欲忍耐等候耶和华 亲像顾暝等天光\n在暗时称赞伊信实 在早时讴咾伊的慈爱\n只有伊是我的石磐 我的拯救 我的高台\n在伊面前排列一切 我的帮助是从伊来",
-  "englishLyrics": ""
+  "englishLyrics": "I will wait for the LORD with all my heart, and fix my eyes upon Him\nComing before the throne of grace, that I may find mercy and grace to help\nI will patiently wait for the LORD, like a watchman waiting for the dawn\nIn the night I praise His faithfulness, in the morning I extol His lovingkindness\nHe alone is my rock, my salvation, my high stronghold\nBefore Him I lay out everything, my help comes from Him"
  },
  {
   "title": "詩篇二十三篇(台)",
@@ -2255,7 +2255,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "耶和華是我的牧者 我無欠缺一件\n伊互我倒佇青翠的草埔 導我佇安靜水邊\n伊互我的靈魂精英 引導我行義的路\n我雖然行過死蔭的山谷 也毋驚災害\n因為祢及我同在\n祢在我對敵面前為我排設筵席\n用油抹我的頭殼 使我的杯滿滿\n恩典慈悲的確隨我一世人\n我欲徛起佇耶和華的厝 直到永遠",
   "lyricsSc": "耶和华是我的牧者 我无欠缺一件\n伊互我倒伫青翠的草埔 导我伫安静水边\n伊互我的灵魂精英 引导我行义的路\n我虽然行过死荫的山谷 也毋惊灾害\n因为祢及我同在\n祢在我对敌面前为我排设筵席\n用油抹我的头壳 使我的杯满满\n恩典慈悲的确随我一世人\n我欲徛起伫耶和华的厝 直到永远",
-  "englishLyrics": ""
+  "englishLyrics": "The LORD is my shepherd, I shall not be in want\nHe makes me lie down in green pastures, He leads me beside quiet waters\nHe restores my soul, He guides me in the paths of righteousness\nThough I walk through the valley of the shadow of death, I will fear no evil\nFor You are with me\nYou prepare a table before me in the presence of my enemies\nYou anoint my head with oil, my cup overflows\nSurely goodness and mercy will follow me all the days of my life\nAnd I will dwell in the house of the LORD forever"
  },
  {
   "title": "祝(台)",
@@ -2269,7 +2269,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "願喜樂與盼望常常充滿你心\n無放離 就有盼望\n願主愛與平安時刻掌管你心\n隨祂腳步不偏離\n咱當跟隨得勝的主腳步\n得應允 釋放靈魂\n雖離開遠遠 咱心相連\n在主裡咱用愛來合一",
   "lyricsSc": "愿喜乐与盼望常常充满你心\n无放离 就有盼望\n愿主爱与平安时刻掌管你心\n随祂脚步不偏离\n咱当跟随得胜的主脚步\n得应允 释放灵魂\n虽离开远远 咱心相连\n在主里咱用爱来合一",
-  "englishLyrics": ""
+  "englishLyrics": "May joy and hope always fill your heart\nNever letting go, and there is hope\nMay the Lord's love and peace forever rule your heart\nFollowing His steps, never straying away\nLet us follow the steps of the victorious Lord\nReceiving His promise, our souls are set free\nThough far apart, our hearts are joined as one\nIn the Lord we are made one in love"
  },
  {
   "title": "我向祢呼求(粵)",
@@ -2283,7 +2283,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "只有主祢真正明白我 心裡深處苦惱和罪過\n羞愧吐露人前 但祢傾聽與垂憐\n祢用說話慰藉我心靈\n想到主祢一切榮耀作 竟也看顧不會忘掉我\n心裡渴望祢臉 像盼春雨潤稻田\n向祢我盡吐心聲\n主啊我默默渴求 來撫慰我內在感受\n當我眼睛模糊 願祢牽引導前行\n每步腳步靠著祢保守\n求主聽我默默渴求 來倚靠祢靜靜等候\n走到祢的壇前 是祢寬恕人的愛\n我願唱出榮耀讚頌祢\n尾段\n走到祢的壇前 是祢寬恕人的愛\n我願唱出榮耀讚頌祢\n我願唱出榮耀讚頌祢",
   "lyricsSc": "只有主祢真正明白我 心里深处苦恼和罪过\n羞愧吐露人前 但祢倾听与垂怜\n祢用说话慰藉我心灵\n想到主祢一切荣耀作 竟也看顾不会忘掉我\n心里渴望祢脸 像盼春雨润稻田\n向祢我尽吐心声\n主啊我默默渴求 来抚慰我内在感受\n当我眼睛模糊 愿祢牵引导前行\n每步脚步靠著祢保守\n求主听我默默渴求 来倚靠祢静静等候\n走到祢的坛前 是祢宽恕人的爱\n我愿唱出荣耀赞颂祢\n尾段\n走到祢的坛前 是祢宽恕人的爱\n我愿唱出荣耀赞颂祢\n我愿唱出荣耀赞颂祢",
-  "englishLyrics": ""
+  "englishLyrics": "Only You, Lord, truly understand me, the trouble and sin deep within my heart\nAshamed to speak before others, but You listen and show mercy\nYou comfort my soul with Your word\nThinking of all Your glorious works, yet You care for and never forget me\nMy heart longs for Your face, like longing for spring rain upon the fields\nTo You I pour out all of my heart\nLord, silently I long for You to soothe what I feel within\nWhen my eyes grow dim, may You lead me onward\nEvery step of mine kept safe by You\nLord, hear my silent longing; leaning on You, I quietly wait\nComing before Your altar, it is Your forgiving love\nI will sing out glory and praise to You\n(Ending)\nComing before Your altar, it is Your forgiving love\nI will sing out glory and praise to You\nI will sing out glory and praise to You"
  },
  {
   "title": "父啊,我向祢呼求",
