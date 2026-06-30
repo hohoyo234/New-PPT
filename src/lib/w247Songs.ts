@@ -1443,7 +1443,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "讓我屈膝 盡我一生 將我心單單歸向主\n俗世所想全屬虛幻 唯獨祢愛方永久\n樂意甘心 為祢傾出 夢與今生的理想\n求你洗清我的過犯 求祢潔淨我心\n崇敬與稱讚都歸祢 祢是道路 真理 生命\n容我再一次將心歸於祢 令我再次更新蛻變\n萬有的主 為了蒼生 祢竟甘心犧牲\n寧願捨身來換我救贖 無盡愛意為祢傾",
   "lyricsSc": "让我屈膝 尽我一生 将我心单单归向主\n俗世所想全属虚幻 唯独祢爱方永久\n乐意甘心 为祢倾出 梦与今生的理想\n求你洗清我的过犯 求祢洁净我心\n崇敬与称赞都归祢 祢是道路 真理 生命\n容我再一次将心归于祢 令我再次更新蜕变\n万有的主 为了苍生 祢竟甘心牺牲\n宁愿舍身来换我救赎 无尽爱意为祢倾",
-  "englishLyrics": ""
+  "englishLyrics": "Let me kneel down, all my life, giving my heart to the Lord alone\nAll the world desires is but illusion, only Your love endures forever\nGladly and willingly I pour out for You my dreams and the ideals of this life\nCleanse me from all my transgressions, purify my heart\nHonor and praise belong to You, You are the way, the truth, the life\nLet me once again give my heart to You, renew and transform me again\nLord of all, for the sake of mankind, You willingly sacrificed Yourself\nWillingly laying down Your life for my redemption, endless love I pour out for You"
  },
  {
   "title": "讓我作活祭(粵)",
@@ -1457,7 +1457,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "願能夠可以深知祢 願能夠照著祢旨意\n踏十架路不管走多遠 按照祢心意而行\n願能夠一生高舉祢 願能夠讚頌祢恩典\n就像香膏甘心的擺上 合祢的心意\n盼萬人得見神善美 盼萬人聽到神聲音\n盼萬人也得嚐主恩惠 讓我作活祭\n願能夠走近祢面前 願能夠貼近袮心意\n盼祢光輝可彰顯於我 願祢的國降臨",
   "lyricsSc": "愿能够可以深知祢 愿能够照著祢旨意\n踏十架路不管走多远 按照祢心意而行\n愿能够一生高举祢 愿能够赞颂祢恩典\n就像香膏甘心的摆上 合祢的心意\n盼万人得见神善美 盼万人听到神声音\n盼万人也得尝主恩惠 让我作活祭\n愿能够走近祢面前 愿能够贴近袮心意\n盼祢光辉可彰显于我 愿祢的国降临",
-  "englishLyrics": ""
+  "englishLyrics": "May I come to know You deeply, may I live according to Your will\nWalking the road of the cross however far, going according to Your heart\nMay I lift You high all my life, may I praise Your grace\nLike fragrant oil willingly poured out, pleasing to Your heart\nMay all people see God's goodness, may all people hear God's voice\nMay all people taste the Lord's grace, let me be a living sacrifice\nMay I draw near before You, may I draw close to Your heart\nMay Your radiance be shown through me, may Your kingdom come"
  },
  {
   "title": "陪我走過春夏秋冬(粵)",
@@ -1471,7 +1471,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "歷經風浪人生中 更清楚祢在保守\n在過去和永遠 仍是信靠祢恩手\n度過歲月成長中 更加深切慕恩主\n是祢慰藉憐憫我 主耶穌\n祢說始終會伴我秋冬春與夏\n疼我 保守我 引導一生\n信靠恩主那懼怕經多少變幻\n信靠主我神 永遠被懷抱\n祢永不捨棄我 永遠與我一起\n深宵清早祢亦陪我過\n過去今天如何 有祢恩典加多\n這一切也靠著神跨過",
   "lyricsSc": "历经风浪人生中 更清楚祢在保守\n在过去和永远 仍是信靠祢恩手\n度过岁月成长中 更加深切慕恩主\n是祢慰藉怜悯我 主耶稣\n祢说始终会伴我秋冬春与夏\n疼我 保守我 引导一生\n信靠恩主那惧怕经多少变幻\n信靠主我神 永远被怀抱\n祢永不舍弃我 永远与我一起\n深宵清早祢亦陪我过\n过去今天如何 有祢恩典加多\n这一切也靠著神跨过",
-  "englishLyrics": ""
+  "englishLyrics": "Through the storms of life, I see more clearly that You keep me\nIn the past and forevermore, still I trust in Your gracious hand\nGrowing through the passing years, I long ever more for the gracious Lord\nIt is You who comfort and have mercy on me, Lord Jesus\nYou said You'll always walk with me through autumn, winter, spring and summer\nLoving me, keeping me, guiding me all my life\nTrusting the gracious Lord, why fear however much may change\nTrusting the Lord my God, forever held within His arms\nYou will never forsake me, forever You are with me\nLate at night, early in the morning, You walk it through with me\nWhatever the past or today may be, Your grace abounds all the more\nThrough all of this, by God I make it through"
  },
  {
   "title": "讚頌祢聖名(粵)",
@@ -1485,7 +1485,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "王啊 我的主 今我頌讚祢聖名\n同來熱烈讚頌祢尊榮\n各地敬拜唱歌 全地讚美拍掌\n祢是全能誠然受讚頌\n王啊 我的主 今我頌讚祢聖名\n同來熱烈讚頌祢尊榮\n各地敬拜唱歌 全地讚美拍掌\n祢是全能原是配頌揚\n傳揚上主恩到萬世萬代 主信實歷代沒變改\n宣講主權能至高威榮 全地讚美永不斷\n傳揚上主恩到萬世萬代 主信實作為是偉大\n宣講主權能至高威榮 全地讚頌祢聖名",
   "lyricsSc": "王啊 我的主 今我颂赞祢圣名\n同来热烈赞颂祢尊荣\n各地敬拜唱歌 全地赞美拍掌\n祢是全能诚然受赞颂\n王啊 我的主 今我颂赞祢圣名\n同来热烈赞颂祢尊荣\n各地敬拜唱歌 全地赞美拍掌\n祢是全能原是配颂扬\n传扬上主恩到万世万代 主信实历代没变改\n宣讲主权能至高威荣 全地赞美永不断\n传扬上主恩到万世万代 主信实作为是伟大\n宣讲主权能至高威荣 全地赞颂祢圣名",
-  "englishLyrics": ""
+  "englishLyrics": "O King, my Lord, today I praise Your holy name\nCome together to fervently praise Your majesty\nEverywhere worship and sing, all the earth praise and clap\nYou are almighty, truly worthy of all praise\nO King, my Lord, today I praise Your holy name\nCome together to fervently praise Your majesty\nEverywhere worship and sing, all the earth praise and clap\nYou are almighty, truly worthy to be exalted\nProclaim the Lord's grace to every generation, His faithfulness never changes through the ages\nDeclare the Lord's power and highest majesty, all the earth praise without ceasing\nProclaim the Lord's grace to every generation, His faithful deeds are great\nDeclare the Lord's power and highest majesty, all the earth praise Your holy name"
  },
  {
   "title": "你們要讚美耶和華",
@@ -1667,7 +1667,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "我以喜樂的心來面對我的環境\n我以平安的心來應對我的處境\n因為凡事都有神的美意 我要讚美堅持到底\n我以盼望的心來面對我的失望\n我以積極的心來戰勝我的沮喪\n因為凡事都有神的美意 我要感恩稱謝到底",
   "lyricsSc": "我以喜乐的心来面对我的环境\n我以平安的心来应对我的处境\n因为凡事都有神的美意 我要赞美坚持到底\n我以盼望的心来面对我的失望\n我以积极的心来战胜我的沮丧\n因为凡事都有神的美意 我要感恩称谢到底",
-  "englishLyrics": ""
+  "englishLyrics": "With a joyful heart I face my circumstances\nWith a peaceful heart I meet my situation\nFor in all things God has a good purpose, I will praise and persevere to the end\nWith a hopeful heart I face my disappointment\nWith a positive heart I overcome my discouragement\nFor in all things God has a good purpose, I will give thanks to the very end"
  },
  {
   "title": "祢比這一切更美麗(粵)",
@@ -1681,7 +1681,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "何耀眼 多璀璨 新天地多美\n前事痛苦悲哀已不再\n印在祢掌心傷創 永遠的記號\n神為愛捨命 誰亦記念\n榮耀國 生命河 水晶似明亮\n全地各方的聖徒俯拜\n雪白潔衣讚頌神 祢聖哉偉大\n神成就救贖 誰亦記念\n不斷憶記 被殺的羔羊多美\n不斷憶記 奇妙的寶血能力\n尊貴至高主 祢比起這一切\n原是更崇高更 美\n無窮無盡那宇宙浩瀚美景\n普天榮耀與祢並沒辦法比\n只想以一生一世來認識祢",
   "lyricsSc": "何耀眼 多璀璨 新天地多美\n前事痛苦悲哀已不再\n印在祢掌心伤创 永远的记号\n神为爱舍命 谁亦记念\n荣耀国 生命河 水晶似明亮\n全地各方的圣徒俯拜\n雪白洁衣赞颂神 祢圣哉伟大\n神成就救赎 谁亦记念\n不断忆记 被杀的羔羊多美\n不断忆记 奇妙的宝血能力\n尊贵至高主 祢比起这一切\n原是更崇高更 美\n无穷无尽那宇宙浩瀚美景\n普天荣耀与祢并没办法比\n只想以一生一世来认识祢",
-  "englishLyrics": ""
+  "englishLyrics": "How dazzling, how radiant, how beautiful the new heaven and earth\nThe pain and sorrow of the past are no more\nThe wounds printed on Your palms, an eternal mark\nGod gave His life for love, who could ever forget\nThe kingdom of glory, the river of life, bright as crystal\nSaints from every corner of the earth bow down\nIn snow-white robes they praise God, holy and great are You\nGod accomplished our redemption, who could ever forget\nRemembering ever, how beautiful is the slain Lamb\nRemembering ever, the wondrous power of the precious blood\nHonored, Most High Lord, more than all of this\nYou are higher still, and more beautiful\nThe endless, vast and glorious vistas of the universe\nAll the glory of heaven cannot compare with You\nI only want to know You all the days of my life"
  },
  {
   "title": "看哪,田裡莊稼成熟了",
@@ -2129,7 +2129,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "我的神 我的王 我要尊崇祢的名\n我要永永遠遠稱讚祢\n我要每日吟詩 我要永遠讚美\n祢是至大 堪受大讚美\n萬世萬代都要讚美祢 要報揚祢權能作為\n傳報祢威嚴和尊貴 永遠稱謝祢名無離",
   "lyricsSc": "我的神 我的王 我要尊崇祢的名\n我要永永远远称赞祢\n我要每日吟诗 我要永远赞美\n祢是至大 堪受大赞美\n万世万代都要赞美祢 要报扬祢权能作为\n传报祢威严和尊贵 永远称谢祢名无离",
-  "englishLyrics": ""
+  "englishLyrics": "My God, my King, I will exalt Your name\nI will praise You forever and ever\nEvery day I will sing, forever I will praise\nYou are most great, worthy of great praise\nAll generations will praise You, proclaim Your mighty deeds\nDeclare Your majesty and honor, forever thank Your name without end"
  },
  {
   "title": "稱頌祢聖名(台)",
@@ -2143,7 +2143,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "稱頌祢聖名 稱頌祢聖名\n因為祢名這奇妙 堪得阮來讚美\n稱頌祢聖名 稱頌祢聖名\n因為祢名這奇妙 堪得至大讚美\n跨過時代空間 祢是起頭到永遠\n祢是自然而然 祢名是耶和華\n稱頌祢聖名 稱頌祢聖名\n因為祢名這奇妙 堪得至大讚美",
   "lyricsSc": "称颂祢圣名 称颂祢圣名\n因为祢名这奇妙 堪得阮来赞美\n称颂祢圣名 称颂祢圣名\n因为祢名这奇妙 堪得至大赞美\n跨过时代空间 祢是起头到永远\n祢是自然而然 祢名是耶和华\n称颂祢圣名 称颂祢圣名\n因为祢名这奇妙 堪得至大赞美",
-  "englishLyrics": ""
+  "englishLyrics": "Bless Your holy name, bless Your holy name\nFor Your name is so wonderful, worthy of our praise\nBless Your holy name, bless Your holy name\nFor Your name is so wonderful, worthy of the greatest praise\nAcross all ages and all space, You are the beginning to forever\nYou are the self-existent One, Your name is Jehovah\nBless Your holy name, bless Your holy name\nFor Your name is so wonderful, worthy of the greatest praise"
  },
  {
   "title": "哈利路亞,祢實在奇妙(台)",
