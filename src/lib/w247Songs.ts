@@ -1331,7 +1331,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "榮耀歸於萬國救主 全地讚美萬世君王\n唯獨祢國度到永久 敬拜歸於祢\n萬膝皆俯拜 萬口皆宣告 耶穌基督是救主\n萬膝皆俯拜 萬口皆宣告 耶穌基督祢是王\n來吧 敬拜頌讚我主 來吧敬拜萬世君王\n全地讚美直到永久 敬拜歸於祢\n哈利路亞 哈利路亞 耶穌基督是救主\n哈利路亞 哈利路亞 耶穌基督祢是王\n耶穌基督祢是王 耶穌基督 唯祢是王",
   "lyricsSc": "荣耀归于万国救主 全地赞美万世君王\n唯独祢国度到永久 敬拜归于祢\n万膝皆俯拜 万口皆宣告 耶稣基督是救主\n万膝皆俯拜 万口皆宣告 耶稣基督祢是王\n来吧 敬拜颂赞我主 来吧敬拜万世君王\n全地赞美直到永久 敬拜归于祢\n哈利路亚 哈利路亚 耶稣基督是救主\n哈利路亚 哈利路亚 耶稣基督祢是王\n耶稣基督祢是王 耶稣基督 唯祢是王",
-  "englishLyrics": ""
+  "englishLyrics": "Glory to the Savior of all nations, all the earth praise the eternal King\nYours alone is the kingdom forever, worship belongs to You\nEvery knee bows down, every mouth declares: Jesus Christ is Savior\nEvery knee bows down, every mouth declares: Jesus Christ, You are King\nCome, worship and praise my Lord, come worship the eternal King\nAll the earth praise forevermore, worship belongs to You\nHallelujah, hallelujah, Jesus Christ is Savior\nHallelujah, hallelujah, Jesus Christ, You are King\nJesus Christ, You are King, Jesus Christ, You alone are King"
  },
  {
   "title": "盡力地頌揚祢(粵)",
@@ -1345,7 +1345,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "盡力地頌揚祢 要讚美高舉祢\n一心一意 沒有退避\n熱烈地頌揚祢 要永遠高舉祢\n萬物也讚頌榮耀祢\n要鼓瑟吹角 讚美呼應\n嘹亮地彈奏 大聲歌唱\n要擊鼓起舞 拍掌歡呼\n齊來同頌凱歌 高聲呼喊\n高歌哈利路亞 歡呼哈利路亞\n基督得勝 現已作王\n大地亦頌揚祢 祢永掌管一切\n凡投靠祢定無懼怕",
   "lyricsSc": "尽力地颂扬祢 要赞美高举祢\n一心一意 没有退避\n热烈地颂扬祢 要永远高举祢\n万物也赞颂荣耀祢\n要鼓瑟吹角 赞美呼应\n嘹亮地弹奏 大声歌唱\n要击鼓起舞 拍掌欢呼\n齐来同颂凯歌 高声呼喊\n高歌哈利路亚 欢呼哈利路亚\n基督得胜 现已作王\n大地亦颂扬祢 祢永掌管一切\n凡投靠祢定无惧怕",
-  "englishLyrics": ""
+  "englishLyrics": "With all my strength I extol You, I will praise and lift You high\nWith heart and soul, never drawing back\nFervently I extol You, I will lift You high forever\nAll creation praises and glorifies You\nStrike the harp, sound the trumpet, praise answering praise\nPlay out loud and clear, sing aloud\nBeat the drum and dance, clap your hands and shout for joy\nTogether sing the song of triumph, shout aloud\nSing out hallelujah, shout for joy hallelujah\nChrist has triumphed, now He reigns as King\nThe whole earth extols You, You reign over all forever\nAll who take refuge in You will never fear"
  },
  {
   "title": "神的羔羊(粵)",
@@ -1359,7 +1359,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "紅日漸暗 明月暗昏 全地眾天震動\n誰懸十架 流淚血洒 承受痛苦責罵\n上帝愛子在各各他 無罪卻遭受責打\n如羊被殺 為我血洒 寧願掛身於苦架\n上帝愛子在各各他 嚐盡了譏諷 鞭打\n上主施愛 擦乾我淚 甘心捨命於苦架",
   "lyricsSc": "红日渐暗 明月暗昏 全地众天震动\n谁悬十架 流泪血洒 承受痛苦责骂\n上帝爱子在各各他 无罪却遭受责打\n如羊被杀 为我血洒 宁愿挂身于苦架\n上帝爱子在各各他 尝尽了讥讽 鞭打\n上主施爱 擦干我泪 甘心舍命于苦架",
-  "englishLyrics": ""
+  "englishLyrics": "The red sun grows dark, the moon dims, all earth and heaven shake\nWho hangs on the cross, shedding tears and blood, bearing pain and scorn\nGod's beloved Son at Golgotha, sinless yet beaten and struck\nSlain like a lamb, His blood shed for me, willingly hung upon the cross\nGod's beloved Son at Golgotha, tasting all the mockery and scourging\nThe Lord pours out His love, wipes my tears, willingly gives His life on the cross"
  },
  {
   "title": "如若(粵)",
@@ -1373,7 +1373,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "人\n如若我的出現 仿似消失空中的晚星\n何為我常在渴望永久\n如若我的出現 仿似不知怎麼的湊巧\n何為我又極渴想愛\n誰來靜聽我心中禱告 明白我心內常吶喊\n誰能為我來解開心結 尋覓到真實愛不朽\n耶穌\n如若你的出現 不過消失空中的晚星\n何為我曾為你受痛苦\n如若你的出現 仿似不知怎麼的湊巧\n何為我願為你犧牲\n你可認識我 向我禱告 常為你思念期待你\n你可願跟隨 將心歸我 無盡愛一直永不改\n合\n誰來靜聽我 (願傾聽我)\n心中禱告 (向我禱告)\n明白我心內常吶喊 (承然擔苦痛)\n誰能為我來 (內心渴求)\n解開心結 (真心禱告)\n尋覓到真實愛不朽 (愛永不改變)\n人\n如若我的出現 不似一顆消失的晚星…",
   "lyricsSc": "人\n如若我的出现 仿似消失空中的晚星\n何为我常在渴望永久\n如若我的出现 仿似不知怎么的凑巧\n何为我又极渴想爱\n谁来静听我心中祷告 明白我心内常呐喊\n谁能为我来解开心结 寻觅到真实爱不朽\n耶稣\n如若你的出现 不过消失空中的晚星\n何为我曾为你受痛苦\n如若你的出现 仿似不知怎么的凑巧\n何为我愿为你牺牲\n你可认识我 向我祷告 常为你思念期待你\n你可愿跟随 将心归我 无尽爱一直永不改\n合\n谁来静听我 (愿倾听我)\n心中祷告 (向我祷告)\n明白我心内常呐喊 (承然担苦痛)\n谁能为我来 (内心渴求)\n解开心结 (真心祷告)\n寻觅到真实爱不朽 (爱永不改变)\n人\n如若我的出现 不似一颗消失的晚星…",
-  "englishLyrics": ""
+  "englishLyrics": "(Person)\nIf my appearing were like an evening star fading in the sky\nWhy then do I always long for the eternal\nIf my appearing were just some unknowing coincidence\nWhy then do I so deeply crave to love\nWho will quietly hear the prayer in my heart, and understand the cry within me\nWho can untie the knots in my heart, that I may find true and undying love\n(Jesus)\nIf your appearing were but an evening star fading in the sky\nWhy then did I suffer pain for you\nIf your appearing were just some unknowing coincidence\nWhy then was I willing to sacrifice for you\nWill you know Me, pray to Me — I always think of you and wait for you\nWill you follow, give your heart to Me — My endless love never changes\n(Together)\nWho will quietly hear me (I will listen to you)\nThe prayer in my heart (pray to Me)\nUnderstand the cry within me (I willingly bear the pain)\nWho can come for me (the longing within)\nUntie the knots in my heart (pray with a sincere heart)\nTo find true and undying love (a love that never changes)\n(Person)\nIf my appearing were not like a fading evening star…"
  },
  {
   "title": "You Are My Favorite (粵)",
@@ -1387,7 +1387,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "天父\n你生命 並沒偶然\n看這世界你像是渺小 然而在我 你就是至寶\n我所造 默默顧念\n我愛細聽你話語聲 遙遙若遠 卻盡在耳邊\nYou are My favorite, 不可替代的你\n從來沒有 只得一個 多麼珍貴的你\nYou are My favorite, 不可替代的你\n來承受永生的福氣 捨身的愛給你\n人\n我生命 並沒偶然\n看這世界我像是渺小 然而在祢 我就是至寶\n祢所造 默默顧念\n祢愛細聽我話語聲 遙遙若遠 卻盡在耳邊\nYou are My favorite, 不可替代的祢\n從來沒有 只得一個 多麼珍貴的祢\nYou are My favorite, 不可替代的祢\n來承受永生的福氣 捨身的愛因有祢",
   "lyricsSc": "天父\n你生命 并没偶然\n看这世界你像是渺小 然而在我 你就是至宝\n我所造 默默顾念\n我爱细听你话语声 遥遥若远 却尽在耳边\nYou are My favorite, 不可替代的你\n从来没有 只得一个 多么珍贵的你\nYou are My favorite, 不可替代的你\n来承受永生的福气 舍身的爱给你\n人\n我生命 并没偶然\n看这世界我像是渺小 然而在祢 我就是至宝\n祢所造 默默顾念\n祢爱细听我话语声 遥遥若远 却尽在耳边\nYou are My favorite, 不可替代的祢\n从来没有 只得一个 多么珍贵的祢\nYou are My favorite, 不可替代的祢\n来承受永生的福气 舍身的爱因有祢",
-  "englishLyrics": ""
+  "englishLyrics": "(Father)\nYour life is no accident\nTo this world you seem so small, yet to Me you are a treasure\nMy creation, I quietly watch over you\nI love to listen to your voice, though far away, yet right beside My ear\nYou are My favorite, irreplaceable you\nThere has never been another, only one, how precious you are\nYou are My favorite, irreplaceable you\nCome receive the blessing of eternal life, My self-giving love for you\n(Person)\nMy life is no accident\nTo this world I seem so small, yet to You I am a treasure\nYour creation, You quietly watch over me\nYou love to listen to my voice, though far away, yet right beside Your ear\nYou are my favorite, irreplaceable You\nThere has never been another, only one, how precious You are\nYou are my favorite, irreplaceable You\nCome receive the blessing of eternal life, self-giving love because of You"
  },
  {
   "title": "全地在歌唱(粵)",
@@ -1401,7 +1401,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "凝看星星隨著晚空 閃閃爍爍和平讚頌\n來讚美滿天星宿 乃父神奇妙創造\n人是什麼 竟得厚愛也在同唱和\n同見證世間一切 乃父神榮耀之作\n神 祢掌管萬有 今所有在全地也歌唱\n全地皆主所創造 互去彰顯神是美\n神 祢主宰萬世 今一切在各方同唱和\n神 在祢盡是佳美 同和唱全地永屬祢",
   "lyricsSc": "凝看星星随著晚空 闪闪烁烁和平赞颂\n来赞美满天星宿 乃父神奇妙创造\n人是什么 竟得厚爱也在同唱和\n同见证世间一切 乃父神荣耀之作\n神 祢掌管万有 今所有在全地也歌唱\n全地皆主所创造 互去彰显神是美\n神 祢主宰万世 今一切在各方同唱和\n神 在祢尽是佳美 同和唱全地永属祢",
-  "englishLyrics": ""
+  "englishLyrics": "Gazing at the stars across the evening sky, twinkling in peaceful praise\nCome praise the stars that fill the sky, the Father's wondrous creation\nWhat is man, that he is so loved and joins in the song\nTogether we witness all in the world, the work of the Father's glory\nGod, You rule over all, now everything on earth is singing\nAll the earth is created by the Lord, together revealing how beautiful God is\nGod, You reign over every age, now all things everywhere sing as one\nGod, in You all is good and beautiful, all the earth sings, forever Yours"
  },
  {
   "title": "造物的主(粵)",
@@ -1415,7 +1415,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "造物的主 眷顧施恩\n同行牧養 讓我安躺溪水邊\n願為了祢 獻我一生\n活著動作 呼吸一切為祢\n容我眼睛望見主祢的佳美\n容讓雙耳得聽到父祢聲音\n容我的心為祢張開飽經祢慈愛\n唯願祢能力 藉祢聖靈臨在我",
   "lyricsSc": "造物的主 眷顾施恩\n同行牧养 让我安躺溪水边\n愿为了祢 献我一生\n活著动作 呼吸一切为祢\n容我眼睛望见主祢的佳美\n容让双耳得听到父祢声音\n容我的心为祢张开饱经祢慈爱\n唯愿祢能力 藉祢圣灵临在我",
-  "englishLyrics": ""
+  "englishLyrics": "Creator Lord, You watch over me and give Your grace\nWalking with me, shepherding me, You let me rest beside still waters\nI will give my whole life for You\nMy living, my every move and breath, all of it for You\nLet my eyes behold Your beauty, Lord\nLet my ears hear Your voice, Father\nLet my heart open to You, filled to the full with Your love\nI only long for Your power, by Your Spirit to dwell in me"
  },
  {
   "title": "來充滿我(粵)",
@@ -1429,7 +1429,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "充滿我心 哦主聖靈\n掌管我的心為祢居所\n更新我心 哦主聖靈\n如今的已不再是我\n而是永活主在我心中\n主的榮光 驅散黑暗\n喜樂平安 替代悲傷\n恩典憐憫 驅走悲怨\n靠著耶穌 今可得勝\n求主充滿",
   "lyricsSc": "充满我心 哦主圣灵\n掌管我的心为祢居所\n更新我心 哦主圣灵\n如今的已不再是我\n而是永活主在我心中\n主的荣光 驱散黑暗\n喜乐平安 替代悲伤\n恩典怜悯 驱走悲怨\n靠著耶稣 今可得胜\n求主充满",
-  "englishLyrics": ""
+  "englishLyrics": "Fill my heart, O Holy Spirit\nRule over my heart as Your dwelling place\nRenew my heart, O Holy Spirit\nNow it is no longer I who live\nBut the living Lord within my heart\nThe Lord's glory drives out the darkness\nJoy and peace replace the sorrow\nGrace and mercy drive away the grief\nThrough Jesus, now I can overcome\nLord, come and fill me"
  },
  {
   "title": "再次將我更新(粵)",
