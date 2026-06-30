@@ -1,0 +1,7 @@
+node_modules
+dist
+*.local
+.DS_Store
+
+# excluded from push: needs `workflow` OAuth scope
+.github/workflows/
