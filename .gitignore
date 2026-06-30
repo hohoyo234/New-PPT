@@ -5,3 +5,6 @@ dist
 
 # excluded from push: needs `workflow` OAuth scope
 .github/workflows/
+
+# Oversized AI PNGs excluded (exceed this network's push size cap; backgrounds load via glob so dropping 3 is harmless)
+src/assets/backgrounds/Gemini_Generated_Image_*.png
