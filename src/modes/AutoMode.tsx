@@ -21,6 +21,13 @@ interface AutoSong {
   englishLyrics: string;
   bg: BgOption;
   matched: boolean;
+  // Per-song style overrides (editable from the preview modal). Undefined = use
+  // the AUTO_SETTINGS default.
+  lyricColor?: string;
+  translationColor?: string;
+  lyricFontSize?: number;
+  translationFontSize?: number;
+  linesPerSlide?: number;
 }
 
 const AUTO_SETTINGS: Omit<DeckSettings, 'selectedBg' | 'showSongTitle' | 'unifyBackground' | 'slideSize'> = {
@@ -151,6 +158,10 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
       const songInputs: SongInput[] = valid.map((s) => ({
         id: s.id, title: s.title, englishTitle: s.englishTitle,
         lyrics: s.lyrics, englishLyrics: s.englishLyrics, customBg: s.bg,
+        // Per-song style overrides flow straight through to the .pptx generator.
+        lyricColor: s.lyricColor, translationColor: s.translationColor,
+        lyricFontSize: s.lyricFontSize, translationFontSize: s.translationFontSize,
+        linesPerSlide: s.linesPerSlide,
       }));
       const res = merge
         ? await exportMerged(songInputs, settings, deckName)
@@ -342,16 +353,22 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
 }) {
   const [bgOpen, setBgOpen] = useState(false);
   const [zoomIdx, setZoomIdx] = useState<number | null>(null);
+  // Effective per-song style: override (set from the modal) or the auto default.
+  const lc = song.lyricColor || AUTO_SETTINGS.lyricColor;
+  const tc = song.translationColor || AUTO_SETTINGS.translationColor;
+  const lfs = song.lyricFontSize || AUTO_SETTINGS.lyricFontSize;
+  const tfs = song.translationFontSize || AUTO_SETTINGS.translationFontSize;
+  const lps = song.linesPerSlide || AUTO_SETTINGS.linesPerSlide;
   const preview = useMemo(() => {
     const exp = expandSongSections(song.lyrics || '', song.englishLyrics || '');
-    const pages = paginateLyrics(exp.lyrics, exp.english, 2);
-    const pc = resolveSlideColors(song.bg, '#FFFFFF', '#A7F3D0');
+    const pages = paginateLyrics(exp.lyrics, exp.english, lps);
+    const pc = resolveSlideColors(song.bg, lc, tc);
     const slides: { type: 'cover' | 'lyric'; title?: string; sub?: string; lines?: { cn: string; en: string }[] }[] = [
       { type: 'cover', title: song.title, sub: song.englishTitle },
     ];
     pages.forEach((lines) => slides.push({ type: 'lyric', lines }));
     return { slides, pc, count: pages.length };
-  }, [song.lyrics, song.englishLyrics, song.bg, song.title, song.englishTitle]);
+  }, [song.lyrics, song.englishLyrics, song.bg, song.title, song.englishTitle, lc, tc, lps]);
   const slideCount = preview.count;
   // Preview font size in container-query units, mirroring the .pptx scaling.
   const cqw = (pt: number) => `${(pt / 7.2).toFixed(2)}cqw`;
@@ -419,8 +436,8 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
                 ) : (
                   (sl.lines || []).map((ln, j) => (
                     <div key={j}>
-                      {ln.cn && <p className="font-serif font-black leading-snug" style={{ fontSize: cqw(48), color: preview.pc.lc, textShadow: shadow }}>{ln.cn}</p>}
-                      {ln.en && <p className="italic leading-snug" style={{ fontSize: cqw(24), color: preview.pc.tc, textShadow: shadow }}>{ln.en}</p>}
+                      {ln.cn && <p className="font-serif font-black leading-snug" style={{ fontSize: cqw(lfs), color: preview.pc.lc, textShadow: shadow }}>{ln.cn}</p>}
+                      {ln.en && <p className="italic leading-snug" style={{ fontSize: cqw(tfs), color: preview.pc.tc, textShadow: shadow }}>{ln.en}</p>}
                     </div>
                   ))
                 )}
@@ -440,12 +457,16 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
           start={zoomIdx}
           lyric={song.lyrics}
           english={song.englishLyrics}
-          lyricFontSize={48}
-          translationFontSize={24}
+          lyricFontSize={lfs}
+          translationFontSize={tfs}
           shadow={shadow}
           onLyric={(v) => onPatch(song.id, { lyrics: v })}
           onEnglish={(v) => onPatch(song.id, { englishLyrics: v })}
           onClose={() => setZoomIdx(null)}
+          style={{ lyricColor: lc, translationColor: tc, lyricFontSize: lfs, translationFontSize: tfs, linesPerSlide: lps }}
+          onStyle={(patch) => onPatch(song.id, patch)}
+          bgOptions={BACKGROUND_OPTIONS}
+          onBg={(b) => onPickPreset(song.id, b)}
         />
       )}
     </div>
