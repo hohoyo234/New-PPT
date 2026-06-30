@@ -3165,7 +3165,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "哈利路 哈利路 主我神作王了\n哈利路 願天歡喜願地快樂\n哈利路 哈利路 主我神作王了\n哈利路 將讚美榮耀歸給祂\n救恩 榮耀 權能屬於神\n祂判斷真實公義\n歡喜穿著光明潔白衣\n來赴羔羊的筵席\n看哪 神的帳幕在人間\n祂要與我們同住\n勞苦 嘆息都成為過去\n主將一切都更新\n哈利路 哈利路 主我神作王了\n哈利路 永遠的福樂已來到",
   "lyricsSc": "哈利路 哈利路 主我神作王了\n哈利路 愿天欢喜愿地快乐\n哈利路 哈利路 主我神作王了\n哈利路 将赞美荣耀归给祂\n救恩 荣耀 权能属于神\n祂判断真实公义\n欢喜穿著光明洁白衣\n来赴羔羊的筵席\n看哪 神的帐幕在人间\n祂要与我们同住\n劳苦 叹息都成为过去\n主将一切都更新\n哈利路 哈利路 主我神作王了\n哈利路 永远的福乐已来到",
-  "englishLyrics": ""
+  "englishLyrics": "Hallelu, hallelu, the Lord our God reigns\nHallelu, let the heavens be glad, let the earth rejoice\nHallelu, hallelu, the Lord our God reigns\nHallelu, give praise and glory to Him\nSalvation, glory and power belong to God\nHis judgments are true and righteous\nJoyfully clothed in robes bright and clean and white\nCome to the marriage supper of the Lamb\nBehold, the dwelling of God is with man\nHe Himself will dwell with us\nToil and sighing have now passed away\nThe Lord makes all things new\nHallelu, hallelu, the Lord our God reigns\nHallelu, the eternal joy has come"
  },
  {
   "title": "盟約",
@@ -3193,7 +3193,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "祢不變的愛 使我心中甜蜜滿足\n祢奇妙的愛 使我夜間歌唱\n從永遠到永遠祢的慈愛永不改變\n我一生一世要仰望祢的慈顏\n祢完全的愛 使我甘心奉獻自己\n祢無邊的愛 我要一生頌揚",
   "lyricsSc": "祢不变的爱 使我心中甜蜜满足\n祢奇妙的爱 使我夜间歌唱\n从永远到永远祢的慈爱永不改变\n我一生一世要仰望祢的慈颜\n祢完全的爱 使我甘心奉献自己\n祢无边的爱 我要一生颂扬",
-  "englishLyrics": ""
+  "englishLyrics": "Your unchanging love fills my heart with sweetness and satisfaction\nYour wondrous love makes me sing in the night\nFrom everlasting to everlasting, Your lovingkindness never changes\nAll my life I will gaze upon Your gracious face\nYour perfect love makes me willing to offer myself\nYour boundless love, I will praise all my life"
  },
  {
   "title": "祢是我神",
@@ -3221,7 +3221,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "是誰從遠處看見認識我\n是誰千萬人中題名召我\n是誰為尋找我降生塵世\n是祢 主耶穌 唯有祢\n是誰從灰塵中抬舉了我\n是誰捨棄尊榮洗我的腳\n是誰為代替我甘心捨命\n是祢 主耶穌 唯有祢\n是祢 主耶穌 唯有祢\n是祢 主耶穌 唯有祢\n唯有祢 為代替我甘心捨命\n是祢 主耶穌 唯有祢\n是誰擔當全人類的刑罰\n是誰洗淨全人類的過犯\n是誰背負全人類的憂患\n是祢 主耶穌 唯有祢\n是祢 主耶穌 唯有祢\n是祢 主耶穌 唯有祢\n唯有祢 背負全人類的憂患\n是祢 主耶穌 唯有祢",
   "lyricsSc": "是谁从远处看见认识我\n是谁千万人中题名召我\n是谁为寻找我降生尘世\n是祢 主耶稣 唯有祢\n是谁从灰尘中抬举了我\n是谁舍弃尊荣洗我的脚\n是谁为代替我甘心舍命\n是祢 主耶稣 唯有祢\n是祢 主耶稣 唯有祢\n是祢 主耶稣 唯有祢\n唯有祢 为代替我甘心舍命\n是祢 主耶稣 唯有祢\n是谁担当全人类的刑罚\n是谁洗净全人类的过犯\n是谁背负全人类的忧患\n是祢 主耶稣 唯有祢\n是祢 主耶稣 唯有祢\n是祢 主耶稣 唯有祢\n唯有祢 背负全人类的忧患\n是祢 主耶稣 唯有祢",
-  "englishLyrics": ""
+  "englishLyrics": "Who saw and knew me from afar\nWho called me by name out of thousands upon thousands\nWho was born into this world to seek for me\nIt is You, Lord Jesus, You alone\nWho lifted me up out of the dust\nWho laid aside His glory to wash my feet\nWho willingly gave His life in my place\nIt is You, Lord Jesus, You alone\nIt is You, Lord Jesus, You alone\nIt is You, Lord Jesus, You alone\nYou alone willingly gave Your life in my place\nIt is You, Lord Jesus, You alone\nWho bore the punishment of all mankind\nWho washed away the sins of all mankind\nWho carried the sorrows of all mankind\nIt is You, Lord Jesus, You alone\nIt is You, Lord Jesus, You alone\nIt is You, Lord Jesus, You alone\nYou alone carried the sorrows of all mankind\nIt is You, Lord Jesus, You alone"
  },
  {
   "title": "她的新郎",
@@ -3235,7 +3235,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "漫漫長夜 她等候她的新郎\n白晝或夜晚 她思念她的新郎\n雖然有時因睏倦而打盹\n黑夜已深 孤單又疲乏\n她一心渴望祂顯現的榮光\n她的新郎是榮耀的君王\n祂的名字如同倒出來的香膏芬芳\n稱為誠信和真實 頭戴許多冠冕\n祂的面貌如同烈日放光\n但祂甘心做她贖罪的羔羊\n無比尊榮遮不住因愛所受的創傷\n祂的愛情配得稱讚 勝過一切美酒\n祂去乃是為她豫備地方\n漫漫長夜 她等候她的新郎\n一天又一天 她耐心預備衣裳\n祂將親手擦乾她的眼淚\n除去死亡 痛苦和悲傷\n她儆醒守望 直到號聲吹響",
   "lyricsSc": "漫漫长夜 她等候她的新郎\n白昼或夜晚 她思念她的新郎\n虽然有时因困倦而打盹\n黑夜已深 孤单又疲乏\n她一心渴望祂显现的荣光\n她的新郎是荣耀的君王\n祂的名字如同倒出来的香膏芬芳\n称为诚信和真实 头戴许多冠冕\n祂的面貌如同烈日放光\n但祂甘心做她赎罪的羔羊\n无比尊荣遮不住因爱所受的创伤\n祂的爱情配得称赞 胜过一切美酒\n祂去乃是为她豫备地方\n漫漫长夜 她等候她的新郎\n一天又一天 她耐心预备衣裳\n祂将亲手擦干她的眼泪\n除去死亡 痛苦和悲伤\n她儆醒守望 直到号声吹响",
-  "englishLyrics": ""
+  "englishLyrics": "Through the long, long night, she waits for her bridegroom\nBy day or by night, she longs for her bridegroom\nThough at times she dozes off from weariness\nThe night is far gone, lonely and worn\nWith all her heart she longs for the glory of His appearing\nHer bridegroom is the King of glory\nHis name is like fragrant oil poured out\nCalled Faithful and True, crowned with many crowns\nHis face shines like the sun in full strength\nYet He willingly became the Lamb for her atonement\nMatchless glory cannot hide the wounds He bore for love\nHis love is worthy of praise, better than any wine\nHe goes to prepare a place for her\nThrough the long, long night, she waits for her bridegroom\nDay after day, she patiently prepares her garment\nWith His own hand He will wipe away her tears\nTaking away death, pain and sorrow\nShe watches and keeps vigil, until the trumpet sounds"
  },
  {
   "title": "我是祢所造",
@@ -3277,7 +3277,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "祢的心裡柔和謙卑 祢的胸懷恩愛憐憫\n哦 祢同在無限甜蜜 祢的話語堅定我心\n因此我愛祢 主啊 祢配得至極的愛情\n因此我愛祢 主啊 祢知道我愛祢\n祢的照應無微不至 祢的引領帶進安息\n哦 祢責備也是溫柔 祢的擔子輕省容易",
   "lyricsSc": "祢的心里柔和谦卑 祢的胸怀恩爱怜悯\n哦 祢同在无限甜蜜 祢的话语坚定我心\n因此我爱祢 主啊 祢配得至极的爱情\n因此我爱祢 主啊 祢知道我爱祢\n祢的照应无微不至 祢的引领带进安息\n哦 祢责备也是温柔 祢的担子轻省容易",
-  "englishLyrics": ""
+  "englishLyrics": "Your heart is gentle and humble, Your bosom full of grace and mercy\nOh, Your presence is endlessly sweet, Your word steadies my heart\nTherefore I love You, Lord, You are worthy of the deepest love\nTherefore I love You, Lord, You know that I love You\nYour care leaves nothing out, Your leading brings me into rest\nOh, even Your rebuke is gentle, Your burden is light and easy"
  },
  {
   "title": "主啊,有誰能像祢",
@@ -3305,7 +3305,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "當祂輕聲呼喚你的名字\n你是否聽見 你是否聽見\n當祂輕聲呼喚你的名字\n你是否全心回應\n那創造宇宙的主宰 樂意住進你的心\n你在母腹尚未成形 祂就已經認識你\n從起初一直到現在 天父的心在等待\n祂渴望你也認識祂 享受祂無限的愛\n祂正輕聲呼喚你的名字\n你是否願意 你是否願意\n祂正輕聲呼喚你的名字\n你是否全心回應\n周遭環境一切事物是否都向你催促\n在你心裡的最深處有股難言的孤獨\n我願你全心回應",
   "lyricsSc": "当祂轻声呼唤你的名字\n你是否听见 你是否听见\n当祂轻声呼唤你的名字\n你是否全心回应\n那创造宇宙的主宰 乐意住进你的心\n你在母腹尚未成形 祂就已经认识你\n从起初一直到现在 天父的心在等待\n祂渴望你也认识祂 享受祂无限的爱\n祂正轻声呼唤你的名字\n你是否愿意 你是否愿意\n祂正轻声呼唤你的名字\n你是否全心回应\n周遭环境一切事物是否都向你催促\n在你心里的最深处有股难言的孤独\n我愿你全心回应",
-  "englishLyrics": ""
+  "englishLyrics": "When He softly calls your name\nDo you hear it, do you hear it\nWhen He softly calls your name\nDo you respond with all your heart\nThe Sovereign who made the universe gladly comes to dwell in your heart\nBefore you were formed in the womb, He already knew you\nFrom the beginning until now, the Father's heart has been waiting\nHe longs for you to know Him too, and enjoy His boundless love\nHe is softly calling your name\nAre you willing, are you willing\nHe is softly calling your name\nDo you respond with all your heart\nIs everything around you pressing in upon you\nIn the deepest part of your heart is an unspeakable loneliness\nI long for you to respond with all your heart"
  },
  {
   "title": "鼓舞",
@@ -3347,7 +3347,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "像火車駛過無盡頭的隧道\n何時能再陽光普照\n像迷羊橫渡無邊際的曠野\n何時能再遠離風暴\n親愛主 聽我禱告\n我孤單別無倚靠\n經風暴 長夜漫漫\n求主恩手步步引導\n經風暴 長夜漫漫\n我知恩主祢正引導",
   "lyricsSc": "像火车驶过无尽头的隧道\n何时能再阳光普照\n像迷羊横渡无边际的旷野\n何时能再远离风暴\n亲爱主 听我祷告\n我孤单别无倚靠\n经风暴 长夜漫漫\n求主恩手步步引导\n经风暴 长夜漫漫\n我知恩主祢正引导",
-  "englishLyrics": ""
+  "englishLyrics": "Like a train passing through an endless tunnel\nWhen will the sunlight shine again\nLike a lost sheep crossing a boundless wilderness\nWhen will I be far from the storm again\nDear Lord, hear my prayer\nI am alone with nothing else to lean on\nThrough the storm, the long, long night\nLord, let Your gracious hand guide me step by step\nThrough the storm, the long, long night\nI know, gracious Lord, that You are leading me"
  },
  {
   "title": "我的天父",
@@ -3361,7 +3361,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "祂眼看顧空中飛鳥 祂手數過我的頭髮\n我的天父慈悲憐憫 祂愛護我 深愛護我\n祂愛護我 深愛護我 我的天父 祂愛護我\n我站立祂愛我 我跌倒祂愛我\n我的天父 祂深愛護我 我的天父 深愛護我\n祂耳聽見暗中私語 祂心洞悉每個思緒\n我的天父參透人心 祂知道我 深知道我\n祂知道我 深知道我 我的天父 祂知道我\n我坐下祂知道 我起來祂知道\n我的天父 祂深知道我 我的天父 深知道我",
   "lyricsSc": "祂眼看顾空中飞鸟 祂手数过我的头发\n我的天父慈悲怜悯 祂爱护我 深爱护我\n祂爱护我 深爱护我 我的天父 祂爱护我\n我站立祂爱我 我跌倒祂爱我\n我的天父 祂深爱护我 我的天父 深爱护我\n祂耳听见暗中私语 祂心洞悉每个思绪\n我的天父参透人心 祂知道我 深知道我\n祂知道我 深知道我 我的天父 祂知道我\n我坐下祂知道 我起来祂知道\n我的天父 祂深知道我 我的天父 深知道我",
-  "englishLyrics": ""
+  "englishLyrics": "His eyes watch the birds of the air, His hand has numbered the hairs of my head\nMy heavenly Father is compassionate and merciful, He cares for me, He deeply cares for me\nHe cares for me, deeply cares for me, my heavenly Father cares for me\nWhen I stand He loves me, when I fall He loves me\nMy heavenly Father deeply cares for me, my heavenly Father deeply cares for me\nHis ear hears the whispers in secret, His heart discerns every thought\nMy heavenly Father searches the heart, He knows me, He deeply knows me\nHe knows me, deeply knows me, my heavenly Father knows me\nWhen I sit down He knows, when I rise up He knows\nMy heavenly Father deeply knows me, my heavenly Father deeply knows me"
  },
  {
   "title": "吸引我,我就快跑隨祢",
@@ -3389,7 +3389,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "水和血從祢的肋旁流下來\n漫過我全人最深玷污\n用火燒 將一切罪惡都燒盡\n直到消逝遺忘的海裡\n罪深重 屢次壓傷疲憊的心\n誰能救我脫離我自己\n雖深知我種種不堪的過去\n神聖愛不曾將我放棄\n耶穌 我的救主 是祢洗我白如雪\n遠離舊事 成為新造的人\n唯祢永是我的救主\n如今我也背起十架走窄路\n常軟弱 唯祢是我幫助\n每跌倒 唯賴祢釘痕手扶起\n祢憐恤憂傷痛悔的心",
   "lyricsSc": "水和血从祢的肋旁流下来\n漫过我全人最深玷污\n用火烧 将一切罪恶都烧尽\n直到消逝遗忘的海里\n罪深重 屡次压伤疲惫的心\n谁能救我脱离我自己\n虽深知我种种不堪的过去\n神圣爱不曾将我放弃\n耶稣 我的救主 是祢洗我白如雪\n远离旧事 成为新造的人\n唯祢永是我的救主\n如今我也背起十架走窄路\n常软弱 唯祢是我帮助\n每跌倒 唯赖祢钉痕手扶起\n祢怜恤忧伤痛悔的心",
-  "englishLyrics": ""
+  "englishLyrics": "Water and blood flowed down from Your side\nCovering over the deepest stains of my whole being\nWith fire You burn all my sin away\nUntil it vanishes into the sea of forgetfulness\nSin so heavy, again and again it crushes my weary heart\nWho can save me from my very self\nThough You know full well my unbearable past\nYour holy love has never given up on me\nJesus, my Savior, it is You who wash me white as snow\nLeaving the old behind, becoming a new creation\nYou alone are forever my Savior\nNow I too take up the cross and walk the narrow road\nOften weak, You alone are my help\nEach time I fall, Your nail-pierced hands lift me up\nYou have mercy on a broken and contrite heart"
  },
  {
   "title": "有誰",
@@ -3403,7 +3403,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "誰曾用手心量諸水 用手虎口量倉天\n用升斗盛大地的塵土 用天平秤山崗和峻嶺\n誰曾測度神的心 或作謀士指教祂\n將公平的路指示祂 又將知識教訓祂\n誰曾測度神的心 或作謀士指教祂\n將公平的路指示祂 有誰 有誰",
   "lyricsSc": "谁曾用手心量诸水 用手虎口量仓天\n用升斗盛大地的尘土 用天平秤山岗和峻岭\n谁曾测度神的心 或作谋士指教祂\n将公平的路指示祂 又将知识教训祂\n谁曾测度神的心 或作谋士指教祂\n将公平的路指示祂 有谁 有谁",
-  "englishLyrics": ""
+  "englishLyrics": "Who has measured the waters in the hollow of His hand, and marked off the heavens with its span\nWho has held the dust of the earth in a measure, and weighed the mountains and hills on the scales\nWho has measured the mind of the LORD, or as His counselor has instructed Him\nWho showed Him the path of justice, and taught Him knowledge\nWho has measured the mind of the LORD, or as His counselor has instructed Him\nWho showed Him the path of justice — who, who"
  },
  {
   "title": "主,我邀請祢",
@@ -3417,7 +3417,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "讓我回到那起初的愛 讓我對祢忠貞專一\n為我再造一顆清潔的心 讓我完全屬於祢\n讓我時常回到加略山 讓我不負祢的愛情\n為我再次融化冰冷的心 讓我全心愛慕祢\n主我邀請祢 恭敬地邀請祢\n再登上我心的寶座\n主我邀請祢 衷心地邀請祢\n再登上我心的寶座",
   "lyricsSc": "让我回到那起初的爱 让我对祢忠贞专一\n为我再造一颗清洁的心 让我完全属于祢\n让我时常回到加略山 让我不负祢的爱情\n为我再次融化冰冷的心 让我全心爱慕祢\n主我邀请祢 恭敬地邀请祢\n再登上我心的宝座\n主我邀请祢 衷心地邀请祢\n再登上我心的宝座",
-  "englishLyrics": ""
+  "englishLyrics": "Let me return to that first love, let me be faithful and devoted to You alone\nCreate in me again a clean heart, let me belong wholly to You\nLet me often return to Calvary, let me not fail Your love\nMelt my cold heart once again, let me love You with all my heart\nLord, I invite You, reverently I invite You\nAscend once more the throne of my heart\nLord, I invite You, sincerely I invite You\nAscend once more the throne of my heart"
  },
  {
   "title": "祝",
@@ -3431,6 +3431,6 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "願喜樂與盼望常常充滿你心\n不放棄 永不絕望\n願主愛與平安時時掌管你心\n隨祂腳蹤不偏離\n我們跟隨得勝的主而去\n得地土 釋放囚虜\n雖然身隔兩地心相繫\n在基督裏我們永為一",
   "lyricsSc": "愿喜乐与盼望常常充满你心\n不放弃 永不绝望\n愿主爱与平安时时掌管你心\n随祂脚踪不偏离\n我们跟随得胜的主而去\n得地土 释放囚虏\n虽然身隔两地心相系\n在基督里我们永为一",
-  "englishLyrics": ""
+  "englishLyrics": "May joy and hope always fill your heart\nNever giving up, never despairing\nMay the Lord's love and peace ever rule your heart\nFollowing His footsteps, never straying away\nWe follow the victorious Lord and go forth\nTo take the land, to set the captives free\nThough our bodies are far apart, our hearts are bound as one\nIn Christ we are forever one"
  }
 ];
