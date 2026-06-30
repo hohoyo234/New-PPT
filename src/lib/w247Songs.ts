@@ -2969,7 +2969,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "眾山怎樣圍繞耶路撒冷 照樣神也圍繞祂的百姓\n耶和華看顧保護你 從今時直到永遠",
   "lyricsSc": "众山怎样围绕耶路撒冷 照样神也围绕祂的百姓\n耶和华看顾保护你 从今时直到永远",
-  "englishLyrics": ""
+  "englishLyrics": "As the mountains surround Jerusalem, so the LORD surrounds His people\nThe LORD watches over and protects you, from this time forth and forevermore"
  },
  {
   "title": "主耶和華是我的幫助",
@@ -2983,7 +2983,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "投靠耶和華 強似倚賴人\n投靠耶和華 強似倚賴王子\n我要向山舉目 我要向最高的山舉目\n主耶和華是我的幫助\n地雖改變 山雖搖動到海心\n看顧我的從來不歇息\n雖經歷水火 它不漫過燒著我\n神在其中 我必不搖動",
   "lyricsSc": "投靠耶和华 强似倚赖人\n投靠耶和华 强似倚赖王子\n我要向山举目 我要向最高的山举目\n主耶和华是我的帮助\n地虽改变 山虽摇动到海心\n看顾我的从来不歇息\n虽经历水火 它不漫过烧著我\n神在其中 我必不摇动",
-  "englishLyrics": ""
+  "englishLyrics": "It is better to take refuge in the LORD than to trust in man\nIt is better to take refuge in the LORD than to trust in princes\nI lift my eyes to the hills, I lift my eyes to the highest mountain\nThe Lord GOD is my help\nThough the earth gives way and the mountains fall into the heart of the sea\nHe who watches over me never slumbers nor sleeps\nThough I pass through water and fire, they will not overwhelm nor consume me\nGod is within her, she will not be moved"
  },
  {
   "title": "愛祢",
@@ -2997,7 +2997,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "讓那新鮮的愛 常湧自我心\n讓那起初的愛 焚燒在我心\n愛祢 更愛祢 一生愛祢\n愛祢 更愛祢 天天愛祢\n愛祢 更愛祢 一生愛祢\n愛祢 更愛祢 天天愛祢\n愛祢 更愛祢 時刻愛祢\n愛祢 更愛祢 永遠愛祢 (我愛祢)\n每個夢想 每個動機\n每個思緒 每個呼吸 都為祢\n盡心 盡性 盡意 盡力 來~\n愛祢 更愛祢 一生愛祢\n愛祢 更愛祢 天天愛祢\n天天愛祢 時刻愛祢 永遠愛祢",
   "lyricsSc": "让那新鲜的爱 常涌自我心\n让那起初的爱 焚烧在我心\n爱祢 更爱祢 一生爱祢\n爱祢 更爱祢 天天爱祢\n爱祢 更爱祢 一生爱祢\n爱祢 更爱祢 天天爱祢\n爱祢 更爱祢 时刻爱祢\n爱祢 更爱祢 永远爱祢 (我爱祢)\n每个梦想 每个动机\n每个思绪 每个呼吸 都为祢\n尽心 尽性 尽意 尽力 来~\n爱祢 更爱祢 一生爱祢\n爱祢 更爱祢 天天爱祢\n天天爱祢 时刻爱祢 永远爱祢",
-  "englishLyrics": ""
+  "englishLyrics": "Let that fresh love ever well up from my heart\nLet that first love burn within my heart\nLove You, love You more, love You all my life\nLove You, love You more, love You every day\nLove You, love You more, love You all my life\nLove You, love You more, love You every day\nLove You, love You more, love You every moment\nLove You, love You more, love You forever (I love You)\nEvery dream, every motive\nEvery thought, every breath, all of it for You\nWith all my heart, soul, mind and strength, I come~\nLove You, love You more, love You all my life\nLove You, love You more, love You every day\nLove You every day, love You every moment, love You forever"
  },
  {
   "title": "哈利路亞",
@@ -3011,7 +3011,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "哈利路亞 哈利路亞\n哈利路亞 哈利路 哈利路亞\n哈利路亞 哈利路亞\n哈利路亞 哈利路亞\n即興\n頌讚歸祢 榮耀歸與祢\n智慧 感謝 尊貴 權柄 能力都歸祢\n直到永遠 直到永永遠遠 哈利路亞",
   "lyricsSc": "哈利路亚 哈利路亚\n哈利路亚 哈利路 哈利路亚\n哈利路亚 哈利路亚\n哈利路亚 哈利路亚\n即兴\n颂赞归祢 荣耀归与祢\n智慧 感谢 尊贵 权柄 能力都归祢\n直到永远 直到永永远远 哈利路亚",
-  "englishLyrics": ""
+  "englishLyrics": "Hallelujah, hallelujah\nHallelujah, hallelu, hallelujah\nHallelujah, hallelujah\nHallelujah, hallelujah\n(Improvisation)\nPraise be to You, glory be to You\nWisdom, thanks, honor, authority and power, all be to You\nForever, for ever and ever, hallelujah"
  },
  {
   "title": "花盡一生來愛祢",
@@ -3025,7 +3025,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "祢使我感動到流淚 又使我心甜到發笑\n想著祢 暖流湧上心頭 再次心醉祢神聖榮耀\n這一生不再追求別的 但以認識祢為至寶\n讓這愛在我靈魂燃燒 得著祢 也被祢得著\n花盡一生來愛祢 花盡一生來愛祢\n願我一生不知別的 但知基督並祂釘十架\n花盡一生來愛祢 花盡一生來愛祢\n我願花盡一生來愛祢 花盡一生來愛祢",
   "lyricsSc": "祢使我感动到流泪 又使我心甜到发笑\n想著祢 暖流涌上心头 再次心醉祢神圣荣耀\n这一生不再追求别的 但以认识祢为至宝\n让这爱在我灵魂燃烧 得著祢 也被祢得著\n花尽一生来爱祢 花尽一生来爱祢\n愿我一生不知别的 但知基督并祂钉十架\n花尽一生来爱祢 花尽一生来爱祢\n我愿花尽一生来爱祢 花尽一生来爱祢",
-  "englishLyrics": ""
+  "englishLyrics": "You move me to tears, and fill my heart with sweetness till I laugh\nThinking of You, warmth wells up in my heart, again entranced by Your holy glory\nThis life I will seek nothing else, but treasure knowing You above all\nLet this love burn within my soul, to gain You, and be gained by You\nI'll spend my whole life to love You, spend my whole life to love You\nMay I know nothing else in life, but Christ and Him crucified\nI'll spend my whole life to love You, spend my whole life to love You\nI will spend my whole life to love You, spend my whole life to love You"
  },
  {
   "title": "祢是配",
@@ -3053,7 +3053,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "在這卑微的身上 主啊 榮耀祢聖名\n在這軟弱的身上 主啊 榮耀祢聖名\n讓世人看見祢的慈愛能力彰顯\n在今天 在我身上 主啊 榮耀祢聖名\n在這迷失的世代 主啊 建立祢教會\n在這心碎的世代 主啊 建立祢教會\n讓世人看見祢的聖潔榮美彰顯\n在這裡 就在此刻 主啊 建立祢教會\n在這裡 就在此刻 主啊 建立 建立\n主啊 建立祢教會",
   "lyricsSc": "在这卑微的身上 主啊 荣耀祢圣名\n在这软弱的身上 主啊 荣耀祢圣名\n让世人看见祢的慈爱能力彰显\n在今天 在我身上 主啊 荣耀祢圣名\n在这迷失的世代 主啊 建立祢教会\n在这心碎的世代 主啊 建立祢教会\n让世人看见祢的圣洁荣美彰显\n在这里 就在此刻 主啊 建立祢教会\n在这里 就在此刻 主啊 建立 建立\n主啊 建立祢教会",
-  "englishLyrics": ""
+  "englishLyrics": "In this lowly body, O Lord, glorify Your holy name\nIn this weak body, O Lord, glorify Your holy name\nLet the world see Your love and power revealed\nToday, and in me, O Lord, glorify Your holy name\nIn this lost generation, O Lord, build Your church\nIn this broken-hearted generation, O Lord, build Your church\nLet the world see Your holiness and beauty revealed\nHere, in this very moment, O Lord, build Your church\nHere, in this very moment, O Lord, build, build\nO Lord, build Your church"
  },
  {
   "title": "詩篇二十三篇",
@@ -3067,7 +3067,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "耶和華是我的牧者 我必不至缺乏\n祂使我躺臥在青草地上 安歇在溪水旁\n祂使我的靈魂甦醒 引導我走義路\n我雖然行過死蔭的幽谷\n也不怕遭害因為祢與我同在\n祢在我敵人面前為我擺設筵席\n用油膏了我的頭 使我福杯滿溢\n必有恩惠慈愛一生隨著我\n我要住在耶和華的殿中 直到永遠",
   "lyricsSc": "耶和华是我的牧者 我必不至缺乏\n祂使我躺卧在青草地上 安歇在溪水旁\n祂使我的灵魂苏醒 引导我走义路\n我虽然行过死荫的幽谷\n也不怕遭害因为祢与我同在\n祢在我敌人面前为我摆设筵席\n用油膏了我的头 使我福杯满溢\n必有恩惠慈爱一生随著我\n我要住在耶和华的殿中 直到永远",
-  "englishLyrics": ""
+  "englishLyrics": "The LORD is my shepherd, I shall not be in want\nHe makes me lie down in green pastures, He leads me beside quiet waters\nHe restores my soul, He guides me in paths of righteousness\nThough I walk through the valley of the shadow of death\nI will fear no evil, for You are with me\nYou prepare a table before me in the presence of my enemies\nYou anoint my head with oil, my cup overflows\nSurely goodness and mercy will follow me all the days of my life\nAnd I will dwell in the house of the LORD forever"
  },
  {
   "title": "耶穌基督是主",
@@ -3137,7 +3137,7 @@ export const W247_SONGS: SeedSong[] = [
   "key": "",
   "lyrics": "主啊 我們自卑 禱告 尋求祢面\n轉離一切惡行 專心尋求祢\n求祢從天上垂聽此處所獻的禱祈\n主啊 赦免我們的罪 醫治這地\n睜眼看 側耳聽 我們痛悔的心靈\n主啊 赦免我們的罪 醫治這地\n主啊 赦免我們的罪 (3X)\n醫治這地",
   "lyricsSc": "主啊 我们自卑 祷告 寻求祢面\n转离一切恶行 专心寻求祢\n求祢从天上垂听此处所献的祷祈\n主啊 赦免我们的罪 医治这地\n睁眼看 侧耳听 我们痛悔的心灵\n主啊 赦免我们的罪 医治这地\n主啊 赦免我们的罪 (3X)\n医治这地",
-  "englishLyrics": ""
+  "englishLyrics": "Lord, we humble ourselves, we pray and seek Your face\nTurning from all our wicked ways, seeking You with all our hearts\nHear from heaven the prayers offered up in this place\nLord, forgive our sin, and heal this land\nOpen Your eyes, incline Your ear, to our repentant hearts\nLord, forgive our sin, and heal this land\nLord, forgive our sin (3X)\nAnd heal this land"
  },
  {
   "title": "尊貴榮耀主",
