@@ -47,6 +47,7 @@ export interface SongInput {
   translationFontSize?: number;
   linesPerSlide?: number;
   shadow?: boolean;
+  shadowLevel?: ShadowLevel;
   enablePinyin?: boolean;
 }
 
@@ -144,7 +145,7 @@ export async function generateDeck(songsToExport: SongInput[], s: DeckSettings):
     const baseLfs = s.unifyFontSize ? s.lyricFontSize : song.lyricFontSize || s.lyricFontSize;
     const baseTfs = s.unifyFontSize ? s.translationFontSize : song.translationFontSize || s.translationFontSize;
     const shadowOn = song.shadow !== undefined ? song.shadow : s.enableShadow;
-    const textShadow = shadowOn ? pptShadow(s.shadowLevel) : undefined;
+    const textShadow = shadowOn ? pptShadow(song.shadowLevel ?? s.shadowLevel) : undefined;
     const usePinyin = song.enablePinyin ?? s.enablePinyin;
 
     // Sets the slide background. Image backgrounds use a full-bleed "cover"

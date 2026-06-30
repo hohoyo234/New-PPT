@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { toPinyin, type BgOption } from '../lib/pptGenerator';
-import type { SlideColors } from '../lib/pptTheme';
+import type { SlideColors, ShadowLevel } from '../lib/pptTheme';
 
 export type PreviewSlide = { type: 'cover' | 'lyric'; title?: string; sub?: string; lines?: { cn: string; en: string }[] };
 
@@ -41,7 +41,7 @@ export function SlideView({ slide, bg, pc, lyricFontSize, translationFontSize, s
 export type SlideStyle = {
   lyricColor: string; translationColor: string;
   lyricFontSize: number; translationFontSize: number; linesPerSlide: number;
-  enablePinyin: boolean;
+  enablePinyin: boolean; shadow: boolean; shadowLevel: ShadowLevel;
 };
 
 // Click-to-enlarge modal: big slide with prev/next + edit the song's lyrics AND
@@ -127,6 +127,16 @@ export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontS
                   {[1, 2, 3, 4, 5, 6].map((n) => (
                     <button key={n} onClick={() => onStyle({ linesPerSlide: n })} className={`flex-1 h-9 rounded-lg text-[12px] font-black transition-all ${style.linesPerSlide === n ? 'bg-emerald-600 text-white shadow' : 'bg-[#F9F7F5] text-outline/60 hover:bg-[#E5E0DA]'}`}>{n}</button>
                   ))}
+                </div>
+              </div>
+              {/* Text shadow */}
+              <div className="space-y-1.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-outline/40 px-1">文字阴影（深色背景更清晰）</span>
+                <div className="flex gap-1.5">
+                  {([['none', '无', false, 'medium'], ['light', '淡', true, 'light'], ['medium', '中', true, 'medium'], ['strong', '浓', true, 'strong']] as const).map(([key, t, on, lvl]) => {
+                    const active = key === 'none' ? !style.shadow : style.shadow && style.shadowLevel === lvl;
+                    return <button key={key} onClick={() => onStyle({ shadow: on, ...(on ? { shadowLevel: lvl } : {}) })} className={`flex-1 h-9 rounded-lg text-[12px] font-black transition-all ${active ? 'bg-emerald-600 text-white shadow' : 'bg-[#F9F7F5] text-outline/60 hover:bg-[#E5E0DA]'}`}>{t}</button>;
+                  })}
                 </div>
               </div>
               {/* Pinyin toggle */}

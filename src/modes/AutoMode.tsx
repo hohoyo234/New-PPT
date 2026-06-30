@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { expandSongSections, paginateLyrics, resolveSlideColors, previewShadow } from '../lib/pptTheme';
+import { expandSongSections, paginateLyrics, resolveSlideColors, previewShadow, type ShadowLevel } from '../lib/pptTheme';
 import type { BgOption, SongInput, DeckSettings } from '../lib/pptGenerator';
 import { BACKGROUND_OPTIONS, pollinationsBg } from '../lib/backgrounds';
 import { searchLibrary, searchLibraryMulti, saveToLibrary, libraryStats } from '../lib/songLibrary';
@@ -29,6 +29,8 @@ interface AutoSong {
   translationFontSize?: number;
   linesPerSlide?: number;
   enablePinyin?: boolean;
+  shadow?: boolean;
+  shadowLevel?: ShadowLevel;
 }
 
 const AUTO_SETTINGS: Omit<DeckSettings, 'selectedBg' | 'showSongTitle' | 'unifyBackground' | 'slideSize'> = {
@@ -163,6 +165,7 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
         lyricColor: s.lyricColor, translationColor: s.translationColor,
         lyricFontSize: s.lyricFontSize, translationFontSize: s.translationFontSize,
         linesPerSlide: s.linesPerSlide, enablePinyin: s.enablePinyin,
+        shadow: s.shadow, shadowLevel: s.shadowLevel,
       }));
       const res = merge
         ? await exportMerged(songInputs, settings, deckName)
@@ -361,6 +364,8 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
   const tfs = song.translationFontSize || AUTO_SETTINGS.translationFontSize;
   const lps = song.linesPerSlide || AUTO_SETTINGS.linesPerSlide;
   const py = song.enablePinyin ?? AUTO_SETTINGS.enablePinyin;
+  const sOn = song.shadow ?? AUTO_SETTINGS.enableShadow;
+  const slvl = song.shadowLevel ?? AUTO_SETTINGS.shadowLevel;
   // Instant background — system picks a random image preset (no AI wait).
   const randomBg = () => {
     const pool = BACKGROUND_OPTIONS.filter((b) => b.url);
@@ -379,7 +384,7 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
   const slideCount = preview.count;
   // Preview font size in container-query units, mirroring the .pptx scaling.
   const cqw = (pt: number) => `${(pt / 7.2).toFixed(2)}cqw`;
-  const shadow = previewShadow('medium');
+  const shadow = sOn ? previewShadow(slvl) : 'none';
 
   const bgStyle: React.CSSProperties = song.bg?.url
     ? { backgroundImage: `url(${song.bg.url})`, backgroundSize: 'cover', backgroundPosition: 'center' }
@@ -472,7 +477,7 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
           onLyric={(v) => onPatch(song.id, { lyrics: v })}
           onEnglish={(v) => onPatch(song.id, { englishLyrics: v })}
           onClose={() => setZoomIdx(null)}
-          style={{ lyricColor: lc, translationColor: tc, lyricFontSize: lfs, translationFontSize: tfs, linesPerSlide: lps, enablePinyin: py }}
+          style={{ lyricColor: lc, translationColor: tc, lyricFontSize: lfs, translationFontSize: tfs, linesPerSlide: lps, enablePinyin: py, shadow: sOn, shadowLevel: slvl }}
           onStyle={(patch) => onPatch(song.id, patch)}
           bgOptions={BACKGROUND_OPTIONS}
           onBg={(b) => onPickPreset(song.id, b)}
