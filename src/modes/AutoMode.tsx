@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import { expandSongSections, paginateLyrics, resolveSlideColors, previewShadow, type ShadowLevel } from '../lib/pptTheme';
 import type { BgOption, SongInput, DeckSettings } from '../lib/pptGenerator';
 import { BACKGROUND_OPTIONS, pollinationsBg } from '../lib/backgrounds';
@@ -414,6 +414,27 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
 }) {
   const [bgOpen, setBgOpen] = useState(false);
   const [zoomIdx, setZoomIdx] = useState<number | null>(null);
+  const lyricsRef = useRef<HTMLTextAreaElement>(null);
+  const englishRef = useRef<HTMLTextAreaElement>(null);
+  const [activeField, setActiveField] = useState<'lyrics' | 'english'>('lyrics');
+  // Insert a [名称] section marker at the cursor of whichever field (歌词 or 翻译)
+  // has focus. expandSongSections expands 中文 markers and strips 英文 markers.
+  const insertSection = (label: string) => {
+    const isEng = activeField === 'english';
+    const ta = isEng ? englishRef.current : lyricsRef.current;
+    const val = (isEng ? song.englishLyrics : song.lyrics) || '';
+    const pos = ta ? ta.selectionStart : val.length;
+    const lineStart = val.lastIndexOf('\n', pos - 1) + 1;
+    const marker = `[${label}]\n`;
+    const next = val.slice(0, lineStart) + marker + val.slice(lineStart);
+    onPatch(song.id, isEng ? { englishLyrics: next } : { lyrics: next });
+    requestAnimationFrame(() => {
+      if (!ta) return;
+      ta.focus();
+      const p = lineStart + marker.length;
+      ta.setSelectionRange(p, p);
+    });
+  };
   // Effective per-song style: override (set from the modal) or the auto default.
   const lc = song.lyricColor || AUTO_SETTINGS.lyricColor;
   const tc = song.translationColor || AUTO_SETTINGS.translationColor;
@@ -501,8 +522,14 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
             <span className={`text-[9px] font-black uppercase tracking-wider px-2 py-1 rounded-full shrink-0 ${song.matched ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>{song.matched ? '✓ 歌库找到' : '✍ 需补歌词'}</span>
           </div>
           <input value={song.englishTitle} onChange={(e) => onPatch(song.id, { englishTitle: e.target.value })} placeholder="英文名 / 副标题(可选)" className="w-full text-xs font-semibold text-outline/60 bg-[#F9F7F5] rounded-lg px-3 py-2 outline-none" />
-          <textarea value={song.lyrics} onChange={(e) => onPatch(song.id, { lyrics: e.target.value })} rows={song.matched ? 4 : 5} placeholder={song.matched ? '' : '歌库没找到这首,请把歌词粘贴到这里(每行一句,空行换页)'} className="w-full text-sm font-semibold bg-[#F9F7F5] rounded-xl px-3 py-2.5 outline-none leading-relaxed resize-none focus:bg-white border border-transparent focus:border-emerald-400" />
-          <textarea value={song.englishLyrics} onChange={(e) => onPatch(song.id, { englishLyrics: e.target.value })} rows={2} placeholder="翻译 / 对照歌词(可选,按行对应)" className="w-full text-xs font-medium text-outline/70 bg-[#F9F7F5] rounded-xl px-3 py-2 outline-none leading-relaxed resize-none" />
+          <textarea ref={lyricsRef} onFocus={() => setActiveField('lyrics')} value={song.lyrics} onChange={(e) => onPatch(song.id, { lyrics: e.target.value })} rows={song.matched ? 4 : 5} placeholder={song.matched ? '' : '歌库没找到这首,请把歌词粘贴到这里(每行一句,空行换页)'} className="w-full text-sm font-semibold bg-[#F9F7F5] rounded-xl px-3 py-2.5 outline-none leading-relaxed resize-none focus:bg-white border border-transparent focus:border-emerald-400" />
+          <div className="flex flex-wrap items-center gap-1.5">
+            <span className="text-[9px] font-bold text-outline/40 uppercase tracking-wider mr-0.5">段落标记</span>
+            {(['主歌', '副歌', '导歌', '桥段', '结尾'] as const).map((lbl) => (
+              <button key={lbl} onClick={() => insertSection(lbl)} className="h-6 px-2 rounded-md bg-[#F9F7F5] hover:bg-emerald-50 hover:text-emerald-600 text-[10px] font-black transition-all">{lbl}</button>
+            ))}
+          </div>
+          <textarea ref={englishRef} onFocus={() => setActiveField('english')} value={song.englishLyrics} onChange={(e) => onPatch(song.id, { englishLyrics: e.target.value })} rows={2} placeholder="翻译 / 对照歌词(可选,按行对应)" className="w-full text-xs font-medium text-outline/70 bg-[#F9F7F5] rounded-xl px-3 py-2 outline-none leading-relaxed resize-none" />
           <div className="flex items-center gap-2">
             <button onClick={() => onStructure(song.id)} className="h-8 px-3 rounded-lg bg-[#F9F7F5] hover:bg-emerald-50 hover:text-emerald-600 text-[10px] font-black uppercase tracking-wider flex items-center gap-1 transition-all"><span className="material-symbols-outlined text-[14px]">music_note</span>自动分主歌副歌</button>
             <span className="text-[10px] text-outline/30 font-medium">用 [副歌] 标记重复段,只写一次自动展开</span>

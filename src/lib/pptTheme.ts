@@ -109,13 +109,16 @@ export function paginateLyrics(lyrics: string, english: string, autoN: number, p
 // The English translation is paired to the Chinese by order and expanded in
 // lockstep, so cn/en stay aligned. No markers → returned unchanged.
 export function expandSongSections(lyrics: string, english: string): { lyrics: string; english: string } {
-  if (!/^\s*\[[^\]]+\]\s*$/m.test(lyrics || '')) return { lyrics, english };
+  const isMarker = (l: string) => /^\s*\[[^\]]+\]\s*$/.test(l);
+  // The English text may carry the same [主歌]/[副歌] labels for the editor's sake;
+  // they are structural hints only and are never rendered — strip them before use.
+  const stripEn = (s: string) => (s || '').split('\n').filter((l) => !isMarker(l)).join('\n');
+  if (!/^\s*\[[^\]]+\]\s*$/m.test(lyrics || '')) return { lyrics, english: stripEn(english) };
 
   const cnLines = (lyrics || '').split('\n');
-  const enQueue = (english || '').split('\n').filter(l => l.trim().length > 0);
+  const enQueue = (english || '').split('\n').filter((l) => l.trim().length > 0 && !isMarker(l));
   let ei = 0;
 
-  const isMarker = (l: string) => /^\s*\[[^\]]+\]\s*$/.test(l);
   const nameOf = (l: string) => l.trim().replace(/^\[|\]$/g, '').trim().toLowerCase();
 
   type Pair = { cn: string; en: string };

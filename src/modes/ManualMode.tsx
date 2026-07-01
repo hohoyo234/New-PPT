@@ -101,17 +101,24 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
   const [zoom, setZoom] = useState<number | null>(null);
   const uploadRef = useRef<HTMLInputElement>(null);
   const lyricsRef = useRef<HTMLTextAreaElement>(null);
+  const englishRef = useRef<HTMLTextAreaElement>(null);
+  // Which lyric field the section buttons act on — the one the user last focused.
+  const [activeField, setActiveField] = useState<'lyrics' | 'english'>('lyrics');
 
   // Mark the stanza at the cursor/selection as a section. Inserts a "[名称]" line
   // at the start of that line; expandSongSections then treats the following lines
   // (until a blank line) as that section — so 副歌 can be written once and reused.
+  // Works on whichever field (歌词 or 翻译) currently has focus.
   const insertSection = (label: string) => {
-    const ta = lyricsRef.current;
-    const val = dLyrics(activeSong);
+    const isEng = activeField === 'english';
+    const ta = isEng ? englishRef.current : lyricsRef.current;
+    const val = isEng ? activeSong.englishLyrics || '' : dLyrics(activeSong);
     const pos = ta ? ta.selectionStart : val.length;
     const lineStart = val.lastIndexOf('\n', pos - 1) + 1;
     const marker = `[${label}]\n`;
-    setLyrics(activeSong.id, val.slice(0, lineStart) + marker + val.slice(lineStart));
+    const next = val.slice(0, lineStart) + marker + val.slice(lineStart);
+    if (isEng) patchSong(activeSong.id, { englishLyrics: next });
+    else setLyrics(activeSong.id, next);
     track('click', `标记·${label}`);
     requestAnimationFrame(() => {
       if (!ta) return;
@@ -367,15 +374,15 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
               <Field label="歌名"><input value={dTitle(activeSong)} onChange={(e) => setTitle(activeSong.id, e.target.value)} placeholder="奇异恩典" className="ed-input" /></Field>
               <Field label="英文名 / 副标题"><input value={activeSong.englishTitle} onChange={(e) => patchSong(activeSong.id, { englishTitle: e.target.value })} placeholder="Amazing Grace" className="ed-input" /></Field>
             </div>
-            <Field label="歌词（每行一句，空行 = 换页）"><textarea ref={lyricsRef} value={dLyrics(activeSong)} onChange={(e) => setLyrics(activeSong.id, e.target.value)} rows={7} placeholder={'奇异恩典 何等甘甜\n我罪已得赦免'} className="ed-input resize-none leading-relaxed" /></Field>
+            <Field label="歌词（每行一句，空行 = 换页）"><textarea ref={lyricsRef} onFocus={() => setActiveField('lyrics')} value={dLyrics(activeSong)} onChange={(e) => setLyrics(activeSong.id, e.target.value)} rows={7} placeholder={'奇异恩典 何等甘甜\n我罪已得赦免'} className="ed-input resize-none leading-relaxed" /></Field>
             <div className="flex flex-wrap items-center gap-1.5">
               <span className="text-[10px] font-bold text-outline/40 uppercase tracking-wider mr-0.5">把光标所在段标为</span>
               {(['主歌', '副歌', '导歌', '桥段', '结尾'] as const).map((lbl) => (
                 <button key={lbl} onClick={() => insertSection(lbl)} className="h-7 px-2.5 rounded-lg bg-[#F9F7F5] hover:bg-emerald-50 hover:text-emerald-600 text-[11px] font-black transition-all">{lbl}</button>
               ))}
             </div>
-            <Field label="翻译 / 对照歌词（按行对应，可留空）"><textarea value={activeSong.englishLyrics} onChange={(e) => patchSong(activeSong.id, { englishLyrics: e.target.value })} rows={5} placeholder={'Amazing grace how sweet the sound'} className="ed-input resize-none leading-relaxed" /></Field>
-            <p className="text-[10px] text-outline/40 px-1 leading-relaxed">💡 提示：把光标点在某段歌词上，按上面的按钮即可加段落标记；<code className="bg-[#F9F7F5] px-1 rounded">[副歌]</code> 重复时只写一次标记即可自动展开。</p>
+            <Field label="翻译 / 对照歌词（按行对应，可留空）"><textarea ref={englishRef} onFocus={() => setActiveField('english')} value={activeSong.englishLyrics} onChange={(e) => patchSong(activeSong.id, { englishLyrics: e.target.value })} rows={5} placeholder={'Amazing grace how sweet the sound'} className="ed-input resize-none leading-relaxed" /></Field>
+            <p className="text-[10px] text-outline/40 px-1 leading-relaxed">💡 提示：把光标点在<b>歌词或翻译</b>的某段上，按上面的按钮即可给该段加标记（中英各自标记，互不影响）；<code className="bg-[#F9F7F5] px-1 rounded">[副歌]</code> 重复时只写一次即可自动展开。</p>
           </div>
 
           <Panel title="背景" defaultOpen>

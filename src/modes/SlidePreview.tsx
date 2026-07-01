@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { toPinyin, toZhuyin, type BgOption } from '../lib/pptGenerator';
 import type { SlideColors, ShadowLevel } from '../lib/pptTheme';
 
@@ -58,6 +58,26 @@ export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontS
   const [i, setI] = useState(start);
   const [tab, setTab] = useState<'text' | 'style'>('text');
   const idx = Math.min(i, Math.max(0, slides.length - 1));
+  const lyricRef = useRef<HTMLTextAreaElement>(null);
+  const engRef = useRef<HTMLTextAreaElement>(null);
+  const [activeField, setActiveField] = useState<'lyric' | 'english'>('lyric');
+  // Insert a [名称] section marker at the cursor of the focused field (歌词/翻译).
+  const insertSection = (label: string) => {
+    const isEng = activeField === 'english';
+    const ta = isEng ? engRef.current : lyricRef.current;
+    const val = isEng ? english : lyric;
+    const pos = ta ? ta.selectionStart : val.length;
+    const lineStart = val.lastIndexOf('\n', pos - 1) + 1;
+    const marker = `[${label}]\n`;
+    const next = val.slice(0, lineStart) + marker + val.slice(lineStart);
+    (isEng ? onEnglish : onLyric)(next);
+    requestAnimationFrame(() => {
+      if (!ta) return;
+      ta.focus();
+      const p = lineStart + marker.length;
+      ta.setSelectionRange(p, p);
+    });
+  };
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-black/70 backdrop-blur-md" onClick={onClose} />
@@ -87,10 +107,16 @@ export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontS
           {(!style || tab === 'text') && (
             <>
               <label className="block space-y-1.5"><span className="text-[10px] font-bold uppercase tracking-wider text-outline/40 px-1">歌词（每行一句，空行 = 换页）</span>
-                <textarea value={lyric} onChange={(e) => onLyric(e.target.value)} rows={9} className="w-full bg-[#F9F7F5] border border-[#E5E0DA]/60 rounded-xl px-3 py-2 text-sm font-semibold outline-none focus:border-emerald-500 resize-none leading-relaxed" />
+                <textarea ref={lyricRef} onFocus={() => setActiveField('lyric')} value={lyric} onChange={(e) => onLyric(e.target.value)} rows={9} className="w-full bg-[#F9F7F5] border border-[#E5E0DA]/60 rounded-xl px-3 py-2 text-sm font-semibold outline-none focus:border-emerald-500 resize-none leading-relaxed" />
               </label>
+              <div className="flex flex-wrap items-center gap-1.5">
+                <span className="text-[9px] font-bold text-outline/40 uppercase tracking-wider mr-0.5">把光标所在段标为</span>
+                {(['主歌', '副歌', '导歌', '桥段', '结尾'] as const).map((lbl) => (
+                  <button key={lbl} onClick={() => insertSection(lbl)} className="h-6 px-2 rounded-md bg-[#F9F7F5] hover:bg-emerald-50 hover:text-emerald-600 text-[10px] font-black transition-all">{lbl}</button>
+                ))}
+              </div>
               <label className="block space-y-1.5"><span className="text-[10px] font-bold uppercase tracking-wider text-outline/40 px-1">翻译 / 对照歌词（可选）</span>
-                <textarea value={english} onChange={(e) => onEnglish(e.target.value)} rows={5} className="w-full bg-[#F9F7F5] border border-[#E5E0DA]/60 rounded-xl px-3 py-2 text-sm font-medium outline-none focus:border-emerald-500 resize-none leading-relaxed" />
+                <textarea ref={engRef} onFocus={() => setActiveField('english')} value={english} onChange={(e) => onEnglish(e.target.value)} rows={5} className="w-full bg-[#F9F7F5] border border-[#E5E0DA]/60 rounded-xl px-3 py-2 text-sm font-medium outline-none focus:border-emerald-500 resize-none leading-relaxed" />
                 <span className="block text-[10px] font-medium text-outline/40 px-1 leading-snug">内置英文翻译为参考版本、非官方译本，可能与会众熟悉的唱本不同，敬拜前请自行核对或修改。</span>
               </label>
             </>
