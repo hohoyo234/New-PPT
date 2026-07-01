@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   loadLibrary, updateById, deleteFromLibrary, addBlankSong, saveToLibrary,
-  exportLibraryJSON, importLibraryJSON, onLibraryChange, type LibrarySong,
+  importLibraryJSON, onLibraryChange, type LibrarySong,
 } from '../lib/songLibrary';
 import { communitySearch, contributeCurated } from '../lib/cloud';
 import { hasConsented } from '../lib/consent';
@@ -56,7 +56,7 @@ function fuzzyScore(s: LibrarySong, tokens: string[], joined: string): number {
 }
 
 export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: React.ReactNode; authSlot?: React.ReactNode }) {
-  const { user, syncNow, syncing, openAuth } = useAuth();
+  const { user, openAuth } = useAuth();
   const [songs, setSongs] = useState<LibrarySong[]>(() => loadLibrary());
   const [q, setQ] = useState('');
   const [filter, setFilter] = useState<Filter>('all');
@@ -133,9 +133,10 @@ export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: Reac
     else setGate({ kind: 'contribute', run: () => doContribute(s) });
   };
 
-  const doSync = async () => {
-    const r = await syncNow();
-    if (r) flash(`☁️ 已同步:上传 ${r.pushed} 首、拉取 ${r.pulled} 首`);
+  // 新增 / 导入 需要登录：未登录时先弹登录框，登录成功后继续原操作。
+  const requireLogin = (reason: string, fn: () => void) => {
+    if (!user) { openAuth({ reason, onSuccess: fn }); return; }
+    fn();
   };
 
   const filtered = useMemo(() => {
@@ -177,16 +178,6 @@ export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: Reac
 
   const addNew = () => { const s = addBlankSong(); refresh(); setEditing(s); };
 
-  const doExport = () => {
-    const blob = new Blob([exportLibraryJSON()], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url; a.download = `歌库备份_${new Date().toISOString().split('T')[0]}.json`;
-    document.body.appendChild(a); a.click(); document.body.removeChild(a);
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-    flash('✅ 歌库已导出');
-  };
-
   const doImport = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]; e.target.value = '';
     if (!file) return;
@@ -206,13 +197,11 @@ export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: Reac
           <div className="flex items-center gap-2">
             {authSlot}
             <input ref={importRef} type="file" accept="application/json,.json" className="hidden" onChange={doImport} />
-            <button onClick={doSync} disabled={syncing} title={user ? '把歌库同步到云端（换设备也不丢）' : '登录后即可云端同步'} className="h-11 px-4 rounded-xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 flex items-center gap-1.5 disabled:opacity-50"><span className={`material-symbols-outlined text-[16px] ${syncing ? 'animate-spin' : ''}`}>{syncing ? 'progress_activity' : 'cloud_sync'}</span><span className="hidden lg:inline">同步</span></button>
-            <button onClick={() => importRef.current?.click()} className="h-11 px-4 rounded-xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">upload</span><span className="hidden lg:inline">导入</span></button>
-            <button onClick={doExport} className="h-11 px-4 rounded-xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">download</span><span className="hidden lg:inline">备份</span></button>
+            <button onClick={() => requireLogin('登录后即可导入歌库', () => importRef.current?.click())} title={user ? '' : '登录后即可导入'} className="h-11 px-4 rounded-xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">upload</span><span className="hidden lg:inline">导入</span></button>
             {isAdmin && (
               <button onClick={() => setAdminOpen(true)} title="管理员面板" className="h-11 px-4 rounded-xl bg-white border border-emerald-300 text-emerald-700 text-[10px] font-black uppercase tracking-wider hover:bg-emerald-50 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">admin_panel_settings</span><span className="hidden lg:inline">管理</span></button>
             )}
-            <button onClick={addNew} className="h-11 px-5 rounded-xl bg-black text-white text-[10px] font-black uppercase tracking-wider hover:bg-emerald-600 flex items-center gap-1.5 shadow-lg"><span className="material-symbols-outlined text-[16px]">add</span>新增</button>
+            <button onClick={() => requireLogin('登录后即可新增歌曲', addNew)} title={user ? '' : '登录后即可新增'} className="h-11 px-5 rounded-xl bg-black text-white text-[10px] font-black uppercase tracking-wider hover:bg-emerald-600 flex items-center gap-1.5 shadow-lg"><span className="material-symbols-outlined text-[16px]">add</span>新增</button>
           </div>
         </div>
       </header>
