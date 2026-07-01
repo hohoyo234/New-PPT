@@ -287,9 +287,14 @@ export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: Reac
                     <span className={`text-[9px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded shrink-0 ${hasLyrics ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'}`}>{hasLyrics ? '有歌词' : '仅歌名'}</span>
                   </div>
                 </div>
-                <button onClick={() => contribute(s)} title="贡献至社区精修库" className="w-8 h-8 rounded-lg hover:bg-violet-50 text-outline/40 hover:text-violet-600 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all"><span className="material-symbols-outlined text-[18px]">ios_share</span></button>
-                <button onClick={() => setEditing(s)} className="w-8 h-8 rounded-lg hover:bg-emerald-50 text-outline/40 hover:text-emerald-600 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all"><span className="material-symbols-outlined text-[18px]">edit</span></button>
-                <button onClick={() => del(s)} className="w-8 h-8 rounded-lg hover:bg-red-50 text-outline/40 hover:text-red-500 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all"><span className="material-symbols-outlined text-[18px]">delete</span></button>
+                {/* 分享 / 编辑 / 删除 — 只有管理员可见且可用（歌库管理权限）。 */}
+                {isAdmin && (
+                  <>
+                    <button onClick={() => contribute(s)} title="贡献至社区精修库" className="w-8 h-8 rounded-lg hover:bg-violet-50 text-outline/40 hover:text-violet-600 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all"><span className="material-symbols-outlined text-[18px]">ios_share</span></button>
+                    <button onClick={() => setEditing(s)} className="w-8 h-8 rounded-lg hover:bg-emerald-50 text-outline/40 hover:text-emerald-600 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all"><span className="material-symbols-outlined text-[18px]">edit</span></button>
+                    <button onClick={() => del(s)} className="w-8 h-8 rounded-lg hover:bg-red-50 text-outline/40 hover:text-red-500 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all"><span className="material-symbols-outlined text-[18px]">delete</span></button>
+                  </>
+                )}
               </div>
             );
           })}
