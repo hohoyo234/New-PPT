@@ -9,6 +9,8 @@ import { exportMerged, exportZip } from '../lib/exporter';
 import { track } from '../lib/tracking';
 import { openLyricSheet } from '../lib/lyricSheet';
 import { PreviewModal } from './SlidePreview';
+import { useAuth } from '../components/AuthProvider';
+import FeedbackModal from '../components/FeedbackModal';
 
 type Step = 'count' | 'entries' | 'confirm';
 
@@ -53,6 +55,7 @@ const AUTO_SETTINGS: Omit<DeckSettings, 'selectedBg' | 'showSongTitle' | 'unifyB
 const uid = () => crypto.randomUUID();
 
 export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.ReactNode; authSlot?: React.ReactNode }) {
+  const { user, openAuth } = useAuth();
   const [step, setStep] = useState<Step>('count');
   const [count, setCount] = useState(3);
   const [entries, setEntries] = useState<string[]>(['', '', '']);
@@ -67,6 +70,7 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
 
   const [status, setStatus] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [showFeedback, setShowFeedback] = useState(false);
   const libStats = useMemo(() => libraryStats(), [step]);
   const [focusedEntry, setFocusedEntry] = useState<number | null>(null);
   const entryResults = useMemo(
@@ -177,8 +181,17 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
     if (on) setSongs((prev) => (prev.length ? prev.map((s) => ({ ...s, bg: prev[0].bg })) : prev));
   };
 
-  // Step 3 → export
-  const doExport = async () => {
+  // Step 3 → export. Gated behind login (everything before this stays open to
+  // guests); a successful login auto-continues the export.
+  const doExport = () => {
+    if (!user) {
+      openAuth({ reason: '登录后即可生成并下载 PPT —— 识别、编辑、预览都不需要登录。', onSuccess: runExport });
+      return;
+    }
+    runExport();
+  };
+
+  const runExport = async () => {
     const valid = songs.filter((s) => s.include && (s.title.trim() || s.lyrics.trim()));
     if (!valid.length) { flash('❌ 没有勾选可导出的歌曲'); return; }
     const missing = valid.filter((s) => !s.lyrics.trim());
@@ -212,6 +225,7 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
       flash(res.bgEmbedFailed
         ? '⚠️ 部分背景图无法加载，已用纯色代替（文件已导出）'
         : merge ? '✅ 已下载合并 PPT' : `✅ 已打包下载 ${res.fileCount} 个 PPT（ZIP）`, 4500);
+      setShowFeedback(true);
     } catch (e) {
       console.error('Auto export failed', e);
       track('error', 'auto 导出失败');
@@ -375,6 +389,8 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
           </div>
         )}
       </main>
+
+      {showFeedback && <FeedbackModal onClose={() => setShowFeedback(false)} />}
 
       {status && (
         <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-black text-white px-8 py-4 rounded-full font-black text-xs tracking-wider shadow-2xl flex items-center gap-3"><span className="material-symbols-outlined text-emerald-400 text-lg">offline_pin</span>{status}</div>

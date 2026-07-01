@@ -12,7 +12,7 @@ interface AuthCtx {
   ready: boolean;
   syncing: boolean;
   /** Whoever this resolves to is signed in; null = guest (功能受限). */
-  openAuth: () => void;
+  openAuth: (opts?: { reason?: string; onSuccess?: () => void }) => void;
   signOutNow: () => Promise<void>;
   /** Full two-way sync: push the local library up, pull the cloud one down. */
   syncNow: () => Promise<{ pushed: number; pulled: number } | null>;
@@ -32,6 +32,7 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
   const [ready, setReady] = useState(false);
   const [syncing, setSyncing] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+  const [authOpts, setAuthOpts] = useState<{ reason?: string; onSuccess?: () => void }>({});
   const [termsOpen, setTermsOpen] = useState(false);
   const pulledFor = useRef<string | null>(null);
 
@@ -93,16 +94,18 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
 
   const value: AuthCtx = {
     user, ready, syncing,
-    openAuth: () => setAuthOpen(true),
+    openAuth: (opts) => { setAuthOpts(opts || {}); setAuthOpen(true); },
     signOutNow,
     syncNow,
     openTerms: () => setTermsOpen(true),
   };
 
+  const closeAuth = () => { setAuthOpen(false); setAuthOpts({}); };
+
   return (
     <Ctx.Provider value={value}>
       {children}
-      {authOpen && <AuthModal onClose={() => setAuthOpen(false)} />}
+      {authOpen && <AuthModal reason={authOpts.reason} onSuccess={authOpts.onSuccess} onClose={closeAuth} />}
       {termsOpen && <AgreementModal kind="terms" onClose={() => setTermsOpen(false)} />}
     </Ctx.Provider>
   );

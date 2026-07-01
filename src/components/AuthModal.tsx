@@ -3,7 +3,7 @@ import { signIn, signUp } from '../lib/auth';
 
 // Email/password login + register modal. On success the parent closes it and
 // reacts to the auth-state change (which kicks off the cloud pull).
-export default function AuthModal({ onClose }: { onClose: () => void }) {
+export default function AuthModal({ onClose, reason, onSuccess }: { onClose: () => void; reason?: string; onSuccess?: () => void }) {
   const [tab, setTab] = useState<'login' | 'register'>('login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -22,6 +22,7 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
     try {
       if (tab === 'login') {
         await signIn(email, password);
+        onSuccess?.();
         onClose();
       } else {
         const { needsConfirmation } = await signUp(email, password);
@@ -29,6 +30,7 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
           setInfo('注册成功！请到邮箱点击验证链接后再登录。');
           setTab('login');
         } else {
+          onSuccess?.();
           onClose();
         }
       }
@@ -51,7 +53,7 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
           <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-[0_0_12px_rgba(16,185,129,0.5)]" />
           <h2 className="font-serif font-black text-2xl text-[#2C2C2C]">{tab === 'login' ? '登录' : '注册账户'}</h2>
         </div>
-        <p className="text-outline/50 font-medium text-sm mb-6">登录后即可云端同步歌库、贡献社区精修版，换设备也不丢。</p>
+        <p className="text-outline/50 font-medium text-sm mb-6">{reason || '登录后即可云端同步歌库、贡献社区精修版，换设备也不丢。'}</p>
 
         <div className="flex bg-[#F4F1EE] rounded-2xl p-1 mb-5">
           {([['login', '登录'], ['register', '注册']] as const).map(([v, t]) => (
@@ -77,6 +79,12 @@ export default function AuthModal({ onClose }: { onClose: () => void }) {
           {busy && <span className="material-symbols-outlined text-lg animate-spin">progress_activity</span>}
           {tab === 'login' ? '登录' : '创建账户'}
         </button>
+
+        {reason && (
+          <button onClick={onClose} className="w-full mt-3 h-11 rounded-2xl bg-[#F4F1EE] text-outline/60 text-[11px] font-black uppercase tracking-widest hover:bg-[#E5E0DA] transition-all">
+            以访客身份继续（暂不登录）
+          </button>
+        )}
 
         <p className="text-[11px] text-outline/40 font-medium text-center mt-5 leading-relaxed">
           继续即表示你同意我们的

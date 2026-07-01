@@ -10,7 +10,7 @@ export default function AuthButton() {
 
   if (!user) {
     return (
-      <button onClick={openAuth} className="h-11 px-4 rounded-2xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 transition-all shadow-sm flex items-center gap-1.5">
+      <button onClick={() => openAuth()} className="h-11 px-4 rounded-2xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 transition-all shadow-sm flex items-center gap-1.5">
         <span className="material-symbols-outlined text-[18px]">account_circle</span>
         <span className="hidden sm:inline">登录 / 注册</span>
       </button>

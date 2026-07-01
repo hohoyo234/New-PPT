@@ -12,6 +12,8 @@ import { saveToLibrary, searchLibraryMulti, type LibrarySong } from '../lib/song
 import { openLyricSheet } from '../lib/lyricSheet';
 import { SlideView, PreviewModal, type PreviewSlide } from './SlidePreview';
 import { track, trackSearch } from '../lib/tracking';
+import { useAuth } from '../components/AuthProvider';
+import FeedbackModal from '../components/FeedbackModal';
 
 const LS_KEY = 'worship_ppt_maker_v1';
 
@@ -68,6 +70,7 @@ function loadState(): PersistShape {
 }
 
 export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React.ReactNode; authSlot?: React.ReactNode }) {
+  const { user, openAuth } = useAuth();
   const initial = useMemo(loadState, []);
   const [songs, setSongs] = useState<SongInput[]>(initial.songs);
   const [activeId, setActiveId] = useState<string>(initial.songs[0].id);
@@ -89,6 +92,7 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
 
   const [status, setStatus] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
+  const [showFeedback, setShowFeedback] = useState(false);
   const [aiOpen, setAiOpen] = useState(false);
   const [aiPrompt, setAiPrompt] = useState('');
   const [aiBusy, setAiBusy] = useState(false);
@@ -205,7 +209,17 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
     }, 1800);
   };
 
-  const handleGenerate = async () => {
+  // Export is gated behind login (editing/preview stay open to guests). A guest
+  // clicking 生成 gets the auth modal; a successful login auto-continues here.
+  const handleGenerate = () => {
+    if (!user) {
+      openAuth({ reason: '登录后即可生成并下载 PPT —— 歌词编辑、预览、歌词单都不需要登录。', onSuccess: runGenerate });
+      return;
+    }
+    runGenerate();
+  };
+
+  const runGenerate = async () => {
     const valid = songs.filter((s) => s.title.trim() || s.lyrics.trim());
     if (!valid.length) {
       flash('❌ 请先输入歌名或歌词');
@@ -227,6 +241,7 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
         }),
       );
       flash(bgEmbedFailed ? '⚠️ 部分背景图无法加载，已用纯色代替（文件已导出）' : `✅ 已下载 ${fileName}`, 4000);
+      setShowFeedback(true);
     } catch (err) {
       console.error('Generate failed', err);
       track('error', 'manual 导出失败');
@@ -492,6 +507,8 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
           </div>
         </div>
       )}
+
+      {showFeedback && <FeedbackModal onClose={() => setShowFeedback(false)} />}
 
       {status && (
         <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-black text-white px-8 py-4 rounded-full font-black text-xs tracking-wider shadow-2xl flex items-center gap-3"><span className="material-symbols-outlined text-emerald-400 text-lg">offline_pin</span>{status}</div>
