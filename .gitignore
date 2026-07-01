@@ -1,0 +1,12 @@
+node_modules
+dist
+*.local
+.DS_Store
+
+
+# Oversized AI PNGs excluded (exceed this network's push size cap; backgrounds load via glob so dropping 3 is harmless)
+src/assets/backgrounds/Gemini_Generated_Image_*.png
+
+# Workflow files can only be added via GitHub web UI (OAuth token lacks `workflow` scope)
+.github/workflows/
+.claude/
