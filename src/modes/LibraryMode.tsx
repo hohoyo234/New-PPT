@@ -7,6 +7,8 @@ import { communitySearch, contributeCurated } from '../lib/cloud';
 import { hasConsented } from '../lib/consent';
 import { useAuth } from '../components/AuthProvider';
 import AgreementModal from '../components/AgreementModal';
+import AdminPanel from '../components/AdminPanel';
+import { isAdminEmail } from '../lib/catalog';
 import { track, trackSearch } from '../lib/tracking';
 
 type Filter = 'all' | 'lyrics' | 'titleOnly';
@@ -61,7 +63,9 @@ export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: Reac
   const [lang, setLang] = useState<'tc' | 'sc'>(() => (localStorage.getItem('lib_lang') as 'tc' | 'sc') || 'tc');
   const [editing, setEditing] = useState<LibrarySong | null>(null);
   const [status, setStatus] = useState<string | null>(null);
+  const [adminOpen, setAdminOpen] = useState(false);
   const importRef = useRef<HTMLInputElement>(null);
+  const isAdmin = isAdminEmail(user?.email);
 
   // 社区精修版 — results pulled live from the shared community pool while searching.
   const [community, setCommunity] = useState<LibrarySong[]>([]);
@@ -205,6 +209,9 @@ export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: Reac
             <button onClick={doSync} disabled={syncing} title={user ? '把歌库同步到云端（换设备也不丢）' : '登录后即可云端同步'} className="h-11 px-4 rounded-xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 flex items-center gap-1.5 disabled:opacity-50"><span className={`material-symbols-outlined text-[16px] ${syncing ? 'animate-spin' : ''}`}>{syncing ? 'progress_activity' : 'cloud_sync'}</span><span className="hidden lg:inline">同步</span></button>
             <button onClick={() => importRef.current?.click()} className="h-11 px-4 rounded-xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">upload</span><span className="hidden lg:inline">导入</span></button>
             <button onClick={doExport} className="h-11 px-4 rounded-xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">download</span><span className="hidden lg:inline">备份</span></button>
+            {isAdmin && (
+              <button onClick={() => setAdminOpen(true)} title="管理员面板" className="h-11 px-4 rounded-xl bg-white border border-emerald-300 text-emerald-700 text-[10px] font-black uppercase tracking-wider hover:bg-emerald-50 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">admin_panel_settings</span><span className="hidden lg:inline">管理</span></button>
+            )}
             <button onClick={addNew} className="h-11 px-5 rounded-xl bg-black text-white text-[10px] font-black uppercase tracking-wider hover:bg-emerald-600 flex items-center gap-1.5 shadow-lg"><span className="material-symbols-outlined text-[16px]">add</span>新增</button>
           </div>
         </div>
@@ -321,6 +328,8 @@ export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: Reac
       )}
 
       {gate && <AgreementModal kind={gate.kind} onAgree={gate.run} onClose={() => setGate(null)} />}
+
+      {adminOpen && isAdmin && <AdminPanel adminEmail={user!.email} onClose={() => setAdminOpen(false)} />}
 
       {status && <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-black text-white px-8 py-4 rounded-full font-black text-xs tracking-wider shadow-2xl flex items-center gap-3"><span className="material-symbols-outlined text-emerald-400 text-lg">offline_pin</span>{status}</div>}
 
