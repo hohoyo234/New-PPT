@@ -7,6 +7,7 @@ import { SEED_SONGS, REPLACE_VERSION } from './lib/seedSongs';
 import AuthProvider from './components/AuthProvider';
 import AuthButton from './components/AuthButton';
 import { initTracking, setTrackedMode, track } from './lib/tracking';
+import { initBehaviour } from './lib/behaviour';
 
 type Mode = 'auto' | 'manual' | 'library';
 
@@ -20,6 +21,8 @@ export default function App() {
     // Cloud write-through is wired by <AuthProvider>: signed-in users sync to
     // their own private table; guests stay local-only.
     setTrackedMode(mode);
+    // Behaviour tracking first so its listener is wired before session_start.
+    initBehaviour();
     initTracking();
   }, []);
 
