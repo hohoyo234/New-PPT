@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { recordConsent, type ConsentKind } from '../lib/consent';
+import { isTrackingOptedOut, setTrackingOptOut } from '../lib/tracking';
 
 type Kind = ConsentKind | 'terms';
 
@@ -49,7 +50,8 @@ const CONTENT: Record<Kind, Content> = {
       '三、用户责任：用户须保证其上传 / 分享的内容已获授权或属合理使用，因侵权产生的法律责任由用户自负。',
       '四、避风港原则：本平台在接到合法侵权通知后，将履行「通知—删除」义务，及时下架被投诉内容。',
       '五、隐私：登录账户的歌库数据仅与你的账户绑定，他人不可见；我们不会出售你的个人数据。',
-      '六、非营利展示：社区精修版等共享内容仅用于同工间非营利的交流学习。',
+      '六、使用统计：我们收集匿名的使用数据（如使用了哪些功能、停留时长、设备类型）以改进产品；你可在下方随时关闭。',
+      '七、非营利展示：社区精修版等共享内容仅用于同工间非营利的交流学习。',
     ],
     agreeLabel: '我知道了',
   },
@@ -71,6 +73,8 @@ export default function AgreementModal({
   const c = CONTENT[kind];
   const needsCheckbox = kind !== 'terms';
   const [checked, setChecked] = useState(!needsCheckbox);
+  const [optedOut, setOptedOut] = useState(isTrackingOptedOut());
+  const toggleTracking = () => { const v = !optedOut; setOptedOut(v); setTrackingOptOut(v); };
 
   const agree = () => {
     if (needsCheckbox && (kind === 'contribute' || kind === 'community')) recordConsent(kind);
@@ -98,6 +102,16 @@ export default function AgreementModal({
             </li>
           ))}
         </ul>
+
+        {kind === 'terms' && (
+          <button onClick={toggleTracking} className="w-full flex items-center justify-between bg-[#F9F7F5] rounded-2xl px-4 py-3.5 mb-5 hover:bg-[#F4F1EE]">
+            <span className="flex items-center gap-2.5 text-left">
+              <span className="material-symbols-outlined text-[20px] text-outline/50">insights</span>
+              <span className="text-[13px] font-bold text-[#2C2C2C]">允许匿名使用统计<span className="block text-[11px] font-medium text-outline/50">帮助改进产品 · 不含任何隐私内容 · 可随时关闭</span></span>
+            </span>
+            <span className={`relative w-10 h-6 rounded-full transition-colors shrink-0 ${optedOut ? 'bg-[#E5E0DA]' : 'bg-emerald-600'}`}><span className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-all ${optedOut ? 'left-0.5' : 'left-[18px]'}`} /></span>
+          </button>
+        )}
 
         {needsCheckbox && (
           <label className="flex items-start gap-3 cursor-pointer select-none bg-[#F9F7F5] rounded-2xl px-4 py-3.5 mb-5">

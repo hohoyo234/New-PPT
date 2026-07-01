@@ -13,6 +13,15 @@ export const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxKS85F2
 
 const ANON_KEY = 'ppt_anon_id';
 const SESSION_KEY = 'ppt_session_id';
+const OPTOUT_KEY = 'ppt_tracking_optout';
+
+// User-facing opt-out: when set, no events are sent to either sink.
+export function isTrackingOptedOut(): boolean {
+  try { return localStorage.getItem(OPTOUT_KEY) === '1'; } catch { return false; }
+}
+export function setTrackingOptOut(on: boolean) {
+  try { localStorage.setItem(OPTOUT_KEY, on ? '1' : '0'); } catch {}
+}
 
 function anonId(): string {
   try {
@@ -85,6 +94,7 @@ function buildEvent(type: string, detail = '', duration = 0): UsageEvent {
 
 // Send to both sinks. `beacon` uses sendBeacon so it survives page unload.
 function send(evt: UsageEvent, beacon = false) {
+  if (isTrackingOptedOut()) return;
   // Sheet sink
   if (APPS_SCRIPT_URL) {
     try {
