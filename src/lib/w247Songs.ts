@@ -545,9 +545,9 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "宋家豪、林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "看哪 燃燒的火焰 聽哪 眾水的聲音\n神哪 祢的榮耀在這裡 我們歡然稱謝祢\n看哪 燃燒的火焰 聽哪 眾水的聲音\n神哪 祢的榮耀在這裡 我們俯伏敬拜祢\n求聖靈的火焰燃燒我的心\n求聖靈的恩膏膏抹我的靈\n我在這裡歌唱讚美永不停息\n求復興的火燃燒點亮這全地\n我在神的殿裡貼近神的心\n我在至聖所裡倚靠神的靈\n神的子民同心發出合一的聲音\n大能的勇士現在要興起\n求聖靈的火焰燃燒我們的心\n求聖靈的恩膏膏抹我們的靈\n我們在這裡歌唱讚美永不停息\n求復興的火燃燒點亮這全地\n我們在神的殿裡貼近神的心\n我們在至聖所裡倚靠神的靈\n神的子民同心發出合一的聲音\n大能的勇士現在要興起 要興起\n尾奏\n喔 要興起 喔",
-  "lyricsSc": "看哪 燃烧的火焰 听哪 众水的声音\n神哪 祢的荣耀在这里 我们欢然称谢祢\n看哪 燃烧的火焰 听哪 众水的声音\n神哪 祢的荣耀在这里 我们俯伏敬拜祢\n求圣灵的火焰燃烧我的心\n求圣灵的恩膏膏抹我的灵\n我在这里歌唱赞美永不停息\n求复兴的火燃烧点亮这全地\n我在神的殿里贴近神的心\n我在至圣所里倚靠神的灵\n神的子民同心发出合一的声音\n大能的勇士现在要兴起\n求圣灵的火焰燃烧我们的心\n求圣灵的恩膏膏抹我们的灵\n我们在这里歌唱赞美永不停息\n求复兴的火燃烧点亮这全地\n我们在神的殿里贴近神的心\n我们在至圣所里倚靠神的灵\n神的子民同心发出合一的声音\n大能的勇士现在要兴起 要兴起\n尾奏\n喔 要兴起 喔",
-  "englishLyrics": "Behold the burning flames, hear the sound of many waters\nO God, Your glory is here, joyfully we give You thanks\nBehold the burning flames, hear the sound of many waters\nO God, Your glory is here, we bow down and worship You\nLet the fire of the Spirit burn within my heart\nLet the anointing of the Spirit anoint my soul\nHere I sing and praise, and never cease\nLet revival's fire burn and light up all this land\nIn the house of God I draw near to His heart\nIn the Holy of Holies I lean upon His Spirit\nGod's people with one accord raise a unified voice\nThe mighty warriors now will arise\nLet the fire of the Spirit burn within our hearts\nLet the anointing of the Spirit anoint our souls\nHere we sing and praise, and never cease\nLet revival's fire burn and light up all this land\nIn the house of God we draw near to His heart\nIn the Holy of Holies we lean upon His Spirit\nGod's people with one accord raise a unified voice\nThe mighty warriors now will arise, will arise\n(Instrumental ending)\nOh, arise, oh"
+  "lyrics": "看哪 燃燒的火焰 聽哪 眾水的聲音\n神哪 祢的榮耀在這裡 我們歡然稱謝祢\n看哪 燃燒的火焰 聽哪 眾水的聲音\n神哪 祢的榮耀在這裡 我們俯伏敬拜祢\n求聖靈的火焰燃燒我的心\n求聖靈的恩膏膏抹我的靈\n我在這裡歌唱讚美永不停息\n求復興的火燃燒點亮這全地\n我在神的殿裡貼近神的心\n我在至聖所裡倚靠神的靈\n神的子民同心發出合一的聲音\n大能的勇士現在要興起\n求聖靈的火焰燃燒我們的心\n求聖靈的恩膏膏抹我們的靈\n我們在這裡歌唱讚美永不停息\n求復興的火燃燒點亮這全地\n我們在神的殿裡貼近神的心\n我們在至聖所裡倚靠神的靈\n神的子民同心發出合一的聲音\n大能的勇士現在要興起 要興起\n喔 要興起 喔",
+  "lyricsSc": "看哪 燃烧的火焰 听哪 众水的声音\n神哪 祢的荣耀在这里 我们欢然称谢祢\n看哪 燃烧的火焰 听哪 众水的声音\n神哪 祢的荣耀在这里 我们俯伏敬拜祢\n求圣灵的火焰燃烧我的心\n求圣灵的恩膏膏抹我的灵\n我在这里歌唱赞美永不停息\n求复兴的火燃烧点亮这全地\n我在神的殿里贴近神的心\n我在至圣所里倚靠神的灵\n神的子民同心发出合一的声音\n大能的勇士现在要兴起\n求圣灵的火焰燃烧我们的心\n求圣灵的恩膏膏抹我们的灵\n我们在这里歌唱赞美永不停息\n求复兴的火燃烧点亮这全地\n我们在神的殿里贴近神的心\n我们在至圣所里倚靠神的灵\n神的子民同心发出合一的声音\n大能的勇士现在要兴起 要兴起\n喔 要兴起 喔",
+  "englishLyrics": "Behold the burning flames, hear the sound of many waters\nO God, Your glory is here, joyfully we give You thanks\nBehold the burning flames, hear the sound of many waters\nO God, Your glory is here, we bow down and worship You\nLet the fire of the Spirit burn within my heart\nLet the anointing of the Spirit anoint my soul\nHere I sing and praise, and never cease\nLet revival's fire burn and light up all this land\nIn the house of God I draw near to His heart\nIn the Holy of Holies I lean upon His Spirit\nGod's people with one accord raise a unified voice\nThe mighty warriors now will arise\nLet the fire of the Spirit burn within our hearts\nLet the anointing of the Spirit anoint our souls\nHere we sing and praise, and never cease\nLet revival's fire burn and light up all this land\nIn the house of God we draw near to His heart\nIn the Holy of Holies we lean upon His Spirit\nGod's people with one accord raise a unified voice\nThe mighty warriors now will arise, will arise\nOh, arise, oh"
  },
  {
   "title": "宣告耶穌聖名 (譯自 I Speak Jesus)",
@@ -783,8 +783,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "祢是我的平安 怒濤中的平安\n風雨中的寧靜 忙碌中的安息\n耶和華唯祢是神 洪水泛濫時祢是神\n坐著為王直到永遠 直到永遠\n耶和華唯祢是神 洪水泛濫時祢是神\n平安的福賜給我們 賜給我們\n即興\n能力屬於祢 權柄屬於祢\n唯有祢是神 永遠祢是神\n(能力屬祢) 能力屬於祢\n(權柄屬祢) 權柄屬於祢\n唯有祢是神 永遠祢是神\n能力屬於祢 (配得讚美)\n權柄屬於祢 (配得尊崇)\n唯有祢是神 永遠祢是神",
-  "lyricsSc": "祢是我的平安 怒涛中的平安\n风雨中的宁静 忙碌中的安息\n耶和华唯祢是神 洪水泛滥时祢是神\n坐著为王直到永远 直到永远\n耶和华唯祢是神 洪水泛滥时祢是神\n平安的福赐给我们 赐给我们\n即兴\n能力属于祢 权柄属于祢\n唯有祢是神 永远祢是神\n(能力属祢) 能力属于祢\n(权柄属祢) 权柄属于祢\n唯有祢是神 永远祢是神\n能力属于祢 (配得赞美)\n权柄属于祢 (配得尊崇)\n唯有祢是神 永远祢是神",
+  "lyrics": "祢是我的平安 怒濤中的平安\n風雨中的寧靜 忙碌中的安息\n耶和華唯祢是神 洪水泛濫時祢是神\n坐著為王直到永遠 直到永遠\n耶和華唯祢是神 洪水泛濫時祢是神\n平安的福賜給我們 賜給我們\n能力屬於祢 權柄屬於祢\n唯有祢是神 永遠祢是神\n(能力屬祢) 能力屬於祢\n(權柄屬祢) 權柄屬於祢\n唯有祢是神 永遠祢是神\n能力屬於祢 (配得讚美)\n權柄屬於祢 (配得尊崇)\n唯有祢是神 永遠祢是神",
+  "lyricsSc": "祢是我的平安 怒涛中的平安\n风雨中的宁静 忙碌中的安息\n耶和华唯祢是神 洪水泛滥时祢是神\n坐著为王直到永远 直到永远\n耶和华唯祢是神 洪水泛滥时祢是神\n平安的福赐给我们 赐给我们\n能力属于祢 权柄属于祢\n唯有祢是神 永远祢是神\n(能力属祢) 能力属于祢\n(权柄属祢) 权柄属于祢\n唯有祢是神 永远祢是神\n能力属于祢 (配得赞美)\n权柄属于祢 (配得尊崇)\n唯有祢是神 永远祢是神",
   "englishLyrics": "(2X)\nIn You there is peace, Lord, whenever it’s storming;\nAmidst wind and rain, Lord, in You there is rest.\n(2X)\nEnthroned above the flood, You reign as King forever;\nThe Lord of many waters, grant us Your peace.\nEnthroned above the flood, You reign as King forever;\nGive strength unto Your people, bless us with peace.\nSpontaneous\nLord of every pow’r, Lord of every thing,\nYou alone are God, Our eternal King.\n(Lord of power) Lord of every pow’r,\n(Of all things) Lord of every thing,\nYou alone are God, Our eternal King.\nLord of every pow’r, (You are worthy)\nLord of every thing, (You are worthy)\nYou alone are God, Our eternal King."
  },
  {
@@ -825,8 +825,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "天上有個榮耀的寶座 其上坐著亙古常在者\n威嚴 尊貴 公義 慈愛\n天使天軍侍立寶座前 聽祂命令 遵行祂旨意\n俯伏敬拜 晝夜不停\n聖哉 聖哉 聖哉 聖哉\n聖哉 聖哉 聖哉 聖哉\n聖所的幔子已經裂開 帶著羔羊寶血近前來\n稱謝讚美 直到永遠\n與基督藏在神的裡面 坐在高天瞻仰祂容顏\n聆聽主心 傳祂旨意\n興起啊 君尊的祭司 興起啊 聖潔的國度\n在萬邦宣揚祂的榮美 向萬代傳揚祂的作為\n即興\n有誰能像祢 俯伏敬拜祢\n唯有祢配得 唯有祢配得\n權柄都屬祢 榮耀都歸祢\n唯有祢配得 唯有祢配得",
-  "lyricsSc": "天上有个荣耀的宝座 其上坐著亘古常在者\n威严 尊贵 公义 慈爱\n天使天军侍立宝座前 听祂命令 遵行祂旨意\n俯伏敬拜 昼夜不停\n圣哉 圣哉 圣哉 圣哉\n圣哉 圣哉 圣哉 圣哉\n圣所的幔子已经裂开 带著羔羊宝血近前来\n称谢赞美 直到永远\n与基督藏在神的里面 坐在高天瞻仰祂容颜\n聆听主心 传祂旨意\n兴起啊 君尊的祭司 兴起啊 圣洁的国度\n在万邦宣扬祂的荣美 向万代传扬祂的作为\n即兴\n有谁能像祢 俯伏敬拜祢\n唯有祢配得 唯有祢配得\n权柄都属祢 荣耀都归祢\n唯有祢配得 唯有祢配得",
+  "lyrics": "天上有個榮耀的寶座 其上坐著亙古常在者\n威嚴 尊貴 公義 慈愛\n天使天軍侍立寶座前 聽祂命令 遵行祂旨意\n俯伏敬拜 晝夜不停\n聖哉 聖哉 聖哉 聖哉\n聖哉 聖哉 聖哉 聖哉\n聖所的幔子已經裂開 帶著羔羊寶血近前來\n稱謝讚美 直到永遠\n與基督藏在神的裡面 坐在高天瞻仰祂容顏\n聆聽主心 傳祂旨意\n興起啊 君尊的祭司 興起啊 聖潔的國度\n在萬邦宣揚祂的榮美 向萬代傳揚祂的作為\n有誰能像祢 俯伏敬拜祢\n唯有祢配得 唯有祢配得\n權柄都屬祢 榮耀都歸祢\n唯有祢配得 唯有祢配得",
+  "lyricsSc": "天上有个荣耀的宝座 其上坐著亘古常在者\n威严 尊贵 公义 慈爱\n天使天军侍立宝座前 听祂命令 遵行祂旨意\n俯伏敬拜 昼夜不停\n圣哉 圣哉 圣哉 圣哉\n圣哉 圣哉 圣哉 圣哉\n圣所的幔子已经裂开 带著羔羊宝血近前来\n称谢赞美 直到永远\n与基督藏在神的里面 坐在高天瞻仰祂容颜\n聆听主心 传祂旨意\n兴起啊 君尊的祭司 兴起啊 圣洁的国度\n在万邦宣扬祂的荣美 向万代传扬祂的作为\n有谁能像祢 俯伏敬拜祢\n唯有祢配得 唯有祢配得\n权柄都属祢 荣耀都归祢\n唯有祢配得 唯有祢配得",
   "englishLyrics": "In the heav’nly realm there is a throne,\nOn it sits the Ancient of Days,\nAwesome, mighty, flowing with grace,\nAnd a host of angels at His throne\nCarry out His will and sing Him praise,\nHumbly serving through night and day.\nHoly, holy, holy, holy\nholy, holy, holy, holy\nNow the temple veil in two has split,\nAnd the blood of Christ for all has flowed:\nGlory, honor, worship and praise!\nNow my life with Christ in God is hid,\nAnd my God in heaven I’ll behold,\nKnow His goodness, tell of His ways!\nRise up, a nation of our God!\nRise up, a priesthood of our King!\nForever His mighty deeds proclaim\nDeclaring the glory of His name!"
  },
  {
@@ -1833,8 +1833,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "那一天 聽到祢名字 祢是耶和華\n自有永有的神 在祢沒有時間的盡頭\n那一天 見到祢容顏 祢至聖至榮\n彷彿站在玻璃海上 唱摩西和羔羊的詩歌\n我多想 我多想 早早飽得祢慈愛\n好叫我一生一世歡呼喜樂\n我羨慕 我渴想 耶和華的院宇\n我心腸 我肉體 向祢呼籲\n那一天 來到祢面前 俯伏敬拜祢\n在王面前側耳 我願單單聆聽祢聲音\n祢聘我 祢召我 做祢忠貞的新婦\n我願意 我願意 我在這裏\n即興\n啊 我在這裏 哦 舉起我的心\n我神 我的王 我在這裏\n舉起我雙臂 哦 舉起我的心\n我神 我的王 我在這裏 啊\n那一天 祢從天降臨 提我到雲裏\n與祢空中相遇 赴羔羊婚筵不再分離\n祢帶我 祢帶我 進入愛的筵宴所\n以愛為旗 以愛為旗 在我以上",
-  "lyricsSc": "那一天 听到祢名字 祢是耶和华\n自有永有的神 在祢没有时间的尽头\n那一天 见到祢容颜 祢至圣至荣\n仿佛站在玻璃海上 唱摩西和羔羊的诗歌\n我多想 我多想 早早饱得祢慈爱\n好叫我一生一世欢呼喜乐\n我羡慕 我渴想 耶和华的院宇\n我心肠 我肉体 向祢呼吁\n那一天 来到祢面前 俯伏敬拜祢\n在王面前侧耳 我愿单单聆听祢声音\n祢聘我 祢召我 做祢忠贞的新妇\n我愿意 我愿意 我在这里\n即兴\n啊 我在这里 哦 举起我的心\n我神 我的王 我在这里\n举起我双臂 哦 举起我的心\n我神 我的王 我在这里 啊\n那一天 祢从天降临 提我到云里\n与祢空中相遇 赴羔羊婚筵不再分离\n祢带我 祢带我 进入爱的筵宴所\n以爱为旗 以爱为旗 在我以上",
+  "lyrics": "那一天 聽到祢名字 祢是耶和華\n自有永有的神 在祢沒有時間的盡頭\n那一天 見到祢容顏 祢至聖至榮\n彷彿站在玻璃海上 唱摩西和羔羊的詩歌\n我多想 我多想 早早飽得祢慈愛\n好叫我一生一世歡呼喜樂\n我羨慕 我渴想 耶和華的院宇\n我心腸 我肉體 向祢呼籲\n那一天 來到祢面前 俯伏敬拜祢\n在王面前側耳 我願單單聆聽祢聲音\n祢聘我 祢召我 做祢忠貞的新婦\n我願意 我願意 我在這裏\n啊 我在這裏 哦 舉起我的心\n我神 我的王 我在這裏\n舉起我雙臂 哦 舉起我的心\n我神 我的王 我在這裏 啊\n那一天 祢從天降臨 提我到雲裏\n與祢空中相遇 赴羔羊婚筵不再分離\n祢帶我 祢帶我 進入愛的筵宴所\n以愛為旗 以愛為旗 在我以上",
+  "lyricsSc": "那一天 听到祢名字 祢是耶和华\n自有永有的神 在祢没有时间的尽头\n那一天 见到祢容颜 祢至圣至荣\n仿佛站在玻璃海上 唱摩西和羔羊的诗歌\n我多想 我多想 早早饱得祢慈爱\n好叫我一生一世欢呼喜乐\n我羡慕 我渴想 耶和华的院宇\n我心肠 我肉体 向祢呼吁\n那一天 来到祢面前 俯伏敬拜祢\n在王面前侧耳 我愿单单聆听祢声音\n祢聘我 祢召我 做祢忠贞的新妇\n我愿意 我愿意 我在这里\n啊 我在这里 哦 举起我的心\n我神 我的王 我在这里\n举起我双臂 哦 举起我的心\n我神 我的王 我在这里 啊\n那一天 祢从天降临 提我到云里\n与祢空中相遇 赴羔羊婚筵不再分离\n祢带我 祢带我 进入爱的筵宴所\n以爱为旗 以爱为旗 在我以上",
   "englishLyrics": "One day, while lost in darkness,\nI first heard Your Name:\nI AM, the Eternal,\nAge to age forever the same.\nOne day I saw Your glory,\nLike that mighty throng\nOn the glassy sea,\nSinging Moses’ ancient song.\nI longed to be filled with\nA love that knew no bound.\nYou gave me such gladness; what joy I found!\nMy soul yearned and fainted\nFor the temple of my Lord;\nMy heart and my flesh cried out for God.\nOne day I fell before You\nAnd inclined my ear.\nYou were my desire;\nYours, the only voice I would hear.\nYou called me, betrothed me,\nTo be Your faithful bride,\nTo be in Your presence; Lord, here am I!\nOne day the trump will sound,\nFrom heaven You’ll descend;\nRising, I shall meet You,\nWith You for all time without end.\nYou’ll bring me, invite me,\nInto Your banquet house,\nBeneath Your great banner, beneath Your love."
  },
  {
@@ -2155,9 +2155,9 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "周杏宜",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "哈利路亞 祢實在奇妙\n哈利路亞 寶座上的羊羔\n哈利路亞 祢使憂傷啼哭變作歡喜\n哈利路亞 從海角到天邊\n哈利路亞 引導我來行\n哈利路亞 讚美榮耀祢名\n哈利路亞 祢使軟弱的心變作堅強\n哈利路亞 祢什麼攏知影\n哈利路亞 引導我來行\n哈利路亞 讚美榮耀祢名\n哈利路亞 祢使軟弱的心變作堅強\n哈利路亞 一生在祢手中\n尾段\n哈利路亞 祢使軟弱的心變作堅強\n哈利路亞 一生在祢手中",
-  "lyricsSc": "哈利路亚 祢实在奇妙\n哈利路亚 宝座上的羊羔\n哈利路亚 祢使忧伤啼哭变作欢喜\n哈利路亚 从海角到天边\n哈利路亚 引导我来行\n哈利路亚 赞美荣耀祢名\n哈利路亚 祢使软弱的心变作坚强\n哈利路亚 祢什么拢知影\n哈利路亚 引导我来行\n哈利路亚 赞美荣耀祢名\n哈利路亚 祢使软弱的心变作坚强\n哈利路亚 一生在祢手中\n尾段\n哈利路亚 祢使软弱的心变作坚强\n哈利路亚 一生在祢手中",
-  "englishLyrics": "Hallelujah, You are truly wonderful\nHallelujah, the Lamb upon the throne\nHallelujah, You turn grief and weeping into joy\nHallelujah, from the ends of the sea to the edge of the sky\nHallelujah, You lead me on my way\nHallelujah, praise and glory to Your name\nHallelujah, You turn the weak heart into strength\nHallelujah, You know all things\nHallelujah, You lead me on my way\nHallelujah, praise and glory to Your name\nHallelujah, You turn the weak heart into strength\nHallelujah, all my life is in Your hands\n(Ending)\nHallelujah, You turn the weak heart into strength\nHallelujah, all my life is in Your hands"
+  "lyrics": "哈利路亞 祢實在奇妙\n哈利路亞 寶座上的羊羔\n哈利路亞 祢使憂傷啼哭變作歡喜\n哈利路亞 從海角到天邊\n哈利路亞 引導我來行\n哈利路亞 讚美榮耀祢名\n哈利路亞 祢使軟弱的心變作堅強\n哈利路亞 祢什麼攏知影\n哈利路亞 引導我來行\n哈利路亞 讚美榮耀祢名\n哈利路亞 祢使軟弱的心變作堅強\n哈利路亞 一生在祢手中\n哈利路亞 祢使軟弱的心變作堅強\n哈利路亞 一生在祢手中",
+  "lyricsSc": "哈利路亚 祢实在奇妙\n哈利路亚 宝座上的羊羔\n哈利路亚 祢使忧伤啼哭变作欢喜\n哈利路亚 从海角到天边\n哈利路亚 引导我来行\n哈利路亚 赞美荣耀祢名\n哈利路亚 祢使软弱的心变作坚强\n哈利路亚 祢什么拢知影\n哈利路亚 引导我来行\n哈利路亚 赞美荣耀祢名\n哈利路亚 祢使软弱的心变作坚强\n哈利路亚 一生在祢手中\n哈利路亚 祢使软弱的心变作坚强\n哈利路亚 一生在祢手中",
+  "englishLyrics": "Hallelujah, You are truly wonderful\nHallelujah, the Lamb upon the throne\nHallelujah, You turn grief and weeping into joy\nHallelujah, from the ends of the sea to the edge of the sky\nHallelujah, You lead me on my way\nHallelujah, praise and glory to Your name\nHallelujah, You turn the weak heart into strength\nHallelujah, You know all things\nHallelujah, You lead me on my way\nHallelujah, praise and glory to Your name\nHallelujah, You turn the weak heart into strength\nHallelujah, all my life is in Your hands\nHallelujah, You turn the weak heart into strength\nHallelujah, all my life is in Your hands"
  },
  {
   "title": "耶穌愛我,我知影(台)",
@@ -2281,9 +2281,9 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "張志豪",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "只有主祢真正明白我 心裡深處苦惱和罪過\n羞愧吐露人前 但祢傾聽與垂憐\n祢用說話慰藉我心靈\n想到主祢一切榮耀作 竟也看顧不會忘掉我\n心裡渴望祢臉 像盼春雨潤稻田\n向祢我盡吐心聲\n主啊我默默渴求 來撫慰我內在感受\n當我眼睛模糊 願祢牽引導前行\n每步腳步靠著祢保守\n求主聽我默默渴求 來倚靠祢靜靜等候\n走到祢的壇前 是祢寬恕人的愛\n我願唱出榮耀讚頌祢\n尾段\n走到祢的壇前 是祢寬恕人的愛\n我願唱出榮耀讚頌祢\n我願唱出榮耀讚頌祢",
-  "lyricsSc": "只有主祢真正明白我 心里深处苦恼和罪过\n羞愧吐露人前 但祢倾听与垂怜\n祢用说话慰藉我心灵\n想到主祢一切荣耀作 竟也看顾不会忘掉我\n心里渴望祢脸 像盼春雨润稻田\n向祢我尽吐心声\n主啊我默默渴求 来抚慰我内在感受\n当我眼睛模糊 愿祢牵引导前行\n每步脚步靠著祢保守\n求主听我默默渴求 来倚靠祢静静等候\n走到祢的坛前 是祢宽恕人的爱\n我愿唱出荣耀赞颂祢\n尾段\n走到祢的坛前 是祢宽恕人的爱\n我愿唱出荣耀赞颂祢\n我愿唱出荣耀赞颂祢",
-  "englishLyrics": "Only You, Lord, truly understand me, the trouble and sin deep within my heart\nAshamed to speak before others, but You listen and show mercy\nYou comfort my soul with Your word\nThinking of all Your glorious works, yet You care for and never forget me\nMy heart longs for Your face, like longing for spring rain upon the fields\nTo You I pour out all of my heart\nLord, silently I long for You to soothe what I feel within\nWhen my eyes grow dim, may You lead me onward\nEvery step of mine kept safe by You\nLord, hear my silent longing; leaning on You, I quietly wait\nComing before Your altar, it is Your forgiving love\nI will sing out glory and praise to You\n(Ending)\nComing before Your altar, it is Your forgiving love\nI will sing out glory and praise to You\nI will sing out glory and praise to You"
+  "lyrics": "只有主祢真正明白我 心裡深處苦惱和罪過\n羞愧吐露人前 但祢傾聽與垂憐\n祢用說話慰藉我心靈\n想到主祢一切榮耀作 竟也看顧不會忘掉我\n心裡渴望祢臉 像盼春雨潤稻田\n向祢我盡吐心聲\n主啊我默默渴求 來撫慰我內在感受\n當我眼睛模糊 願祢牽引導前行\n每步腳步靠著祢保守\n求主聽我默默渴求 來倚靠祢靜靜等候\n走到祢的壇前 是祢寬恕人的愛\n我願唱出榮耀讚頌祢\n走到祢的壇前 是祢寬恕人的愛\n我願唱出榮耀讚頌祢\n我願唱出榮耀讚頌祢",
+  "lyricsSc": "只有主祢真正明白我 心里深处苦恼和罪过\n羞愧吐露人前 但祢倾听与垂怜\n祢用说话慰藉我心灵\n想到主祢一切荣耀作 竟也看顾不会忘掉我\n心里渴望祢脸 像盼春雨润稻田\n向祢我尽吐心声\n主啊我默默渴求 来抚慰我内在感受\n当我眼睛模糊 愿祢牵引导前行\n每步脚步靠著祢保守\n求主听我默默渴求 来倚靠祢静静等候\n走到祢的坛前 是祢宽恕人的爱\n我愿唱出荣耀赞颂祢\n走到祢的坛前 是祢宽恕人的爱\n我愿唱出荣耀赞颂祢\n我愿唱出荣耀赞颂祢",
+  "englishLyrics": "Only You, Lord, truly understand me, the trouble and sin deep within my heart\nAshamed to speak before others, but You listen and show mercy\nYou comfort my soul with Your word\nThinking of all Your glorious works, yet You care for and never forget me\nMy heart longs for Your face, like longing for spring rain upon the fields\nTo You I pour out all of my heart\nLord, silently I long for You to soothe what I feel within\nWhen my eyes grow dim, may You lead me onward\nEvery step of mine kept safe by You\nLord, hear my silent longing; leaning on You, I quietly wait\nComing before Your altar, it is Your forgiving love\nI will sing out glory and praise to You\nComing before Your altar, it is Your forgiving love\nI will sing out glory and praise to You\nI will sing out glory and praise to You"
  },
  {
   "title": "父啊,我向祢呼求",
@@ -2295,8 +2295,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "祢知道我最深的意念 祢明瞭我內裏的一切\n但祢從不定罪 滿有憐憫和恩惠\n溫柔的光照亮我心扉\n我追想祢過往的作為 我思念祢同在的榮顏\n我的心渴想祢 如乾旱之地盼雨\n神啊 求祢留心聽\n父啊 我向祢呼求 醫治我裏面的破碎\n當我的心發昏 領我到更高之地\n使我高過四面的仇敵\n我要倚靠祢的慈愛 要因祢的救恩快樂\n容我到祢聖所 瞻仰祢榮耀能力\n以歡樂的嘴唇讚美祢\n尾段\n容我到祢聖所 瞻仰祢榮耀能力\n以歡樂的嘴唇讚美祢\n我要以歡樂的嘴唇讚美祢",
-  "lyricsSc": "祢知道我最深的意念 祢明了我内里的一切\n但祢从不定罪 满有怜悯和恩惠\n温柔的光照亮我心扉\n我追想祢过往的作为 我思念祢同在的荣颜\n我的心渴想祢 如干旱之地盼雨\n神啊 求祢留心听\n父啊 我向祢呼求 医治我里面的破碎\n当我的心发昏 领我到更高之地\n使我高过四面的仇敌\n我要倚靠祢的慈爱 要因祢的救恩快乐\n容我到祢圣所 瞻仰祢荣耀能力\n以欢乐的嘴唇赞美祢\n尾段\n容我到祢圣所 瞻仰祢荣耀能力\n以欢乐的嘴唇赞美祢\n我要以欢乐的嘴唇赞美祢",
+  "lyrics": "祢知道我最深的意念 祢明瞭我內裏的一切\n但祢從不定罪 滿有憐憫和恩惠\n溫柔的光照亮我心扉\n我追想祢過往的作為 我思念祢同在的榮顏\n我的心渴想祢 如乾旱之地盼雨\n神啊 求祢留心聽\n父啊 我向祢呼求 醫治我裏面的破碎\n當我的心發昏 領我到更高之地\n使我高過四面的仇敵\n我要倚靠祢的慈愛 要因祢的救恩快樂\n容我到祢聖所 瞻仰祢榮耀能力\n以歡樂的嘴唇讚美祢\n容我到祢聖所 瞻仰祢榮耀能力\n以歡樂的嘴唇讚美祢\n我要以歡樂的嘴唇讚美祢",
+  "lyricsSc": "祢知道我最深的意念 祢明了我内里的一切\n但祢从不定罪 满有怜悯和恩惠\n温柔的光照亮我心扉\n我追想祢过往的作为 我思念祢同在的荣颜\n我的心渴想祢 如干旱之地盼雨\n神啊 求祢留心听\n父啊 我向祢呼求 医治我里面的破碎\n当我的心发昏 领我到更高之地\n使我高过四面的仇敌\n我要倚靠祢的慈爱 要因祢的救恩快乐\n容我到祢圣所 瞻仰祢荣耀能力\n以欢乐的嘴唇赞美祢\n容我到祢圣所 瞻仰祢荣耀能力\n以欢乐的嘴唇赞美祢\n我要以欢乐的嘴唇赞美祢",
   "englishLyrics": "Lord, You know my ev’ry inmost thought,\nEv’rything within me that goes on;\nYou’d be right to judge me,\nYet You overflow with grace:\nLord, Your gentle light shines on my heart!\nFondly I recall Your mighty deeds,\nAnd Your glorious face I long to see!\nOh, my soul thirsts for You\nAs the desert thirsts for rain!\nHear me, listen to my plea!\nFather, unto You I cry\nTo heal my brokenness inside!\nWhen my heart grows faint, Lord,\nLead me to a higher place,\nHigher than the foes to ev’ry side!\nIn Your love I’ll always stay,\nRejoicing in Your saving grace!\nIn Your sanctuary, I’ll revere Your glorious pow’r,\nAnd with joyful lips I’ll sing you praise!\nIn Your sanctuary, I’ll revere Your glorious pow’r,\nAnd with joyful lips I’ll sing you praise!\nAnd with joyful lips I’ll sing you praise!"
  },
  {
@@ -2309,9 +2309,9 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "哈利路亞 祢真實奇妙\n哈利路亞 寶座上的羔羊\n哈利路亞 祢使哀哭轉眼變成歡笑\n哈利路亞 從天涯到海角\n哈利路亞 指引我方向\n哈利路亞 配得一切榮耀\n哈利路亞 祢使軟弱轉眼變成剛強\n哈利路亞 祢什麼都明瞭\n尾段\n哈利路亞 祢使軟弱轉眼變成剛強\n哈利路亞 祢什麼都明瞭",
-  "lyricsSc": "哈利路亚 祢真实奇妙\n哈利路亚 宝座上的羔羊\n哈利路亚 祢使哀哭转眼变成欢笑\n哈利路亚 从天涯到海角\n哈利路亚 指引我方向\n哈利路亚 配得一切荣耀\n哈利路亚 祢使软弱转眼变成刚强\n哈利路亚 祢什么都明了\n尾段\n哈利路亚 祢使软弱转眼变成刚强\n哈利路亚 祢什么都明了",
-  "englishLyrics": "I praise You, Lord, for Your marvelous works;\nI praise You, Lord, the Lamb upon the throne;\nI praise You, Lord,\nBecause You turn my mourning into joy;\nI praise You, Lord, no matter where I go!\nI praise You, Lord, for You show the way;\nI praise You, Lord, to Whom all glory’s due;\nI praise You, Lord,\nBecause You turn my weakness into strength;\nI praise You, Lord, for all is known to You.\n「哈利路亞」出自希伯來文，原本是「你們要讚美耶和華」的意思，後來也常被用作稱謝神的讚嘆語。因此，這首歌的英文版將「哈利路亞」譯為 “I Praise You, Lord”"
+  "lyrics": "哈利路亞 祢真實奇妙\n哈利路亞 寶座上的羔羊\n哈利路亞 祢使哀哭轉眼變成歡笑\n哈利路亞 從天涯到海角\n哈利路亞 指引我方向\n哈利路亞 配得一切榮耀\n哈利路亞 祢使軟弱轉眼變成剛強\n哈利路亞 祢什麼都明瞭\n哈利路亞 祢使軟弱轉眼變成剛強\n哈利路亞 祢什麼都明瞭",
+  "lyricsSc": "哈利路亚 祢真实奇妙\n哈利路亚 宝座上的羔羊\n哈利路亚 祢使哀哭转眼变成欢笑\n哈利路亚 从天涯到海角\n哈利路亚 指引我方向\n哈利路亚 配得一切荣耀\n哈利路亚 祢使软弱转眼变成刚强\n哈利路亚 祢什么都明了\n哈利路亚 祢使软弱转眼变成刚强\n哈利路亚 祢什么都明了",
+  "englishLyrics": "I praise You, Lord, for Your marvelous works;\nI praise You, Lord, the Lamb upon the throne;\nI praise You, Lord,\nBecause You turn my mourning into joy;\nI praise You, Lord, no matter where I go!\nI praise You, Lord, for You show the way;\nI praise You, Lord, to Whom all glory’s due;\nI praise You, Lord,\nI praise You, Lord, for all is known to You.\n「哈利路亞」出自希伯來文，原本是「你們要讚美耶和華」的意思，後來也常被用作稱謝神的讚嘆語。因此，這首歌的英文版將「哈利路亞」譯為 “I Praise You, Lord”"
  },
  {
   "title": "何等深情",
@@ -2379,8 +2379,8 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "被殺羔羊已復活 高坐在神右邊\n祂將駕雲降臨 來作王到永遠\n天使晝夜呼喊 聖哉 聖哉 聖哉\n眾聖徒俯伏於寶座前 甘心獻上冠冕\n萬民同來敬拜 敬拜萬王之王\n頌讚 尊貴 榮耀 權勢 歸祂直到永遠\n萬民同來敬拜 敬拜萬王之王\n救恩 能力 國度 權柄 都歸祂直到永遠\n尾段\n救恩 能力 國度 權柄 都歸祂直到永遠\n都歸祂直到永遠",
-  "lyricsSc": "被杀羔羊已复活 高坐在神右边\n祂将驾云降临 来作王到永远\n天使昼夜呼喊 圣哉 圣哉 圣哉\n众圣徒俯伏于宝座前 甘心献上冠冕\n万民同来敬拜 敬拜万王之王\n颂赞 尊贵 荣耀 权势 归祂直到永远\n万民同来敬拜 敬拜万王之王\n救恩 能力 国度 权柄 都归祂直到永远\n尾段\n救恩 能力 国度 权柄 都归祂直到永远\n都归祂直到永远",
+  "lyrics": "被殺羔羊已復活 高坐在神右邊\n祂將駕雲降臨 來作王到永遠\n天使晝夜呼喊 聖哉 聖哉 聖哉\n眾聖徒俯伏於寶座前 甘心獻上冠冕\n萬民同來敬拜 敬拜萬王之王\n頌讚 尊貴 榮耀 權勢 歸祂直到永遠\n萬民同來敬拜 敬拜萬王之王\n救恩 能力 國度 權柄 都歸祂直到永遠\n救恩 能力 國度 權柄 都歸祂直到永遠\n都歸祂直到永遠",
+  "lyricsSc": "被杀羔羊已复活 高坐在神右边\n祂将驾云降临 来作王到永远\n天使昼夜呼喊 圣哉 圣哉 圣哉\n众圣徒俯伏于宝座前 甘心献上冠冕\n万民同来敬拜 敬拜万王之王\n颂赞 尊贵 荣耀 权势 归祂直到永远\n万民同来敬拜 敬拜万王之王\n救恩 能力 国度 权柄 都归祂直到永远\n救恩 能力 国度 权柄 都归祂直到永远\n都归祂直到永远",
   "englishLyrics": "Risen to God’s right hand,\nJesus, the Lamb Who was slain;\nDown from the clouds He’ll descend,\nFounding His endless reign!\n“Holy!” the angels cry;\nGathered, the saints bow down,\nAnd, as the cry echoes day and night,\nOffer their golden crowns!\nCome and worship the King,\nWorship the King of Kings!\nPraise and honor, glory and power,\nGive Him forevermore!\nNations, come and adore,\nWorship the Lord of Lords!\nSalvation, kingdom and power,\nGive to Him forevermore!\nSalvation, kingdom and power,\nGive to Him forevermore!\nGive to Him forevermore!"
  },
  {
@@ -2547,9 +2547,9 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容、張志豪",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "榮耀都歸神羔羊 榮耀都歸神羔羊\n唯有祢配得一切讚美 配做王到永遠\n尊貴都歸神羔羊 尊貴都歸神羔羊\n昔在 今在 以後永在 獨一全能真神\n為愛祢倒空自己 取了奴僕的樣式\n甘為罪人掛在十字架上 藉死廢去死亡\n榮耀 榮耀 榮耀 榮耀\n唯有祢配得一切讚美 配做王到永遠\n即興\n獨一全能神\n頌讚都歸祢 尊貴都歸祢\n權柄 豐富 智慧 能力 榮耀都歸祢\n榮耀都歸祢",
-  "lyricsSc": "荣耀都归神羔羊 荣耀都归神羔羊\n唯有祢配得一切赞美 配做王到永远\n尊贵都归神羔羊 尊贵都归神羔羊\n昔在 今在 以后永在 独一全能真神\n为爱祢倒空自己 取了奴仆的样式\n甘为罪人挂在十字架上 藉死废去死亡\n荣耀 荣耀 荣耀 荣耀\n唯有祢配得一切赞美 配做王到永远\n即兴\n独一全能神\n颂赞都归祢 尊贵都归祢\n权柄 丰富 智慧 能力 荣耀都归祢\n荣耀都归祢",
-  "englishLyrics": "Glory to the Lamb of God (2X)\nUnto none but You, all praise is due\nAnd the eternal throne\nGlory to the King of Kings (2X)\nWho was and is and is to come\nThe One Almighty God\nFor love You emptied Yourself\nA servant come from on high\nAnd for our sins, gave Your life on a cross\nThat death itself might die\nGlory! Glory! Glory! Glory!\nUnto none but You, all praise is due\nAnd the eternal throne"
+  "lyrics": "榮耀都歸神羔羊 榮耀都歸神羔羊\n唯有祢配得一切讚美 配做王到永遠\n尊貴都歸神羔羊 尊貴都歸神羔羊\n昔在 今在 以後永在 獨一全能真神\n為愛祢倒空自己 取了奴僕的樣式\n甘為罪人掛在十字架上 藉死廢去死亡\n榮耀 榮耀 榮耀 榮耀\n唯有祢配得一切讚美 配做王到永遠\n獨一全能神\n頌讚都歸祢 尊貴都歸祢\n權柄 豐富 智慧 能力 榮耀都歸祢\n榮耀都歸祢",
+  "lyricsSc": "荣耀都归神羔羊 荣耀都归神羔羊\n唯有祢配得一切赞美 配做王到永远\n尊贵都归神羔羊 尊贵都归神羔羊\n昔在 今在 以后永在 独一全能真神\n为爱祢倒空自己 取了奴仆的样式\n甘为罪人挂在十字架上 藉死废去死亡\n荣耀 荣耀 荣耀 荣耀\n唯有祢配得一切赞美 配做王到永远\n独一全能神\n颂赞都归祢 尊贵都归祢\n权柄 丰富 智慧 能力 荣耀都归祢\n荣耀都归祢",
+  "englishLyrics": "Glory to the Lamb of God (2X)\nUnto none but You, all praise is due\nAnd the eternal throne\nGlory to the King of Kings (2X)\nWho was and is and is to come\nThe One Almighty God\nFor love You emptied Yourself\nA servant come from on high\nThat death itself might die\nGlory! Glory! Glory! Glory!\nUnto none but You, all praise is due\nAnd the eternal throne"
  },
  {
   "title": "我的救主",
@@ -3009,9 +3009,9 @@ export const W247_SONGS: SeedSong[] = [
   "singer": "林婉容",
   "publication": "小羊詩歌 (w247.net)",
   "key": "",
-  "lyrics": "哈利路亞 哈利路亞\n哈利路亞 哈利路 哈利路亞\n哈利路亞 哈利路亞\n哈利路亞 哈利路亞\n即興\n頌讚歸祢 榮耀歸與祢\n智慧 感謝 尊貴 權柄 能力都歸祢\n直到永遠 直到永永遠遠 哈利路亞",
-  "lyricsSc": "哈利路亚 哈利路亚\n哈利路亚 哈利路 哈利路亚\n哈利路亚 哈利路亚\n哈利路亚 哈利路亚\n即兴\n颂赞归祢 荣耀归与祢\n智慧 感谢 尊贵 权柄 能力都归祢\n直到永远 直到永永远远 哈利路亚",
-  "englishLyrics": "Hallelujah, hallelujah\nHallelujah, hallelu, hallelujah\nHallelujah, hallelujah\nHallelujah, hallelujah\n(Improvisation)\nPraise be to You, glory be to You\nWisdom, thanks, honor, authority and power, all be to You\nForever, for ever and ever, hallelujah"
+  "lyrics": "哈利路亞 哈利路亞\n哈利路亞 哈利路 哈利路亞\n哈利路亞 哈利路亞\n哈利路亞 哈利路亞\n頌讚歸祢 榮耀歸與祢\n智慧 感謝 尊貴 權柄 能力都歸祢\n直到永遠 直到永永遠遠 哈利路亞",
+  "lyricsSc": "哈利路亚 哈利路亚\n哈利路亚 哈利路 哈利路亚\n哈利路亚 哈利路亚\n哈利路亚 哈利路亚\n颂赞归祢 荣耀归与祢\n智慧 感谢 尊贵 权柄 能力都归祢\n直到永远 直到永永远远 哈利路亚",
+  "englishLyrics": "Hallelujah, hallelujah\nHallelujah, hallelu, hallelujah\nHallelujah, hallelujah\nHallelujah, hallelujah\nPraise be to You, glory be to You\nWisdom, thanks, honor, authority and power, all be to You\nForever, for ever and ever, hallelujah"
  },
  {
   "title": "花盡一生來愛祢",
