@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   loadLibrary, updateById, deleteFromLibrary, addBlankSong, saveToLibrary,
-  importLibraryJSON, onLibraryChange, type LibrarySong,
+  importLibraryJSON, exportLibraryJSON, onLibraryChange, type LibrarySong,
 } from '../lib/songLibrary';
 import { communitySearch, contributeCurated } from '../lib/cloud';
 import { hasConsented } from '../lib/consent';
@@ -133,10 +133,16 @@ export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: Reac
     else setGate({ kind: 'contribute', run: () => doContribute(s) });
   };
 
-  // 新增 / 导入 需要登录：未登录时先弹登录框，登录成功后继续原操作。
-  const requireLogin = (reason: string, fn: () => void) => {
-    if (!user) { openAuth({ reason, onSuccess: fn }); return; }
-    fn();
+  // 备份 — 导出整库 JSON 下载（仅管理员）。
+  const doExport = () => {
+    const blob = new Blob([exportLibraryJSON()], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `worship-library-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    flash('✅ 已导出备份');
   };
 
   const filtered = useMemo(() => {
@@ -197,11 +203,20 @@ export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: Reac
           <div className="flex items-center gap-2">
             {authSlot}
             <input ref={importRef} type="file" accept="application/json,.json" className="hidden" onChange={doImport} />
-            <button onClick={() => requireLogin('登录后即可导入歌库', () => importRef.current?.click())} title={user ? '' : '登录后即可导入'} className="h-11 px-4 rounded-xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">upload</span><span className="hidden lg:inline">导入</span></button>
-            {isAdmin && (
-              <button onClick={() => setAdminOpen(true)} title="管理员面板" className="h-11 px-4 rounded-xl bg-white border border-emerald-300 text-emerald-700 text-[10px] font-black uppercase tracking-wider hover:bg-emerald-50 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">admin_panel_settings</span><span className="hidden lg:inline">管理</span></button>
+            {/* 导入 / 新增 — 仅登录用户可见。 */}
+            {user && (
+              <button onClick={() => importRef.current?.click()} className="h-11 px-4 rounded-xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">upload</span><span className="hidden lg:inline">导入</span></button>
             )}
-            <button onClick={() => requireLogin('登录后即可新增歌曲', addNew)} title={user ? '' : '登录后即可新增'} className="h-11 px-5 rounded-xl bg-black text-white text-[10px] font-black uppercase tracking-wider hover:bg-emerald-600 flex items-center gap-1.5 shadow-lg"><span className="material-symbols-outlined text-[16px]">add</span>新增</button>
+            {/* 备份 / 管理 — 仅管理员可见。 */}
+            {isAdmin && (
+              <>
+                <button onClick={doExport} title="导出整库备份" className="h-11 px-4 rounded-xl bg-white border border-[#E5E0DA]/60 text-[10px] font-black uppercase tracking-wider hover:border-emerald-400 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">download</span><span className="hidden lg:inline">备份</span></button>
+                <button onClick={() => setAdminOpen(true)} title="管理员面板" className="h-11 px-4 rounded-xl bg-white border border-emerald-300 text-emerald-700 text-[10px] font-black uppercase tracking-wider hover:bg-emerald-50 flex items-center gap-1.5"><span className="material-symbols-outlined text-[16px]">admin_panel_settings</span><span className="hidden lg:inline">管理</span></button>
+              </>
+            )}
+            {user && (
+              <button onClick={addNew} className="h-11 px-5 rounded-xl bg-black text-white text-[10px] font-black uppercase tracking-wider hover:bg-emerald-600 flex items-center gap-1.5 shadow-lg"><span className="material-symbols-outlined text-[16px]">add</span>新增</button>
+            )}
           </div>
         </div>
       </header>
