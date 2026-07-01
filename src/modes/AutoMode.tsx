@@ -35,6 +35,7 @@ interface AutoSong {
   linesPerSlide?: number;
   enablePinyin?: boolean;
   enableZhuyin?: boolean;
+  showEnglish?: boolean;
   shadow?: boolean;
   shadowLevel?: ShadowLevel;
 }
@@ -49,6 +50,7 @@ const AUTO_SETTINGS: Omit<DeckSettings, 'selectedBg' | 'showSongTitle' | 'unifyB
   shadowLevel: 'medium',
   enablePinyin: false,
   enableZhuyin: false,
+  showEnglish: true,
   unifyFontSize: false,
 };
 
@@ -214,7 +216,7 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
         lyricColor: s.lyricColor, translationColor: s.translationColor,
         lyricFontSize: s.lyricFontSize, translationFontSize: s.translationFontSize,
         linesPerSlide: s.linesPerSlide, enablePinyin: s.enablePinyin, enableZhuyin: s.enableZhuyin,
-        shadow: s.shadow, shadowLevel: s.shadowLevel,
+        showEnglish: s.showEnglish, shadow: s.shadow, shadowLevel: s.shadowLevel,
       }));
       const res = merge
         ? await exportMerged(songInputs, settings, deckName)
@@ -420,6 +422,7 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
   const lps = song.linesPerSlide || AUTO_SETTINGS.linesPerSlide;
   const py = song.enablePinyin ?? AUTO_SETTINGS.enablePinyin;
   const zy = song.enableZhuyin ?? AUTO_SETTINGS.enableZhuyin;
+  const se = song.showEnglish ?? AUTO_SETTINGS.showEnglish;
   const sOn = song.shadow ?? AUTO_SETTINGS.enableShadow;
   const slvl = song.shadowLevel ?? AUTO_SETTINGS.shadowLevel;
   // Instant background — system picks a random image preset (no AI wait).
@@ -429,7 +432,7 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
     if (pool.length) onPickPreset(song.id, pool[Math.floor(Math.random() * pool.length)]);
   };
   const preview = useMemo(() => {
-    const exp = expandSongSections(song.lyrics || '', song.englishLyrics || '');
+    const exp = expandSongSections(song.lyrics || '', se ? (song.englishLyrics || '') : '');
     const pages = paginateLyrics(exp.lyrics, exp.english, lps);
     const pc = resolveSlideColors(song.bg, lc, tc);
     const slides: { type: 'cover' | 'lyric'; title?: string; sub?: string; lines?: { cn: string; en: string }[] }[] = [
@@ -437,7 +440,7 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
     ];
     pages.forEach((lines) => slides.push({ type: 'lyric', lines }));
     return { slides, pc, count: pages.length };
-  }, [song.lyrics, song.englishLyrics, song.bg, song.title, song.englishTitle, lc, tc, lps]);
+  }, [song.lyrics, song.englishLyrics, song.bg, song.title, song.englishTitle, lc, tc, lps, se]);
   const slideCount = preview.count;
   // Preview font size in container-query units, mirroring the .pptx scaling.
   const cqw = (pt: number) => `${(pt / 7.2).toFixed(2)}cqw`;
@@ -555,7 +558,7 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
           onLyric={(v) => onPatch(song.id, { lyrics: v })}
           onEnglish={(v) => onPatch(song.id, { englishLyrics: v })}
           onClose={() => setZoomIdx(null)}
-          style={{ lyricColor: lc, translationColor: tc, lyricFontSize: lfs, translationFontSize: tfs, linesPerSlide: lps, enablePinyin: py, enableZhuyin: zy, shadow: sOn, shadowLevel: slvl }}
+          style={{ lyricColor: lc, translationColor: tc, lyricFontSize: lfs, translationFontSize: tfs, linesPerSlide: lps, enablePinyin: py, enableZhuyin: zy, showEnglish: se, shadow: sOn, shadowLevel: slvl }}
           onStyle={(patch) => onPatch(song.id, patch)}
           bgOptions={BACKGROUND_OPTIONS}
           onBg={(b) => onPickPreset(song.id, b)}

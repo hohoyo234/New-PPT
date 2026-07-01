@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { signIn, signUp } from '../lib/auth';
+import { signIn, signUp, signInWithGoogle } from '../lib/auth';
 
 // Email/password login + register modal. On success the parent closes it and
 // reacts to the auth-state change (which kicks off the cloud pull).
@@ -10,6 +10,18 @@ export default function AuthModal({ onClose, reason, onSuccess }: { onClose: () 
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [info, setInfo] = useState<string | null>(null);
+
+  const google = async () => {
+    setError(null);
+    setInfo(null);
+    setBusy(true);
+    try {
+      await signInWithGoogle(); // redirects the browser away on success
+    } catch (e: any) {
+      setError(e?.message || 'Google 登录失败，请重试');
+      setBusy(false);
+    }
+  };
 
   const submit = async () => {
     setError(null);
@@ -55,6 +67,17 @@ export default function AuthModal({ onClose, reason, onSuccess }: { onClose: () 
         </div>
         <p className="text-outline/50 font-medium text-sm mb-6">{reason || '登录后即可云端同步歌库、贡献社区精修版，换设备也不丢。'}</p>
 
+        <button onClick={google} disabled={busy} className="w-full mb-4 h-12 rounded-2xl bg-white border border-[#E5E0DA] text-[#2C2C2C] text-[13px] font-black hover:bg-[#F9F7F5] transition-all flex items-center justify-center gap-2.5 disabled:opacity-50">
+          <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/><path fill="#FF3D00" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/><path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/><path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/></svg>
+          使用 Google 登录
+        </button>
+
+        <div className="flex items-center gap-3 mb-4">
+          <div className="flex-1 h-px bg-[#E5E0DA]" />
+          <span className="text-[10px] font-bold uppercase tracking-wider text-outline/40">或用邮箱</span>
+          <div className="flex-1 h-px bg-[#E5E0DA]" />
+        </div>
+
         <div className="flex bg-[#F4F1EE] rounded-2xl p-1 mb-5">
           {([['login', '登录'], ['register', '注册']] as const).map(([v, t]) => (
             <button key={v} onClick={() => { setTab(v); setError(null); setInfo(null); }} className={`flex-1 h-10 rounded-xl text-[12px] font-black uppercase tracking-wider transition-all ${tab === v ? 'bg-white text-emerald-600 shadow' : 'text-outline/50 hover:text-[#2C2C2C]'}`}>{t}</button>
@@ -67,7 +90,7 @@ export default function AuthModal({ onClose, reason, onSuccess }: { onClose: () 
             <input type="email" autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" className="ai" />
           </label>
           <label className="block space-y-1.5">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-outline/40 px-1">密码{tab === 'register' && '（至少 6 位）'}</span>
+            <span className="text-[10px] font-bold uppercase tracking-wider text-outline/40 px-1">密码{tab === 'register' && '（至少 8 位）'}</span>
             <input type="password" autoComplete={tab === 'login' ? 'current-password' : 'new-password'} value={password} onChange={(e) => setPassword(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && submit()} placeholder="••••••••" className="ai" />
           </label>
         </div>

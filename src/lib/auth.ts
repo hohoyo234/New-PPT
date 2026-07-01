@@ -42,6 +42,18 @@ export async function signUp(
   return { user: toUser(data.user), needsConfirmation: !data.session };
 }
 
+// Google OAuth. Redirects the browser to Google, then back to the current page;
+// the returned session is picked up by onAuthChange (no in-page callback). The
+// redirectTo must be whitelisted in Supabase → Auth → URL Configuration.
+export async function signInWithGoogle(): Promise<void> {
+  const redirectTo = window.location.origin + window.location.pathname;
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: { redirectTo },
+  });
+  if (error) throw new Error(friendly(error.message));
+}
+
 export async function signOut(): Promise<void> {
   await supabase.auth.signOut();
 }
@@ -51,7 +63,9 @@ function friendly(msg: string): string {
   const m = msg.toLowerCase();
   if (m.includes('invalid login')) return '邮箱或密码不正确';
   if (m.includes('already registered') || m.includes('already exists')) return '该邮箱已注册，请直接登录';
-  if (m.includes('password should be at least')) return '密码至少需要 6 位';
+  const lenMatch = msg.match(/at least (\d+) character/i);
+  if (lenMatch) return `密码至少需要 ${lenMatch[1]} 位`;
+  if (m.includes('weak_password') || m.includes('password is known') || m.includes('should contain')) return '密码强度不够，请换一个更复杂的密码';
   if (m.includes('unable to validate email') || m.includes('invalid email')) return '邮箱格式不正确';
   if (m.includes('email not confirmed')) return '邮箱尚未验证，请查收验证邮件';
   if (m.includes('rate limit')) return '操作过于频繁，请稍后再试';

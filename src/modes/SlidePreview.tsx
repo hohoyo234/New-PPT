@@ -42,7 +42,7 @@ export function SlideView({ slide, bg, pc, lyricFontSize, translationFontSize, s
 export type SlideStyle = {
   lyricColor: string; translationColor: string;
   lyricFontSize: number; translationFontSize: number; linesPerSlide: number;
-  enablePinyin: boolean; enableZhuyin: boolean; shadow: boolean; shadowLevel: ShadowLevel;
+  enablePinyin: boolean; enableZhuyin: boolean; showEnglish: boolean; shadow: boolean; shadowLevel: ShadowLevel;
 };
 
 // Click-to-enlarge modal: big slide with prev/next + edit the song's lyrics AND
@@ -138,6 +138,16 @@ export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontS
                   {([['none', '无', false, 'medium'], ['light', '淡', true, 'light'], ['medium', '中', true, 'medium'], ['strong', '浓', true, 'strong']] as const).map(([key, t, on, lvl]) => {
                     const active = key === 'none' ? !style.shadow : style.shadow && style.shadowLevel === lvl;
                     return <button key={key} onClick={() => onStyle({ shadow: on, ...(on ? { shadowLevel: lvl } : {}) })} className={`flex-1 h-9 rounded-lg text-[12px] font-black transition-all ${active ? 'bg-emerald-600 text-white shadow' : 'bg-[#F9F7F5] text-outline/60 hover:bg-[#E5E0DA]'}`}>{t}</button>;
+                  })}
+                </div>
+              </div>
+              {/* English lyrics show / hide */}
+              <div className="space-y-1.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-outline/40 px-1">英文歌词</span>
+                <div className="flex gap-1.5">
+                  {([['show', '显示', true], ['hide', '隐藏', false]] as const).map(([key, t, on]) => {
+                    const active = style.showEnglish === on;
+                    return <button key={key} onClick={() => onStyle({ showEnglish: on })} className={`flex-1 h-9 rounded-lg text-[12px] font-black transition-all ${active ? 'bg-emerald-600 text-white shadow' : 'bg-[#F9F7F5] text-outline/60 hover:bg-[#E5E0DA]'}`}>{t}</button>;
                   })}
                 </div>
               </div>

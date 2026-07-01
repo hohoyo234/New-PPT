@@ -53,6 +53,7 @@ export interface SongInput {
   shadowLevel?: ShadowLevel;
   enablePinyin?: boolean;
   enableZhuyin?: boolean;
+  showEnglish?: boolean;
 }
 
 export type SlideSize = '16:9' | '4:3';
@@ -75,6 +76,7 @@ export interface DeckSettings {
   shadowLevel: ShadowLevel;
   enablePinyin: boolean;
   enableZhuyin: boolean;
+  showEnglish: boolean;
   showSongTitle: boolean;
   unifyFontSize: boolean;
   unifyBackground: boolean;
@@ -153,6 +155,7 @@ export async function generateDeck(songsToExport: SongInput[], s: DeckSettings):
     const textShadow = shadowOn ? pptShadow(song.shadowLevel ?? s.shadowLevel) : undefined;
     const usePinyin = song.enablePinyin ?? s.enablePinyin;
     const useZhuyin = song.enableZhuyin ?? s.enableZhuyin;
+    const showEnglish = song.showEnglish ?? s.showEnglish;
     // Phonetic ruby line above each lyric line (pinyin takes priority if both on).
     const annotate = usePinyin ? toPinyin : useZhuyin ? toZhuyin : null;
 
@@ -202,7 +205,7 @@ export async function generateDeck(songsToExport: SongInput[], s: DeckSettings):
     }
 
     // Expand repeated [副歌]/[主歌] sections, then paginate.
-    const exp = expandSongSections(song.lyrics || '', song.englishLyrics || '');
+    const exp = expandSongSections(song.lyrics || '', showEnglish ? (song.englishLyrics || '') : '');
     const slidesContent = paginateLyrics(exp.lyrics, exp.english, lps);
     const transRatio = baseLfs > 0 ? baseTfs / baseLfs : 0.5;
     const lineH = 0.8 * SY;

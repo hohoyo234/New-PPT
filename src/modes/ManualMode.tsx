@@ -36,6 +36,7 @@ const DEFAULT_SETTINGS: DeckSettings = {
   shadowLevel: 'medium',
   enablePinyin: false,
   enableZhuyin: false,
+  showEnglish: true,
   showSongTitle: true,
   unifyFontSize: false,
   unifyBackground: true,
@@ -256,7 +257,7 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
     const bg = settings.unifyBackground ? settings.selectedBg : activeSong.customBg || settings.selectedBg;
     const pc = resolveSlideColors(bg, settings.lyricColor, settings.translationColor);
     const shadowCss = settings.enableShadow ? previewShadow(settings.shadowLevel) : 'none';
-    const exp = expandSongSections(activeSong.lyrics || '', activeSong.englishLyrics || '');
+    const exp = expandSongSections(activeSong.lyrics || '', settings.showEnglish ? (activeSong.englishLyrics || '') : '');
     const lyricPages = paginateLyrics(exp.lyrics, exp.english, settings.linesPerSlide);
     const slides: { type: 'cover' | 'lyric'; title?: string; sub?: string; lines?: { cn: string; en: string }[] }[] = [];
     if (settings.showSongTitle) slides.push({ type: 'cover', title: activeSong.title, sub: activeSong.englishTitle });
@@ -448,6 +449,7 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
             <SliderRow label="歌词字号" value={settings.lyricFontSize} min={20} max={72} onChange={(v) => set('lyricFontSize', v)} />
             <SliderRow label="翻译字号" value={settings.translationFontSize} min={12} max={48} onChange={(v) => set('translationFontSize', v)} />
             <Toggle label="包含歌名封面页" checked={settings.showSongTitle} onChange={(v) => set('showSongTitle', v)} />
+            <Toggle label="显示英文歌词" checked={settings.showEnglish} onChange={(v) => set('showEnglish', v)} />
             <div className="space-y-1.5">
               <span className="text-[11px] font-bold text-[#2C2C2C]">歌词上方注音</span>
               <div className="flex gap-1.5">
