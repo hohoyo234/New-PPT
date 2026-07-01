@@ -22,6 +22,8 @@ interface AutoSong {
   englishLyrics: string;
   bg: BgOption;
   matched: boolean;
+  // Whether this song is included in the export (checkbox on each card).
+  include: boolean;
   // Per-song style overrides (editable from the preview modal). Undefined = use
   // the AUTO_SETTINGS default.
   lyricColor?: string;
@@ -30,6 +32,7 @@ interface AutoSong {
   translationFontSize?: number;
   linesPerSlide?: number;
   enablePinyin?: boolean;
+  enableZhuyin?: boolean;
   shadow?: boolean;
   shadowLevel?: ShadowLevel;
 }
@@ -43,6 +46,7 @@ const AUTO_SETTINGS: Omit<DeckSettings, 'selectedBg' | 'showSongTitle' | 'unifyB
   enableShadow: true,
   shadowLevel: 'medium',
   enablePinyin: false,
+  enableZhuyin: false,
   unifyFontSize: false,
 };
 
@@ -90,7 +94,7 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
 
   // Step 1 → 2
   const startEntries = (n: number) => {
-    const c = Math.max(1, Math.min(20, n));
+    const c = Math.max(1, Math.min(7, n));
     setCount(c);
     setEntries(Array.from({ length: c }, (_, i) => entries[i] || ''));
     setStep('entries');
@@ -111,12 +115,12 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
           // Auto-split verse/chorus on import (idempotent: skips already-marked lyrics).
           producer: s.producer || parsed.producer, lyrics: detectChorus(s.lyrics), englishLyrics: s.englishLyrics || '',
           // Reuse the background saved with this song last time; else derive one.
-          bg: s.bg || deriveBackground(s.title, s.lyrics), matched: true,
+          bg: s.bg || deriveBackground(s.title, s.lyrics), matched: true, include: true,
         };
       }
       return {
         id: uid(), raw, title: parsed.title, englishTitle: '', producer: parsed.producer,
-        lyrics: '', englishLyrics: '', bg: deriveBackground(parsed.title, trimmed), matched: false,
+        lyrics: '', englishLyrics: '', bg: deriveBackground(parsed.title, trimmed), matched: false, include: true,
       };
     }).filter((s) => s.raw.trim());
 
@@ -143,12 +147,40 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
     patch(id, { bg: { id: `ai-${Date.now()}`, label: 'AI 背景', url: pollinationsBg(s.title || 'worship sacred light'), isAiResult: true } });
   };
 
-  const pickPresetBg = (id: string, bg: BgOption) => patch(id, { bg });
+  const pickPresetBg = (id: string, bg: BgOption) => {
+    patch(id, { bg });
+    // When backgrounds are unified, changing one immediately re-applies to all.
+    if (unifyBg) setSongs((prev) => prev.map((s) => ({ ...s, bg })));
+  };
+
+  const toggleInclude = (id: string) => setSongs((prev) => prev.map((s) => (s.id === id ? { ...s, include: !s.include } : s)));
+
+  // Drag-to-reorder the confirm cards (pick your own running order).
+  const [dragId, setDragId] = useState<string | null>(null);
+  const reorder = (toId: string) => {
+    setSongs((prev) => {
+      if (!dragId || dragId === toId) return prev;
+      const arr = [...prev];
+      const from = arr.findIndex((s) => s.id === dragId);
+      const to = arr.findIndex((s) => s.id === toId);
+      if (from < 0 || to < 0) return prev;
+      const [m] = arr.splice(from, 1);
+      arr.splice(to, 0, m);
+      return arr;
+    });
+  };
+
+  // Toggle unified background. Turning it ON right away copies the first song's
+  // background onto every song so the previews all match (不只导出时统一).
+  const applyUnifyBg = (on: boolean) => {
+    setUnifyBg(on);
+    if (on) setSongs((prev) => (prev.length ? prev.map((s) => ({ ...s, bg: prev[0].bg })) : prev));
+  };
 
   // Step 3 → export
   const doExport = async () => {
-    const valid = songs.filter((s) => s.title.trim() || s.lyrics.trim());
-    if (!valid.length) { flash('❌ 没有可导出的歌曲'); return; }
+    const valid = songs.filter((s) => s.include && (s.title.trim() || s.lyrics.trim()));
+    if (!valid.length) { flash('❌ 没有勾选可导出的歌曲'); return; }
     const missing = valid.filter((s) => !s.lyrics.trim());
     if (missing.length && !window.confirm(`有 ${missing.length} 首还没有歌词，仍然导出吗？（这些只会有封面页）`)) return;
 
@@ -168,7 +200,7 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
         // Per-song style overrides flow straight through to the .pptx generator.
         lyricColor: s.lyricColor, translationColor: s.translationColor,
         lyricFontSize: s.lyricFontSize, translationFontSize: s.translationFontSize,
-        linesPerSlide: s.linesPerSlide, enablePinyin: s.enablePinyin,
+        linesPerSlide: s.linesPerSlide, enablePinyin: s.enablePinyin, enableZhuyin: s.enableZhuyin,
         shadow: s.shadow, shadowLevel: s.shadowLevel,
       }));
       const res = merge
@@ -224,13 +256,9 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
             <h1 className="font-serif font-black text-4xl sm:text-5xl tracking-tight text-[#2C2C2C] mb-4">这次要做几首歌？</h1>
             <p className="text-outline/50 font-medium mb-12 max-w-md">输入数量,接下来逐首粘贴歌名 / 一句歌词 / 制作人,系统自动识别并配好背景。</p>
             <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
-              {[1, 2, 3, 4, 5, 6].map((n) => (
+              {[1, 2, 3, 4, 5, 6, 7].map((n) => (
                 <button key={n} onClick={() => setCount(n)} className={`w-16 h-16 rounded-2xl text-2xl font-serif font-black transition-all ${count === n ? 'bg-emerald-600 text-white scale-110 shadow-lg' : 'bg-white border border-[#E5E0DA]/60 text-[#2C2C2C] hover:border-emerald-400'}`}>{n}</button>
               ))}
-              <div className="flex items-center gap-2 bg-white border border-[#E5E0DA]/60 rounded-2xl px-3 h-16">
-                <span className="text-[10px] font-bold text-outline/40 uppercase">其他</span>
-                <input type="number" min={1} max={20} value={count} onChange={(e) => setCount(Number(e.target.value) || 1)} className="w-14 text-xl font-serif font-black text-center bg-transparent outline-none" />
-              </div>
             </div>
             <button onClick={() => startEntries(count)} className="h-14 px-10 rounded-2xl bg-black text-white text-sm font-black uppercase tracking-widest hover:bg-emerald-600 transition-all shadow-xl flex items-center gap-2">
               开始 <span className="material-symbols-outlined">arrow_forward</span>
@@ -254,7 +282,7 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
                       onChange={(e) => setEntries((p) => p.map((x, j) => (j === i ? e.target.value : x)))}
                       onFocus={() => setFocusedEntry(i)}
                       onBlur={() => setTimeout(() => setFocusedEntry(null), 200)}
-                      placeholder="例如:奇异恩典 / 约翰牛顿,或随便一句歌词…"
+                      placeholder="歌名 / 制作人 / 一句歌词，例如:奇异恩典 / 约翰牛顿"
                       className="flex-1 bg-transparent outline-none text-sm font-semibold"
                       autoFocus={i === 0}
                     />
@@ -292,50 +320,51 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
           <div>
             <div className="text-center mb-8">
               <h2 className="font-serif font-black text-3xl text-[#2C2C2C] mb-2">确认并导出</h2>
-              <p className="text-outline/50 font-medium text-sm">已自动分主歌副歌、配好背景。检查歌词，设置好导出方式后一键生成。</p>
-            </div>
-            <div className="space-y-5">
-              {songs.map((s, i) => <ConfirmCard key={s.id} index={i} song={s} onPatch={patch} onStructure={autoStructure} onReRoll={reRollBg} onPickPreset={pickPresetBg} />)}
+              <p className="text-outline/50 font-medium text-sm">已自动分主歌副歌、配好背景。勾选要导出的歌、拖动排序，检查歌词后一键生成。</p>
             </div>
 
-            {/* Export settings — directly below the confirm cards */}
-            <div className="max-w-xl mx-auto mt-10">
-              <div className="flex items-center gap-2 mb-4 px-1">
-                <span className="material-symbols-outlined text-emerald-500 text-2xl">download_done</span>
-                <h3 className="font-serif font-black text-2xl text-[#2C2C2C]">导出设置</h3>
-                <span className="text-[11px] text-outline/40 font-bold ml-auto">共 {songs.filter((s) => s.title || s.lyrics).length} 首</span>
+            {/* Export settings — moved up (everything except 合并/分开, which stays by the generate button) */}
+            <div className="bg-white rounded-3xl border border-[#E5E0DA]/50 p-5 shadow-sm mb-6 grid sm:grid-cols-2 gap-x-8 gap-y-4 items-center">
+              <div className="space-y-1.5 sm:col-span-2">
+                <span className="text-[10px] font-black uppercase tracking-widest text-outline/50">文件名</span>
+                <input value={deckName} onChange={(e) => setDeckName(e.target.value)} className="w-full bg-[#F9F7F5] rounded-xl px-4 py-2.5 text-sm font-bold outline-none border border-[#E5E0DA]/60 focus:border-emerald-500" />
               </div>
-
-              <div className="bg-white rounded-3xl border border-[#E5E0DA]/50 p-6 shadow-sm space-y-6">
-                <div className="space-y-2">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-outline/50">文件名</span>
-                  <input value={deckName} onChange={(e) => setDeckName(e.target.value)} className="w-full bg-[#F9F7F5] rounded-xl px-4 py-3 text-sm font-bold outline-none border border-[#E5E0DA]/60 focus:border-emerald-500" />
+              <OptionRow label="歌名封面页" desc="每首歌开头是否加一页大标题">
+                <Seg options={[{ v: true, t: '要歌名' }, { v: false, t: '不要' }]} value={withTitle} onChange={setWithTitle} />
+              </OptionRow>
+              <OptionRow label="背景" desc="各自背景，还是全套统一">
+                <Seg options={[{ v: false, t: '各自背景' }, { v: true, t: '统一背景' }]} value={unifyBg} onChange={applyUnifyBg} />
+              </OptionRow>
+              <OptionRow label="尺寸" desc="宽屏 16:9 或标准 4:3">
+                <div className="flex bg-[#F9F7F5] rounded-xl p-1 shrink-0">
+                  {(['16:9', '4:3'] as const).map((v) => (
+                    <button key={v} onClick={() => setSlideSize(v)} className={`px-3.5 py-2 rounded-lg text-[11px] font-black uppercase tracking-wider transition-all ${slideSize === v ? 'bg-emerald-600 text-white shadow' : 'text-outline/50 hover:text-[#2C2C2C]'}`}>{v}</button>
+                  ))}
                 </div>
+              </OptionRow>
+            </div>
 
-                <OptionRow label="歌名封面页" desc="每首歌开头是否加一页大标题">
-                  <Seg options={[{ v: true, t: '要歌名' }, { v: false, t: '不要' }]} value={withTitle} onChange={setWithTitle} />
-                </OptionRow>
+            <div className="space-y-5">
+              {songs.map((s, i) => (
+                <ConfirmCard
+                  key={s.id} index={i} song={s} onPatch={patch} onStructure={autoStructure}
+                  onReRoll={reRollBg} onPickPreset={pickPresetBg} onToggleInclude={toggleInclude}
+                  onDragStart={() => setDragId(s.id)} onDragOverCard={() => reorder(s.id)} onDragEnd={() => setDragId(null)}
+                />
+              ))}
+            </div>
 
+            {/* Merge/ZIP + generate button at the bottom, by the action */}
+            <div className="max-w-xl mx-auto mt-10">
+              <div className="bg-white rounded-3xl border border-[#E5E0DA]/50 p-6 shadow-sm">
                 <OptionRow label="合并 / 分开" desc="拼成一个 PPT,还是每首一个打包成 ZIP">
                   <Seg options={[{ v: true, t: '合并一个' }, { v: false, t: 'ZIP 分开' }]} value={merge} onChange={setMerge} />
                 </OptionRow>
-
-                <OptionRow label="背景" desc="每首用各自的背景,还是全套统一">
-                  <Seg options={[{ v: false, t: '各自背景' }, { v: true, t: '统一背景' }]} value={unifyBg} onChange={setUnifyBg} />
-                </OptionRow>
-
-                <OptionRow label="尺寸" desc="宽屏 16:9 (1920×1080) 或标准 4:3">
-                  <div className="flex bg-[#F9F7F5] rounded-xl p-1 shrink-0">
-                    {(['16:9', '4:3'] as const).map((v) => (
-                      <button key={v} onClick={() => setSlideSize(v)} className={`px-3.5 py-2 rounded-lg text-[11px] font-black uppercase tracking-wider transition-all ${slideSize === v ? 'bg-emerald-600 text-white shadow' : 'text-outline/50 hover:text-[#2C2C2C]'}`}>{v}</button>
-                    ))}
-                  </div>
-                </OptionRow>
               </div>
 
-              <button onClick={doExport} disabled={busy} className="w-full mt-6 h-16 rounded-2xl bg-emerald-600 text-white text-base font-black uppercase tracking-widest hover:bg-emerald-500 transition-all shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-3 disabled:opacity-50">
+              <button onClick={doExport} disabled={busy} className="w-full mt-4 h-16 rounded-2xl bg-emerald-600 text-white text-base font-black uppercase tracking-widest hover:bg-emerald-500 transition-all shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-3 disabled:opacity-50">
                 <span className={`material-symbols-outlined text-2xl ${busy ? 'animate-spin' : ''}`}>{busy ? 'progress_activity' : 'rocket_launch'}</span>
-                {busy ? '生成中…' : merge ? '生成并下载 PPT' : '生成并下载 ZIP'}
+                {busy ? '生成中…' : `${merge ? '生成并下载 PPT' : '生成并下载 ZIP'} · ${songs.filter((s) => s.include && (s.title || s.lyrics)).length} 首`}
               </button>
             </div>
 
@@ -354,12 +383,16 @@ export default function AutoMode({ modeToggle, authSlot }: { modeToggle: React.R
   );
 }
 
-function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset }: {
+function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset, onToggleInclude, onDragStart, onDragOverCard, onDragEnd }: {
   index: number; song: AutoSong;
   onPatch: (id: string, p: Partial<AutoSong>) => void;
   onStructure: (id: string) => void;
   onReRoll: (id: string) => void;
   onPickPreset: (id: string, bg: BgOption) => void;
+  onToggleInclude: (id: string) => void;
+  onDragStart: () => void;
+  onDragOverCard: () => void;
+  onDragEnd: () => void;
 }) {
   const [bgOpen, setBgOpen] = useState(false);
   const [zoomIdx, setZoomIdx] = useState<number | null>(null);
@@ -370,6 +403,7 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
   const tfs = song.translationFontSize || AUTO_SETTINGS.translationFontSize;
   const lps = song.linesPerSlide || AUTO_SETTINGS.linesPerSlide;
   const py = song.enablePinyin ?? AUTO_SETTINGS.enablePinyin;
+  const zy = song.enableZhuyin ?? AUTO_SETTINGS.enableZhuyin;
   const sOn = song.shadow ?? AUTO_SETTINGS.enableShadow;
   const slvl = song.shadowLevel ?? AUTO_SETTINGS.shadowLevel;
   // Instant background — system picks a random image preset (no AI wait).
@@ -398,7 +432,27 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
     : { backgroundColor: `#${song.bg?.color || '064E3B'}` };
 
   return (
-    <div className="bg-white rounded-3xl border border-[#E5E0DA]/50 p-5 shadow-sm">
+    <div
+      onDragOver={(e) => { e.preventDefault(); onDragOverCard(); }}
+      className={`bg-white rounded-3xl border p-5 shadow-sm transition-all ${song.include ? 'border-[#E5E0DA]/50' : 'border-dashed border-[#E5E0DA] opacity-55'}`}
+    >
+      {/* Select + reorder row */}
+      <div className="flex items-center gap-2 mb-3">
+        <button onClick={() => onToggleInclude(song.id)} title={song.include ? '不导出这首' : '导出这首'} className={`w-6 h-6 rounded-md border-2 flex items-center justify-center shrink-0 transition-all ${song.include ? 'bg-emerald-600 border-emerald-600 text-white' : 'border-[#E5E0DA] text-transparent hover:border-emerald-400'}`}>
+          <span className="material-symbols-outlined text-[16px]">check</span>
+        </button>
+        <span className="text-[11px] font-black text-outline/40">{song.include ? '导出' : '已排除'}</span>
+        <div
+          draggable
+          onDragStart={onDragStart}
+          onDragEnd={onDragEnd}
+          title="拖动调整顺序"
+          className="ml-auto flex items-center gap-1 h-7 px-2 rounded-lg bg-[#F9F7F5] hover:bg-[#E5E0DA] cursor-grab active:cursor-grabbing text-outline/40"
+        >
+          <span className="material-symbols-outlined text-[16px]">drag_indicator</span>
+          <span className="text-[10px] font-black uppercase tracking-wider">拖动排序</span>
+        </div>
+      </div>
       <div className="flex items-start gap-4">
         {/* bg thumbnail */}
         <div className="shrink-0 space-y-2">
@@ -481,10 +535,11 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
           translationFontSize={tfs}
           shadow={shadow}
           enablePinyin={py}
+          enableZhuyin={zy}
           onLyric={(v) => onPatch(song.id, { lyrics: v })}
           onEnglish={(v) => onPatch(song.id, { englishLyrics: v })}
           onClose={() => setZoomIdx(null)}
-          style={{ lyricColor: lc, translationColor: tc, lyricFontSize: lfs, translationFontSize: tfs, linesPerSlide: lps, enablePinyin: py, shadow: sOn, shadowLevel: slvl }}
+          style={{ lyricColor: lc, translationColor: tc, lyricFontSize: lfs, translationFontSize: tfs, linesPerSlide: lps, enablePinyin: py, enableZhuyin: zy, shadow: sOn, shadowLevel: slvl }}
           onStyle={(patch) => onPatch(song.id, patch)}
           bgOptions={BACKGROUND_OPTIONS}
           onBg={(b) => onPickPreset(song.id, b)}

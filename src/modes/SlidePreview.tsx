@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { toPinyin, type BgOption } from '../lib/pptGenerator';
+import { toPinyin, toZhuyin, type BgOption } from '../lib/pptGenerator';
 import type { SlideColors, ShadowLevel } from '../lib/pptTheme';
 
 export type PreviewSlide = { type: 'cover' | 'lyric'; title?: string; sub?: string; lines?: { cn: string; en: string }[] };
@@ -9,11 +9,12 @@ const bgStyle = (bg?: BgOption | null): React.CSSProperties =>
 
 // One slide rendered with container-query font sizes so it scales with its box
 // and matches the .pptx. Fill a relatively-positioned, sized parent.
-export function SlideView({ slide, bg, pc, lyricFontSize, translationFontSize, shadow, enablePinyin = false }: {
+export function SlideView({ slide, bg, pc, lyricFontSize, translationFontSize, shadow, enablePinyin = false, enableZhuyin = false }: {
   slide: PreviewSlide; bg?: BgOption | null; pc: SlideColors;
-  lyricFontSize: number; translationFontSize: number; shadow: string; enablePinyin?: boolean;
+  lyricFontSize: number; translationFontSize: number; shadow: string; enablePinyin?: boolean; enableZhuyin?: boolean;
 }) {
   const cqw = (pt: number) => `${(pt / 7.2).toFixed(2)}cqw`;
+  const annotate = enablePinyin ? toPinyin : enableZhuyin ? toZhuyin : null;
   return (
     <div className="absolute inset-0 flex items-center justify-center text-center p-[5%]" style={{ ...bgStyle(bg), containerType: 'inline-size' }}>
       {bg?.url && <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/40" />}
@@ -26,7 +27,7 @@ export function SlideView({ slide, bg, pc, lyricFontSize, translationFontSize, s
         ) : (
           (slide.lines || []).map((ln, j) => (
             <div key={j}>
-              {enablePinyin && toPinyin(ln.cn) && <p style={{ fontSize: cqw(lyricFontSize * 0.45), color: pc.lc, textShadow: shadow }}>{toPinyin(ln.cn)}</p>}
+              {annotate && annotate(ln.cn) && <p style={{ fontSize: cqw(lyricFontSize * 0.45), color: pc.lc, textShadow: shadow }}>{annotate(ln.cn)}</p>}
               {ln.cn && <p className="font-serif font-black leading-snug" style={{ fontSize: cqw(lyricFontSize), color: pc.lc, textShadow: shadow }}>{ln.cn}</p>}
               {ln.en && <p className="italic leading-snug" style={{ fontSize: cqw(translationFontSize), color: pc.tc, textShadow: shadow }}>{ln.en}</p>}
             </div>
@@ -41,14 +42,14 @@ export function SlideView({ slide, bg, pc, lyricFontSize, translationFontSize, s
 export type SlideStyle = {
   lyricColor: string; translationColor: string;
   lyricFontSize: number; translationFontSize: number; linesPerSlide: number;
-  enablePinyin: boolean; shadow: boolean; shadowLevel: ShadowLevel;
+  enablePinyin: boolean; enableZhuyin: boolean; shadow: boolean; shadowLevel: ShadowLevel;
 };
 
 // Click-to-enlarge modal: big slide with prev/next + edit the song's lyrics AND
 // (optionally) its style — colors, background, font sizes, lines per page — live.
-export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontSize, translationFontSize, shadow, enablePinyin, onLyric, onEnglish, onClose, style, onStyle, bgOptions, onBg, onRandomBg }: {
+export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontSize, translationFontSize, shadow, enablePinyin, enableZhuyin, onLyric, onEnglish, onClose, style, onStyle, bgOptions, onBg, onRandomBg }: {
   slides: PreviewSlide[]; bg?: BgOption | null; pc: SlideColors; start: number;
-  lyric: string; english: string; lyricFontSize: number; translationFontSize: number; shadow: string; enablePinyin?: boolean;
+  lyric: string; english: string; lyricFontSize: number; translationFontSize: number; shadow: string; enablePinyin?: boolean; enableZhuyin?: boolean;
   onLyric: (v: string) => void; onEnglish: (v: string) => void; onClose: () => void;
   // When provided, a "样式" panel appears with live color/font/lines/background controls.
   style?: SlideStyle; onStyle?: (patch: Partial<SlideStyle>) => void;
@@ -63,7 +64,7 @@ export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontS
       <div className="relative bg-white rounded-3xl shadow-2xl w-full max-w-5xl max-h-[92vh] overflow-y-auto p-5 grid md:grid-cols-[1.5fr_1fr] gap-5">
         <div>
           <div className="relative aspect-video rounded-xl overflow-hidden">
-            {slides[idx] && <SlideView slide={slides[idx]} bg={bg} pc={pc} lyricFontSize={lyricFontSize} translationFontSize={translationFontSize} shadow={shadow} enablePinyin={enablePinyin} />}
+            {slides[idx] && <SlideView slide={slides[idx]} bg={bg} pc={pc} lyricFontSize={lyricFontSize} translationFontSize={translationFontSize} shadow={shadow} enablePinyin={enablePinyin} enableZhuyin={enableZhuyin} />}
           </div>
           <div className="flex items-center justify-between mt-3">
             <button onClick={() => setI(Math.max(0, idx - 1))} disabled={idx === 0} className="h-9 px-4 rounded-xl bg-[#F9F7F5] text-[11px] font-black uppercase tracking-wider disabled:opacity-40 hover:bg-[#E5E0DA]">上一页</button>
@@ -140,11 +141,16 @@ export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontS
                   })}
                 </div>
               </div>
-              {/* Pinyin toggle */}
-              <button onClick={() => onStyle({ enablePinyin: !style.enablePinyin })} className="w-full flex items-center justify-between bg-[#F9F7F5] rounded-xl px-3.5 py-2.5 hover:bg-[#F4F1EE]">
-                <span className="flex items-center gap-2"><span className="material-symbols-outlined text-[18px] text-outline/50">translate</span><span className="text-[12px] font-black text-[#2C2C2C]">歌词上方加拼音</span></span>
-                <span className={`relative w-10 h-6 rounded-full transition-colors ${style.enablePinyin ? 'bg-emerald-600' : 'bg-[#E5E0DA]'}`}><span className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-all ${style.enablePinyin ? 'left-[18px]' : 'left-0.5'}`} /></span>
-              </button>
+              {/* Phonetic ruby: none / pinyin / zhuyin */}
+              <div className="space-y-1.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-outline/40 px-1">歌词上方注音</span>
+                <div className="flex gap-1.5">
+                  {([['none', '无'], ['pinyin', '拼音'], ['zhuyin', 'ㄅㄆㄇ 注音']] as const).map(([key, t]) => {
+                    const active = key === 'none' ? !style.enablePinyin && !style.enableZhuyin : key === 'pinyin' ? style.enablePinyin : style.enableZhuyin;
+                    return <button key={key} onClick={() => onStyle({ enablePinyin: key === 'pinyin', enableZhuyin: key === 'zhuyin' })} className={`flex-1 h-9 rounded-lg text-[12px] font-black transition-all ${active ? 'bg-emerald-600 text-white shadow' : 'bg-[#F9F7F5] text-outline/60 hover:bg-[#E5E0DA]'}`}>{t}</button>;
+                  })}
+                </div>
+              </div>
             </div>
           )}
 

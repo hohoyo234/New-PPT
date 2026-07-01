@@ -337,7 +337,7 @@ export function searchLibraryMulti(query: string, limit = 8): LibrarySong[] {
     const title = (s.title || '').toLowerCase();
     const titleSc = (s.titleSc || '').toLowerCase();
     const eng = (s.englishTitle || '').toLowerCase();
-    const text = [title, titleSc, eng, (s.composer || '').toLowerCase(), (s.lyrics || '').toLowerCase(), (s.lyricsSc || '').toLowerCase()].join('\n');
+    const text = [title, titleSc, eng, (s.producer || '').toLowerCase(), (s.composer || '').toLowerCase(), (s.lyricist || '').toLowerCase(), (s.lyrics || '').toLowerCase(), (s.lyricsSc || '').toLowerCase()].join('\n');
     let score = 0;
     if (title === q || titleSc === q) score = 100;
     else if (title.includes(q) || titleSc.includes(q) || eng.includes(q)) score = 70;

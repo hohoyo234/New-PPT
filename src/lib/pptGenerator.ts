@@ -12,6 +12,9 @@ import {
   pptShadow,
   type ShadowLevel,
 } from './pptTheme';
+import { toZhuyin } from './zhuyin';
+
+export { toZhuyin };
 
 // Hanyu Pinyin (tone marks) for a Chinese line. Non-Chinese text is kept as-is.
 export const toPinyin = (s: string): string => {
@@ -49,6 +52,7 @@ export interface SongInput {
   shadow?: boolean;
   shadowLevel?: ShadowLevel;
   enablePinyin?: boolean;
+  enableZhuyin?: boolean;
 }
 
 export type SlideSize = '16:9' | '4:3';
@@ -70,6 +74,7 @@ export interface DeckSettings {
   enableShadow: boolean;
   shadowLevel: ShadowLevel;
   enablePinyin: boolean;
+  enableZhuyin: boolean;
   showSongTitle: boolean;
   unifyFontSize: boolean;
   unifyBackground: boolean;
@@ -147,6 +152,9 @@ export async function generateDeck(songsToExport: SongInput[], s: DeckSettings):
     const shadowOn = song.shadow !== undefined ? song.shadow : s.enableShadow;
     const textShadow = shadowOn ? pptShadow(song.shadowLevel ?? s.shadowLevel) : undefined;
     const usePinyin = song.enablePinyin ?? s.enablePinyin;
+    const useZhuyin = song.enableZhuyin ?? s.enableZhuyin;
+    // Phonetic ruby line above each lyric line (pinyin takes priority if both on).
+    const annotate = usePinyin ? toPinyin : useZhuyin ? toZhuyin : null;
 
     // Sets the slide background. Image backgrounds use a full-bleed "cover"
     // image (crops to fill, never distorts — fixes the squished look at any
@@ -199,21 +207,21 @@ export async function generateDeck(songsToExport: SongInput[], s: DeckSettings):
     const transRatio = baseLfs > 0 ? baseTfs / baseLfs : 0.5;
     const lineH = 0.8 * SY;
     const transH = 0.8 * SY;
-    const pinyinH = usePinyin ? 0.4 * SY : 0;
+    const annoH = annotate ? 0.4 * SY : 0;
 
     slidesContent.forEach((slideLines) => {
       const lyricPt = Math.max(12, Math.min(72, baseLfs)) * SX;
       const transPt = Math.max(10, Math.min(48, Math.round(baseLfs * transRatio))) * SX;
-      const pinyinPt = Math.max(10, Math.round(Math.max(12, Math.min(72, baseLfs)) * 0.45)) * SX;
+      const annoPt = Math.max(10, Math.round(Math.max(12, Math.min(72, baseLfs)) * 0.45)) * SX;
       const lSlide = pres.addSlide();
       setSlideBg(lSlide);
-      const blockH = slideLines.reduce((h, l) => h + pinyinH + lineH + (l.en ? transH : 0), 0);
+      const blockH = slideLines.reduce((h, l) => h + annoH + lineH + (l.en ? transH : 0), 0);
       let currentY = Math.max(0.3 * SY, (H - blockH) / 2);
       slideLines.forEach(({ cn, en }) => {
-        if (usePinyin) {
-          const py = toPinyin(cn);
-          if (py) lSlide.addText(py, { x: 0, y: currentY, w: '100%', h: pinyinH, align: 'center', fontFace: bodyFont, fontSize: pinyinPt, color: lc, shadow: textShadow });
-          currentY += pinyinH;
+        if (annotate) {
+          const ruby = annotate(cn);
+          if (ruby) lSlide.addText(ruby, { x: 0, y: currentY, w: '100%', h: annoH, align: 'center', fontFace: bodyFont, fontSize: annoPt, color: lc, shadow: textShadow });
+          currentY += annoH;
         }
         lSlide.addText(cn, { x: 0, y: currentY, w: '100%', h: lineH, align: 'center', fontFace: titleFont, fontSize: lyricPt, color: lc, bold: true, shadow: textShadow });
         currentY += lineH;

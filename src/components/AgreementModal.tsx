@@ -4,6 +4,10 @@ import { isTrackingOptedOut, setTrackingOptOut } from '../lib/tracking';
 
 type Kind = ConsentKind | 'terms';
 
+// Public takedown / rights contact shown in the compliance copy. Change here to
+// swap the address the notices point people at.
+export const CONTACT_EMAIL = 'jzey805@gmail.com';
+
 interface Content {
   icon: string;
   title: string;
@@ -22,7 +26,7 @@ const CONTENT: Record<Kind, Content> = {
       '本平台仅提供技术排版与展示服务，不对上传内容的版权归属作任何主张。',
       '我确认上传的歌词 / 歌谱内容不构成对第三方的商业版权侵权，相关责任由我本人承担。',
       '我授权平台在非营利前提下，对上传内容进行存储、排版与公开展示，以供同工交流学习。',
-      '平台遵循「通知—删除」（避风港）原则：一旦收到合法侵权通知，将及时下架相关内容。',
+      `平台遵循「通知—删除」（避风港）原则：如内容侵犯了您的权益，请来信 ${CONTACT_EMAIL}，一旦收到合法侵权通知将及时下架相关内容。`,
     ],
     agreeLabel: '我已阅读并同意上述条款',
   },
@@ -52,6 +56,7 @@ const CONTENT: Record<Kind, Content> = {
       '五、隐私：登录账户的歌库数据仅与你的账户绑定，他人不可见；我们不会出售你的个人数据。',
       '六、使用统计：我们收集匿名的使用数据（如使用了哪些功能、停留时长、设备类型）以改进产品；你可在下方随时关闭。',
       '七、非营利展示：社区精修版等共享内容仅用于同工间非营利的交流学习。',
+      `八、权益联系：如本平台展示的任何内容侵犯了您的合法权益，请来信 ${CONTACT_EMAIL}，我们会尽快核实，并依「通知—删除」原则及时处理。`,
     ],
     agreeLabel: '我知道了',
   },

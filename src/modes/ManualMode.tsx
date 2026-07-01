@@ -6,7 +6,7 @@ import {
   previewShadow,
   type ShadowLevel,
 } from '../lib/pptTheme';
-import { generateDeck, downloadBlob, toPinyin, type BgOption, type SongInput, type DeckSettings } from '../lib/pptGenerator';
+import { generateDeck, downloadBlob, toPinyin, toZhuyin, type BgOption, type SongInput, type DeckSettings } from '../lib/pptGenerator';
 import { BACKGROUND_OPTIONS, pollinationsBg } from '../lib/backgrounds';
 import { saveToLibrary, searchLibraryMulti, type LibrarySong } from '../lib/songLibrary';
 import { openLyricSheet } from '../lib/lyricSheet';
@@ -33,6 +33,7 @@ const DEFAULT_SETTINGS: DeckSettings = {
   enableShadow: true,
   shadowLevel: 'medium',
   enablePinyin: false,
+  enableZhuyin: false,
   showSongTitle: true,
   unifyFontSize: false,
   unifyBackground: true,
@@ -74,6 +75,18 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
   const [deckName, setDeckName] = useState(initial.deckName);
   const [customBgs, setCustomBgs] = useState<BgOption[]>(initial.customBgs || []);
 
+  // Resume prompt: if a previous session left real (non-sample) content, ask
+  // whether to keep editing it or start fresh — instead of silently reloading.
+  const hadSaved = useMemo(() => {
+    try {
+      const raw = localStorage.getItem(LS_KEY);
+      if (!raw) return false;
+      const p = JSON.parse(raw) as PersistShape;
+      return !!p.songs?.some((s) => (s.title || '').trim() || (s.lyrics || '').trim());
+    } catch { return false; }
+  }, []);
+  const [showResume, setShowResume] = useState(hadSaved);
+
   const [status, setStatus] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [aiOpen, setAiOpen] = useState(false);
@@ -82,6 +95,26 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
   const [lang, setLang] = useState<'tc' | 'sc'>(() => (localStorage.getItem('lib_lang') as 'tc' | 'sc') || 'tc');
   const [zoom, setZoom] = useState<number | null>(null);
   const uploadRef = useRef<HTMLInputElement>(null);
+  const lyricsRef = useRef<HTMLTextAreaElement>(null);
+
+  // Mark the stanza at the cursor/selection as a section. Inserts a "[名称]" line
+  // at the start of that line; expandSongSections then treats the following lines
+  // (until a blank line) as that section — so 副歌 can be written once and reused.
+  const insertSection = (label: string) => {
+    const ta = lyricsRef.current;
+    const val = dLyrics(activeSong);
+    const pos = ta ? ta.selectionStart : val.length;
+    const lineStart = val.lastIndexOf('\n', pos - 1) + 1;
+    const marker = `[${label}]\n`;
+    setLyrics(activeSong.id, val.slice(0, lineStart) + marker + val.slice(lineStart));
+    track('click', `标记·${label}`);
+    requestAnimationFrame(() => {
+      if (!ta) return;
+      ta.focus();
+      const p = lineStart + marker.length;
+      ta.setSelectionRange(p, p);
+    });
+  };
 
   const activeSong = songs.find((s) => s.id === activeId) || songs[0];
   const allBgs = [...BACKGROUND_OPTIONS, ...customBgs];
@@ -112,6 +145,16 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
     const s = newSong();
     setSongs((prev) => [...prev, s]);
     setActiveId(s.id);
+  };
+
+  // "重新开始" from the resume prompt: wipe the setlist back to one blank song.
+  const startFresh = () => {
+    const s = newSong();
+    setSongs([s]);
+    setActiveId(s.id);
+    setDeckName('Sunday Worship');
+    setShowResume(false);
+    track('click', '重新开始');
   };
 
   // Search the song library and add a chosen song to the setlist.
@@ -270,7 +313,7 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
             <div className="relative mb-3">
               <div className="flex items-center gap-2 bg-[#F9F7F5] rounded-xl border border-[#E5E0DA]/60 px-3 h-10 focus-within:border-emerald-500">
                 <span className="material-symbols-outlined text-outline/30 text-[18px]">search</span>
-                <input value={songQuery} onChange={(e) => setSongQuery(e.target.value)} placeholder="从歌库搜歌加进来…" className="flex-1 bg-transparent outline-none text-sm font-semibold" />
+                <input value={songQuery} onChange={(e) => setSongQuery(e.target.value)} placeholder="歌名 / 制作人 / 一句歌词" className="flex-1 bg-transparent outline-none text-sm font-semibold" />
                 {songQuery && <button onClick={() => setSongQuery('')} className="material-symbols-outlined text-outline/40 text-[18px] hover:text-[#2C2C2C]">close</button>}
               </div>
               {songQuery && (
@@ -308,9 +351,15 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
               <Field label="歌名"><input value={dTitle(activeSong)} onChange={(e) => setTitle(activeSong.id, e.target.value)} placeholder="奇异恩典" className="ed-input" /></Field>
               <Field label="英文名 / 副标题"><input value={activeSong.englishTitle} onChange={(e) => patchSong(activeSong.id, { englishTitle: e.target.value })} placeholder="Amazing Grace" className="ed-input" /></Field>
             </div>
-            <Field label="歌词（每行一句，空行 = 换页）"><textarea value={dLyrics(activeSong)} onChange={(e) => setLyrics(activeSong.id, e.target.value)} rows={7} placeholder={'奇异恩典 何等甘甜\n我罪已得赦免'} className="ed-input resize-none leading-relaxed" /></Field>
+            <Field label="歌词（每行一句，空行 = 换页）"><textarea ref={lyricsRef} value={dLyrics(activeSong)} onChange={(e) => setLyrics(activeSong.id, e.target.value)} rows={7} placeholder={'奇异恩典 何等甘甜\n我罪已得赦免'} className="ed-input resize-none leading-relaxed" /></Field>
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="text-[10px] font-bold text-outline/40 uppercase tracking-wider mr-0.5">把光标所在段标为</span>
+              {(['主歌', '副歌', '导歌', '桥段', '结尾'] as const).map((lbl) => (
+                <button key={lbl} onClick={() => insertSection(lbl)} className="h-7 px-2.5 rounded-lg bg-[#F9F7F5] hover:bg-emerald-50 hover:text-emerald-600 text-[11px] font-black transition-all">{lbl}</button>
+              ))}
+            </div>
             <Field label="翻译 / 对照歌词（按行对应，可留空）"><textarea value={activeSong.englishLyrics} onChange={(e) => patchSong(activeSong.id, { englishLyrics: e.target.value })} rows={5} placeholder={'Amazing grace how sweet the sound'} className="ed-input resize-none leading-relaxed" /></Field>
-            <p className="text-[10px] text-outline/40 px-1 leading-relaxed">💡 提示：用 <code className="bg-[#F9F7F5] px-1 rounded">[副歌]</code> 标记段落，重复时只写一次标记即可自动展开。</p>
+            <p className="text-[10px] text-outline/40 px-1 leading-relaxed">💡 提示：把光标点在某段歌词上，按上面的按钮即可加段落标记；<code className="bg-[#F9F7F5] px-1 rounded">[副歌]</code> 重复时只写一次标记即可自动展开。</p>
           </div>
         </section>
 
@@ -334,13 +383,16 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
                     ) : (
                       <>
                         <p className="text-[8px] font-black uppercase tracking-widest text-white/25">SLIDE {idx + 1}</p>
-                        {(sl.lines || []).map((ln, j) => (
+                        {(sl.lines || []).map((ln, j) => {
+                          const annotate = settings.enablePinyin ? toPinyin : settings.enableZhuyin ? toZhuyin : null;
+                          return (
                           <div key={j}>
-                            {settings.enablePinyin && toPinyin(ln.cn) && <p style={{ fontSize: cqw(settings.lyricFontSize * 0.45), color: sl.pc.lc, textShadow: sl.shadowCss }}>{toPinyin(ln.cn)}</p>}
+                            {annotate && annotate(ln.cn) && <p style={{ fontSize: cqw(settings.lyricFontSize * 0.45), color: sl.pc.lc, textShadow: sl.shadowCss }}>{annotate(ln.cn)}</p>}
                             {ln.cn && <p className="font-serif font-black leading-snug" style={{ fontSize: cqw(settings.lyricFontSize), color: sl.pc.lc, textShadow: sl.shadowCss }}>{ln.cn}</p>}
                             {ln.en && <p className="italic leading-snug" style={{ fontSize: cqw(settings.translationFontSize), color: sl.pc.tc, textShadow: sl.shadowCss }}>{ln.en}</p>}
                           </div>
-                        ))}
+                          );
+                        })}
                       </>
                     )}
                   </div>
@@ -381,7 +433,15 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
             <SliderRow label="歌词字号" value={settings.lyricFontSize} min={20} max={72} onChange={(v) => set('lyricFontSize', v)} />
             <SliderRow label="翻译字号" value={settings.translationFontSize} min={12} max={48} onChange={(v) => set('translationFontSize', v)} />
             <Toggle label="包含歌名封面页" checked={settings.showSongTitle} onChange={(v) => set('showSongTitle', v)} />
-            <Toggle label="显示拼音" checked={settings.enablePinyin} onChange={(v) => set('enablePinyin', v)} />
+            <div className="space-y-1.5">
+              <span className="text-[11px] font-bold text-[#2C2C2C]">歌词上方注音</span>
+              <div className="flex gap-1.5">
+                {([['none', '无'], ['pinyin', '拼音'], ['zhuyin', 'ㄅㄆㄇ']] as const).map(([key, t]) => {
+                  const active = key === 'none' ? !settings.enablePinyin && !settings.enableZhuyin : key === 'pinyin' ? settings.enablePinyin : settings.enableZhuyin;
+                  return <button key={key} onClick={() => setSettings((p) => ({ ...p, enablePinyin: key === 'pinyin', enableZhuyin: key === 'zhuyin' }))} className={`flex-1 h-9 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all ${active ? 'bg-emerald-600 text-white' : 'bg-[#F9F7F5] text-outline/50 hover:bg-[#E5E0DA]'}`}>{t}</button>;
+                })}
+              </div>
+            </div>
           </Panel>
 
           <Panel title="文字与阴影">
@@ -400,6 +460,22 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
           </Panel>
         </section>
       </main>
+
+      {showResume && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-6">
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-md" />
+          <div className="relative bg-white w-full max-w-md rounded-[36px] shadow-2xl p-9 text-center">
+            <div className="w-16 h-16 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto mb-5"><span className="material-symbols-outlined text-3xl">history</span></div>
+            <h3 className="text-2xl font-serif font-black mb-2">继续上次的制作？</h3>
+            <p className="text-[13px] text-outline/50 font-medium mb-1">检测到上次未完成的歌单</p>
+            <p className="text-[13px] font-bold text-[#2C2C2C] mb-7">「{deckName || 'Sunday Worship'}」· 共 {songs.length} 首</p>
+            <div className="flex gap-4">
+              <button onClick={startFresh} className="flex-1 py-4 bg-[#F9F7F5] text-outline/60 rounded-2xl text-[11px] font-black uppercase tracking-widest hover:bg-[#E5E0DA]">重新开始</button>
+              <button onClick={() => { setShowResume(false); track('click', '继续上次'); }} className="flex-1 py-4 bg-emerald-600 text-white rounded-2xl text-[11px] font-black uppercase tracking-widest hover:bg-emerald-500 shadow-lg">用上次的</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {aiOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-6">

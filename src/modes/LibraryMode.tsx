@@ -218,7 +218,7 @@ export default function LibraryMode({ modeToggle, authSlot }: { modeToggle: Reac
           </div>
           <div className="flex items-center gap-2 bg-white rounded-2xl border border-[#E5E0DA]/60 px-4 h-12 shadow-sm w-full sm:w-72">
             <span className="material-symbols-outlined text-outline/30 text-[18px]">search</span>
-            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="搜歌名 / 歌词片段（记不全也行）" className="flex-1 bg-transparent outline-none text-sm font-semibold" />
+            <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="歌名 / 制作人 / 一句歌词（记不全也行）" className="flex-1 bg-transparent outline-none text-sm font-semibold" />
           </div>
         </div>
 
