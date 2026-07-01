@@ -1,5 +1,5 @@
 import React, { useMemo, useRef, useState } from 'react';
-import { expandSongSections, paginateLyrics, resolveSlideColors, previewShadow, type ShadowLevel } from '../lib/pptTheme';
+import { expandSongSections, paginateLyrics, insertSectionMarker, resolveSlideColors, previewShadow, type ShadowLevel } from '../lib/pptTheme';
 import type { BgOption, SongInput, DeckSettings } from '../lib/pptGenerator';
 import { BACKGROUND_OPTIONS, pollinationsBg } from '../lib/backgrounds';
 import { searchLibrary, searchLibraryMulti, saveToLibrary, libraryStats } from '../lib/songLibrary';
@@ -417,22 +417,21 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
   const lyricsRef = useRef<HTMLTextAreaElement>(null);
   const englishRef = useRef<HTMLTextAreaElement>(null);
   const [activeField, setActiveField] = useState<'lyrics' | 'english'>('lyrics');
-  // Insert a [名称] section marker at the cursor of whichever field (歌词 or 翻译)
-  // has focus. expandSongSections expands 中文 markers and strips 英文 markers.
+  // Mark the stanza at the cursor of the focused field (歌词/翻译) and mirror the
+  // label into the paired stanza of the other language so 中/英 stay in sync.
   const insertSection = (label: string) => {
     const isEng = activeField === 'english';
     const ta = isEng ? englishRef.current : lyricsRef.current;
-    const val = (isEng ? song.englishLyrics : song.lyrics) || '';
-    const pos = ta ? ta.selectionStart : val.length;
-    const lineStart = val.lastIndexOf('\n', pos - 1) + 1;
-    const marker = `[${label}]\n`;
-    const next = val.slice(0, lineStart) + marker + val.slice(lineStart);
-    onPatch(song.id, isEng ? { englishLyrics: next } : { lyrics: next });
+    const cnText = song.lyrics || '';
+    const enText = song.englishLyrics || '';
+    const primary = isEng ? enText : cnText;
+    const pos = ta ? ta.selectionStart : primary.length;
+    const r = insertSectionMarker(cnText, enText, isEng ? 'en' : 'cn', pos, label);
+    onPatch(song.id, { lyrics: r.cn, englishLyrics: r.en });
     requestAnimationFrame(() => {
       if (!ta) return;
       ta.focus();
-      const p = lineStart + marker.length;
-      ta.setSelectionRange(p, p);
+      ta.setSelectionRange(r.caret, r.caret);
     });
   };
   // Effective per-song style: override (set from the modal) or the auto default.

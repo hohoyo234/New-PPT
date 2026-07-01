@@ -3,6 +3,7 @@ import {
   resolveSlideColors,
   paginateLyrics,
   expandSongSections,
+  insertSectionMarker,
   previewShadow,
   type ShadowLevel,
 } from '../lib/pptTheme';
@@ -105,26 +106,24 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
   // Which lyric field the section buttons act on — the one the user last focused.
   const [activeField, setActiveField] = useState<'lyrics' | 'english'>('lyrics');
 
-  // Mark the stanza at the cursor/selection as a section. Inserts a "[名称]" line
-  // at the start of that line; expandSongSections then treats the following lines
-  // (until a blank line) as that section — so 副歌 can be written once and reused.
-  // Works on whichever field (歌词 or 翻译) currently has focus.
+  // Mark the stanza at the cursor as a section, based on whichever field (歌词/翻译)
+  // has focus, and MIRROR the label into the paired stanza of the other language so
+  // 中/英 stay in sync. expandSongSections strips 英文 markers so they never render.
   const insertSection = (label: string) => {
     const isEng = activeField === 'english';
     const ta = isEng ? englishRef.current : lyricsRef.current;
-    const val = isEng ? activeSong.englishLyrics || '' : dLyrics(activeSong);
-    const pos = ta ? ta.selectionStart : val.length;
-    const lineStart = val.lastIndexOf('\n', pos - 1) + 1;
-    const marker = `[${label}]\n`;
-    const next = val.slice(0, lineStart) + marker + val.slice(lineStart);
-    if (isEng) patchSong(activeSong.id, { englishLyrics: next });
-    else setLyrics(activeSong.id, next);
+    const cnText = dLyrics(activeSong);
+    const enText = activeSong.englishLyrics || '';
+    const primary = isEng ? enText : cnText;
+    const pos = ta ? ta.selectionStart : primary.length;
+    const r = insertSectionMarker(cnText, enText, isEng ? 'en' : 'cn', pos, label);
+    const cnPatch = lang === 'sc' ? { lyricsSc: r.cn } : { lyrics: r.cn };
+    patchSong(activeSong.id, { ...cnPatch, englishLyrics: r.en });
     track('click', `标记·${label}`);
     requestAnimationFrame(() => {
       if (!ta) return;
       ta.focus();
-      const p = lineStart + marker.length;
-      ta.setSelectionRange(p, p);
+      ta.setSelectionRange(r.caret, r.caret);
     });
   };
 
@@ -368,8 +367,7 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl border border-[#E5E0DA]/50 p-5 shadow-sm space-y-4">
-            <h2 className="text-[10px] font-black uppercase tracking-[0.25em] text-outline/50 px-1">歌曲内容</h2>
+          <Panel title="歌曲内容" defaultOpen>
             <div className="grid grid-cols-2 gap-3">
               <Field label="歌名"><input value={dTitle(activeSong)} onChange={(e) => setTitle(activeSong.id, e.target.value)} placeholder="奇异恩典" className="ed-input" /></Field>
               <Field label="英文名 / 副标题"><input value={activeSong.englishTitle} onChange={(e) => patchSong(activeSong.id, { englishTitle: e.target.value })} placeholder="Amazing Grace" className="ed-input" /></Field>
@@ -382,8 +380,8 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
               ))}
             </div>
             <Field label="翻译 / 对照歌词（按行对应，可留空）"><textarea ref={englishRef} onFocus={() => setActiveField('english')} value={activeSong.englishLyrics} onChange={(e) => patchSong(activeSong.id, { englishLyrics: e.target.value })} rows={5} placeholder={'Amazing grace how sweet the sound'} className="ed-input resize-none leading-relaxed" /></Field>
-            <p className="text-[10px] text-outline/40 px-1 leading-relaxed">💡 提示：把光标点在<b>歌词或翻译</b>的某段上，按上面的按钮即可给该段加标记（中英各自标记，互不影响）；<code className="bg-[#F9F7F5] px-1 rounded">[副歌]</code> 重复时只写一次即可自动展开。</p>
-          </div>
+            <p className="text-[10px] text-outline/40 px-1 leading-relaxed">💡 提示：把光标点在某段上，按上面的按钮即可给该段加标记，<b>中英会自动同步</b>；<code className="bg-[#F9F7F5] px-1 rounded">[副歌]</code> 重复时只写一次即可自动展开。</p>
+          </Panel>
 
           <Panel title="背景" defaultOpen>
             <div className="grid grid-cols-3 gap-2 max-h-[360px] overflow-y-auto no-scrollbar pr-0.5">

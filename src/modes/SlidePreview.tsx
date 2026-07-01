@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { toPinyin, toZhuyin, type BgOption } from '../lib/pptGenerator';
-import type { SlideColors, ShadowLevel } from '../lib/pptTheme';
+import { insertSectionMarker, type SlideColors, type ShadowLevel } from '../lib/pptTheme';
 
 export type PreviewSlide = { type: 'cover' | 'lyric'; title?: string; sub?: string; lines?: { cn: string; en: string }[] };
 
@@ -61,21 +61,20 @@ export function PreviewModal({ slides, bg, pc, start, lyric, english, lyricFontS
   const lyricRef = useRef<HTMLTextAreaElement>(null);
   const engRef = useRef<HTMLTextAreaElement>(null);
   const [activeField, setActiveField] = useState<'lyric' | 'english'>('lyric');
-  // Insert a [名称] section marker at the cursor of the focused field (歌词/翻译).
+  // Mark the stanza at the cursor of the focused field (歌词/翻译) and mirror the
+  // label into the paired stanza of the other language so 中/英 stay in sync.
   const insertSection = (label: string) => {
     const isEng = activeField === 'english';
     const ta = isEng ? engRef.current : lyricRef.current;
-    const val = isEng ? english : lyric;
-    const pos = ta ? ta.selectionStart : val.length;
-    const lineStart = val.lastIndexOf('\n', pos - 1) + 1;
-    const marker = `[${label}]\n`;
-    const next = val.slice(0, lineStart) + marker + val.slice(lineStart);
-    (isEng ? onEnglish : onLyric)(next);
+    const primary = isEng ? english : lyric;
+    const pos = ta ? ta.selectionStart : primary.length;
+    const r = insertSectionMarker(lyric, english, isEng ? 'en' : 'cn', pos, label);
+    onLyric(r.cn);
+    onEnglish(r.en);
     requestAnimationFrame(() => {
       if (!ta) return;
       ta.focus();
-      const p = lineStart + marker.length;
-      ta.setSelectionRange(p, p);
+      ta.setSelectionRange(r.caret, r.caret);
     });
   };
   return (

@@ -99,6 +99,53 @@ export function paginateLyrics(lyrics: string, english: string, autoN: number, p
   return slides;
 }
 
+// Insert a [label] section marker into the stanza the cursor is in, and MIRROR
+// it to the paired stanza in the other language so 中/英 stay in sync. Pairing is
+// by content-line order (blank lines & existing markers ignored). The mirror is
+// skipped when the other field is empty. Returns both texts + the new caret pos
+// (within the focused field).
+export function insertSectionMarker(
+  cn: string,
+  en: string,
+  field: 'cn' | 'en',
+  cursorPos: number,
+  label: string,
+): { cn: string; en: string; caret: number } {
+  const isMarker = (l: string) => /^\s*\[[^\]]+\]\s*$/.test(l);
+  const primary = field === 'cn' ? cn : en;
+  const other = field === 'cn' ? en : cn;
+  const lineStart = primary.lastIndexOf('\n', cursorPos - 1) + 1;
+  // How many real content lines precede the cursor's line → the paired index.
+  const idx = primary
+    .slice(0, lineStart)
+    .split('\n')
+    .filter((l) => l.trim() && !isMarker(l)).length;
+  const nextPrimary = `${primary.slice(0, lineStart)}[${label}]\n${primary.slice(lineStart)}`;
+  const caret = lineStart + label.length + 3; // past "[label]\n"
+  // Mirror: insert the marker before the other field's idx-th content line.
+  let nextOther = other;
+  if (other.trim()) {
+    const lines = other.split('\n');
+    let count = 0;
+    let placed = false;
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].trim() && !isMarker(lines[i])) {
+        if (count === idx) {
+          lines.splice(i, 0, `[${label}]`);
+          placed = true;
+          break;
+        }
+        count++;
+      }
+    }
+    if (!placed) lines.push(`[${label}]`);
+    nextOther = lines.join('\n');
+  }
+  return field === 'cn'
+    ? { cn: nextPrimary, en: nextOther, caret }
+    : { cn: nextOther, en: nextPrimary, caret };
+}
+
 // Expand repeated sections (verse/chorus) so a repeating chorus is typed ONCE.
 //   • Label a section with a [name] line on its own, e.g. [副歌] or [主歌1].
 //   • The FIRST [name] line + the lines under it (until a blank line or the next
