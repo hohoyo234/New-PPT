@@ -377,50 +377,8 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
             <Field label="翻译 / 对照歌词（按行对应，可留空）"><textarea value={activeSong.englishLyrics} onChange={(e) => patchSong(activeSong.id, { englishLyrics: e.target.value })} rows={5} placeholder={'Amazing grace how sweet the sound'} className="ed-input resize-none leading-relaxed" /></Field>
             <p className="text-[10px] text-outline/40 px-1 leading-relaxed">💡 提示：把光标点在某段歌词上，按上面的按钮即可加段落标记；<code className="bg-[#F9F7F5] px-1 rounded">[副歌]</code> 重复时只写一次标记即可自动展开。</p>
           </div>
-        </section>
 
-        <section className="lg:col-span-5 space-y-3">
-          <div className="bg-[#1A1A1A] rounded-3xl overflow-hidden shadow-xl">
-            <div className="px-5 h-12 flex items-center justify-between border-b border-white/10">
-              <span className="text-[10px] font-black uppercase tracking-[0.25em] text-emerald-400">实时预览</span>
-              <span className="text-[10px] font-bold text-white/40">{previewSlides.length} 页 · {activeSong.title || '未命名'}</span>
-            </div>
-            <div className="p-4 max-h-[70vh] overflow-y-auto no-scrollbar space-y-3">
-              {previewSlides.map((sl, idx) => (
-                <div key={idx} className="relative rounded-xl overflow-hidden flex items-center justify-center text-center p-6" style={{ ...bgStyle(sl.bg), aspectRatio: '16/9', containerType: 'inline-size' }}>
-                  {sl.bg?.url && <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/40" />}
-                  <div className="relative z-10 w-full space-y-1.5">
-                    {sl.type === 'cover' ? (
-                      <>
-                        <p className="text-[9px] font-black uppercase tracking-widest" style={{ color: sl.pc.lc, opacity: 0.55 }}>SLIDE {idx + 1}</p>
-                        <h2 className="font-serif font-black leading-tight" style={{ fontSize: cqw(48), color: sl.pc.lc, textShadow: sl.shadowCss }}>{sl.title || '未命名'}</h2>
-                        {sl.sub && <p className="font-medium" style={{ fontSize: cqw(24), color: sl.pc.tc, textShadow: sl.shadowCss }}>{sl.sub}</p>}
-                      </>
-                    ) : (
-                      <>
-                        <p className="text-[8px] font-black uppercase tracking-widest text-white/25">SLIDE {idx + 1}</p>
-                        {(sl.lines || []).map((ln, j) => {
-                          const annotate = settings.enablePinyin ? toPinyin : settings.enableZhuyin ? toZhuyin : null;
-                          return (
-                          <div key={j}>
-                            {annotate && annotate(ln.cn) && <p style={{ fontSize: cqw(settings.lyricFontSize * 0.45), color: sl.pc.lc, textShadow: sl.shadowCss }}>{annotate(ln.cn)}</p>}
-                            {ln.cn && <p className="font-serif font-black leading-snug" style={{ fontSize: cqw(settings.lyricFontSize), color: sl.pc.lc, textShadow: sl.shadowCss }}>{ln.cn}</p>}
-                            {ln.en && <p className="italic leading-snug" style={{ fontSize: cqw(settings.translationFontSize), color: sl.pc.tc, textShadow: sl.shadowCss }}>{ln.en}</p>}
-                          </div>
-                          );
-                        })}
-                      </>
-                    )}
-                  </div>
-                </div>
-              ))}
-              {previewSlides.length === 0 && <div className="aspect-video rounded-xl flex items-center justify-center text-white/30 text-sm font-bold">输入歌词后预览出现在这里</div>}
-            </div>
-          </div>
-        </section>
-
-        <section className="lg:col-span-3 space-y-5">
-          <Panel title="背景">
+          <Panel title="背景" defaultOpen>
             <div className="grid grid-cols-3 gap-2 max-h-[360px] overflow-y-auto no-scrollbar pr-0.5">
               {allBgs.map((bg) => (
                 <button key={bg.id} onClick={() => set('selectedBg', bg)} title={bg.label} className={`relative aspect-video rounded-xl overflow-hidden border-2 transition-all ${settings.selectedBg.id === bg.id ? 'border-emerald-500 scale-105 shadow' : 'border-transparent hover:border-emerald-500/40'}`} style={bgStyle(bg)}>
@@ -476,6 +434,47 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
             )}
           </Panel>
         </section>
+
+        <section className="lg:col-span-8 space-y-3">
+          <div className="bg-[#1A1A1A] rounded-3xl overflow-hidden shadow-xl">
+            <div className="px-5 h-12 flex items-center justify-between border-b border-white/10">
+              <span className="text-[10px] font-black uppercase tracking-[0.25em] text-emerald-400">实时预览</span>
+              <span className="text-[10px] font-bold text-white/40">{previewSlides.length} 页 · {activeSong.title || '未命名'}</span>
+            </div>
+            <div className="p-4 max-h-[70vh] overflow-y-auto no-scrollbar space-y-3">
+              {previewSlides.map((sl, idx) => (
+                <div key={idx} className="relative rounded-xl overflow-hidden flex items-center justify-center text-center p-6" style={{ ...bgStyle(sl.bg), aspectRatio: '16/9', containerType: 'inline-size' }}>
+                  {sl.bg?.url && <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/40" />}
+                  <div className="relative z-10 w-full space-y-1.5">
+                    {sl.type === 'cover' ? (
+                      <>
+                        <p className="text-[9px] font-black uppercase tracking-widest" style={{ color: sl.pc.lc, opacity: 0.55 }}>SLIDE {idx + 1}</p>
+                        <h2 className="font-serif font-black leading-tight" style={{ fontSize: cqw(48), color: sl.pc.lc, textShadow: sl.shadowCss }}>{sl.title || '未命名'}</h2>
+                        {sl.sub && <p className="font-medium" style={{ fontSize: cqw(24), color: sl.pc.tc, textShadow: sl.shadowCss }}>{sl.sub}</p>}
+                      </>
+                    ) : (
+                      <>
+                        <p className="text-[8px] font-black uppercase tracking-widest text-white/25">SLIDE {idx + 1}</p>
+                        {(sl.lines || []).map((ln, j) => {
+                          const annotate = settings.enablePinyin ? toPinyin : settings.enableZhuyin ? toZhuyin : null;
+                          return (
+                          <div key={j}>
+                            {annotate && annotate(ln.cn) && <p style={{ fontSize: cqw(settings.lyricFontSize * 0.45), color: sl.pc.lc, textShadow: sl.shadowCss }}>{annotate(ln.cn)}</p>}
+                            {ln.cn && <p className="font-serif font-black leading-snug" style={{ fontSize: cqw(settings.lyricFontSize), color: sl.pc.lc, textShadow: sl.shadowCss }}>{ln.cn}</p>}
+                            {ln.en && <p className="italic leading-snug" style={{ fontSize: cqw(settings.translationFontSize), color: sl.pc.tc, textShadow: sl.shadowCss }}>{ln.en}</p>}
+                          </div>
+                          );
+                        })}
+                      </>
+                    )}
+                  </div>
+                </div>
+              ))}
+              {previewSlides.length === 0 && <div className="aspect-video rounded-xl flex items-center justify-center text-white/30 text-sm font-bold">输入歌词后预览出现在这里</div>}
+            </div>
+          </div>
+        </section>
+
       </main>
 
       {showResume && (
@@ -524,11 +523,15 @@ export default function ManualMode({ modeToggle, authSlot }: { modeToggle: React
   );
 }
 
-function Panel({ title, children }: { title: string; children: React.ReactNode }) {
+function Panel({ title, children, defaultOpen = false }: { title: string; children: React.ReactNode; defaultOpen?: boolean }) {
+  const [open, setOpen] = useState(defaultOpen);
   return (
-    <div className="bg-white rounded-3xl border border-[#E5E0DA]/50 p-5 shadow-sm space-y-4">
-      <h2 className="text-[10px] font-black uppercase tracking-[0.25em] text-outline/50">{title}</h2>
-      {children}
+    <div className="bg-white rounded-3xl border border-[#E5E0DA]/50 shadow-sm">
+      <button onClick={() => setOpen((o) => !o)} className="w-full flex items-center justify-between px-5 py-4 group">
+        <h2 className="text-[10px] font-black uppercase tracking-[0.25em] text-outline/50 group-hover:text-[#2C2C2C] transition-colors">{title}</h2>
+        <span className={`material-symbols-outlined text-[20px] text-outline/40 transition-transform ${open ? 'rotate-180' : ''}`}>expand_more</span>
+      </button>
+      {open && <div className="px-5 pb-5 space-y-4">{children}</div>}
     </div>
   );
 }

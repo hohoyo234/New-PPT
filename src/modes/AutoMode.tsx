@@ -513,7 +513,6 @@ function ConfirmCard({ index, song, onPatch, onStructure, onReRoll, onPickPreset
       {/* Live slide preview (same look as 手动 mode) */}
       <div className="mt-4 pt-4 border-t border-[#E5E0DA]/50">
         <div className="flex items-center gap-2 mb-2 px-1">
-          <span className="material-symbols-outlined text-emerald-500 text-[16px]">slideshow</span>
           <span className="text-[10px] font-black uppercase tracking-wider text-outline/50">实时预览 · {preview.slides.length} 页</span>
         </div>
         <div className="flex gap-2.5 overflow-x-auto no-scrollbar pb-1">
