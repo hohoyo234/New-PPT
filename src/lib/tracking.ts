@@ -9,7 +9,7 @@ import { supabase } from './supabase';
 
 // Paste the deployed Apps Script web-app /exec URL here to stream events into the
 // Google Sheet. Empty = Sheet sink off (Supabase still records everything).
-export const APPS_SCRIPT_URL = '';
+export const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxKS85F22HtspbnMmBqzqwue6WC-YAjhA26oukuXfgkxGm5x3tTU5DWXsH8XkTHPPZ6/exec';
 
 const ANON_KEY = 'ppt_anon_id';
 const SESSION_KEY = 'ppt_session_id';
